@@ -1,0 +1,196 @@
+
+
+<!doctype html>
+<html lang="en">
+
+<head>
+   <!--
+  Before it was infobucket it was a page of links that began 10/6/97
+  -->
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="pinterest" content="nopin">
+
+
+   <meta name="description" content="chess game ">
+
+   <title> vs  | Infobucket</title>
+
+
+
+<!-- https://realfavicongenerator.net/ -->
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+ 
+<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+
+
+<link href="/assets/css/main.css" rel="stylesheet">
+
+
+
+   <!-- Support libraries from Yahoo YUI project -->
+   <!-- <script type="text/javascript" src="http://chesstempo.com/js/pgnyui.js"></script>   -->
+   <!-- <script type="text/javascript" src="http://chesstempo.com/js/pgnviewer.js"></script> -->
+
+   <script type="text/javascript" src="pgnyui.js"></script>
+   <script type="text/javascript" src="pgnviewer.js"></script>
+   <link type="text/css" rel="stylesheet" href="moves.css">
+
+</head>
+
+<body>
+
+   <!-- This website began 10/6/97 -->
+
+   
+
+         <div class="navigation">
+      <div class="nav-container">
+         <div class="brand">
+
+            <a href="/">Infobucket</a>
+
+         </div>
+         <nav>
+            <div class="nav-mobile">
+               <a id="nav-toggle" href="#"><span></span></a>
+            </div>
+            <ul class="nav-list">
+               <li><a href="/gallery/">Gallery</a></li>
+               <li><a href="/aboutme/">About</a></li>
+               <li><a href="/contact/">Contact</a></li>
+               <li>
+                  <a href="#">More</a>
+                  <ul class="nav-dropdown">
+                     <li><a href="/sort/" title="simple sort">Sorting columns</a></li>
+                     <li><a href="/chess/" title="local chess">Chess</a></li>
+                     <li><a href="/blog/">Blog</a></li>
+                  </ul>
+               </li>
+            </ul>
+         </nav>
+      </div>
+   </div>
+
+      <main>
+
+         <article>
+
+            <div id="site_title">
+               <h2>Vicary-Lowder</h2>
+               <p>Game viewer by <a href="http://chesstempo.com/pgn-viewer.html">ChessTempo</a></p>
+            </div>
+
+            <div id="eventdata">
+               [Event "Phi Kappa Blanca ??"]<br>
+               [Site "NCSU Student Center, Raleigh NC"]<br>
+               [Date "1993.09.11"]<br>
+               [Round "03"]<br>
+               [White "Vicary, Elizabeth Z."]<br>
+               [Black "Lowder, Phil"]<br>
+               [Result "0-1"]<br>
+               [WhiteUSCF "1859"]<br>
+               [BlackUSCF "1798"]<br>
+               [ECO "A06"]<br>
+            </div>
+
+            <div id="chess-container">
+               <script>
+                  new PgnViewer({
+                     boardName: "chess",
+                     pgnString: '1. Nf3 d5 2. b4 Bg4 3. Bb2 Nd7 4. e3 e5 5. a3 Bd6 6. Be2 Ngf6 7. O-O c6 8. d3 Qc7 9. h3 h5 10. hxg4 hxg4 11. Ng5 e4 12. Bxg4 Bh2+ {My much higher rated opponent resigned after 12...Bh2+. I was left in a familiar state of confusion. She enlightened me. 13.Kh1 Bg1+ and if 14.Kxg1 or 14.Bh3 then Qh2# } 0-1',
+                     pieceSize: 40,
+                     pieceSet: 'merida',
+                     pauseBetweenMoves: 800,
+                     showCoordinates: true,
+                     addVersion: true,
+                     autoScrollMoves: true,
+                     newlineForEachMainMove: false,
+                     showBracketsOnVariation: false,
+                     movesFormat: 'main_on_own_line',
+                     moveAnimationLength: 0.1,
+                     pollPGNMilliseconds: 90000
+                  });
+               </script>
+            </div>
+
+            <div id="chess-moves"></div>
+
+
+         </article>
+
+      </main>
+
+ <div class="sig parent">
+
+  <div class="fb_page_like child">
+
+  </div>
+  <div class="signature child">
+    <img src="/assets/media/gif/newsig.gif" width="300" height="51" alt="signature Phil W. Lowder">
+  </div>
+
+</div>
+
+ <div class="footer_row">
+
+   <div class="footer_column">
+      <ul>
+         <li class="footer_label">Site Map </li>
+         <li><a href="/">Home</a></li>
+         <li><a href="/aboutme/">About Me</a></li>
+         <li><a href="/blog/">Blog</a></li>
+         <li><a href="/gallery/">Gallery</a></li>
+         <li><a href="/chess/">Chess</a></li>
+         <li><a href="/contact/">Contact</a></li>
+      </ul>
+   </div>
+   <div class="footer_column">
+      <ul>
+         <li class="footer_label">Tools</li>
+         <li><a href="https://code.visualstudio.com/">VS Code</a></li>
+         <li><a href="https://sass-lang.com/">Sass</a></li>
+         <li><a href="http://koala-app.com/">Koala</a></li>
+         <li><a href="http://www.wampserver.com/en/">WampServer</a></li>
+         <li><a href="https://winscp.net/">WinSCP</a></li>
+         <li><a href="https://www.mozilla.org/en-US/firefox/new/">FireFox</a></li>
+      </ul>
+   </div>
+   <div class="footer_column">
+      <ul>
+         <li class="footer_label">Tip of the Hat</li>
+         <li><a href="https://www.taniarascia.com/responsive-dropdown-navigation-bar/">Tania Rascia</a></li>
+         <li><a href="https://www.toptal.com/designers/subtlepatterns/noisy-grid/">Noisy Grid</a></li>
+         <li><a href="https://subtlepatterns.com/">Subtle Patterns</a></li>
+         <li><a href="https://www.html-form-guide.com/php-form/php-form-action-self.html">HTML Form Guide</a></li>
+         <li><a href="https://varvy.com/">Varvy</a></li>
+         <li><a href="https://feathericons.com/">Feather Icons</a></li>
+      </ul>
+   </div>
+   <div class="footer_column">
+      <ul>
+       <li><a href="https://www.facebook.com/phil.lowder">
+            <img src="/assets/media/png/FB-f-Logo__white_72.png" width="72" height="72" alt="FaceBook Logo"></a>
+       </li>
+       <li><a href="https://github.com/philwlowder">
+         <img src="/assets/media/png/GitHub-Mark-Light-64px.png" width="64" height="64" alt="GitHub Logo"></a>
+      </li>
+    
+      </ul>
+   </div>
+
+
+<script src="/assets/js/combine.js"></script>
+   
+</body>
+
+</html>

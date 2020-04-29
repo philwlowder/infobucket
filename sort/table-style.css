@@ -1,0 +1,118 @@
+
+ body {
+	 background-image:none;
+	 grid-template-rows: 50px 1fr auto auto;
+	 grid-template-columns: 2% 96% 2%;
+	 
+	 	}
+
+.table_container {
+	grid-row: 3;
+}
+
+/*
+Generic Styling, for Desktops/Laptops
+*/
+
+
+.intro {
+	grid-column: 1-9;
+	width: 95%;
+	max-width: 900px;
+	margin-left: 0;
+	margin-right: 25px;
+	grid-row: 2;
+}
+
+
+table {
+  width:100%;
+  min-width: 800px;
+	border-collapse: collapse;
+	margin: 25px;
+	margin-right: 20px;
+}
+
+/*Zebra Striping*/
+
+tr:nth-of-type(odd) {
+  background: rgb(228, 226, 226);
+}
+
+th {
+  background: rgba(78, 78, 78, 0.877);
+  color: rgba(99, 97, 97, 0.781);
+  font-weight: bold;
+  padding: 6px;
+	border: 1px solid #ccc;
+}
+
+td {
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+
+/*
+Max width before this PARTICULAR table gets nasty
+This query will take effect for any screen smaller than 760px
+and also iPads specifically.
+*/
+@media
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+
+	/* Force table to not be like tables anymore */
+	table, thead, tbody, th, td, tr {
+		display: block;
+	}
+
+
+
+tbody {
+width: 100%;
+border: none;
+}
+
+
+	/* Hide table headers (but not display: none;, for accessibility) */
+	thead tr {
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+
+	tr { border: 1px solid #ccc;
+	}
+
+	td {
+		/* Behave  like a "row" */
+		border: none;
+		border-bottom: 1px solid rgb(73, 67, 67);
+		position: relative;
+		padding-left: 30%;
+	}
+
+	td:before {
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 6px;
+		left: 6px;
+		width: 40%;
+		padding-right: 20px;
+		white-space: nowrap;
+	}
+
+	/*
+	Label the data
+	*/
+	td:nth-of-type(1):before { content: "White"; }
+	td:nth-of-type(2):before { content: "Black"; }
+	td:nth-of-type(3):before { content: "Opening"; }
+	td:nth-of-type(4):before { content: "Site"; }
+	td:nth-of-type(5):before { content: "Year"; }
+	td:nth-of-type(6):before { content: "Game"; }
+
+}

@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="en">
 
@@ -24,10 +23,9 @@
    <meta name="pinterest" content="nopin">
 
 
-   <meta name="description" content="chess game ">
+<meta name="description" content="a php script that adds links to the Bootstrap pagination navbar">
 
-   <title>Lowder vs Hauser | Infobucket</title>
-
+<title>Pagination Helper</title>
 
 
 <!-- https://realfavicongenerator.net/ -->
@@ -46,20 +44,9 @@
 <link href="/assets/css/main.css" rel="stylesheet">
 
 
-
-   <!-- Support libraries from Yahoo YUI project -->
-   <!-- <script type="text/javascript" src="http://chesstempo.com/js/pgnyui.js"></script>   -->
-   <!-- <script type="text/javascript" src="http://chesstempo.com/js/pgnviewer.js"></script> -->
-
-   <script type="text/javascript" src="pgnyui.js"></script>
-   <script type="text/javascript" src="pgnviewer.js"></script>
-   <link type="text/css" rel="stylesheet" href="moves.css">
-
 </head>
 
 <body>
-
-   <!-- This website began 10/6/97 -->
 
    
 
@@ -93,53 +80,64 @@
       <main>
 
          <article>
+            <a href="/blog" class="btn">Back</a>
 
-            <div id="site_title">
-               <h2>Lowder-Hauser</h2>
-               <p>Game viewer by <a href="https://chesstempo.com/pgn-viewer.html">ChessTempo</a></p>
-            </div>
+            <h1>PHP Script</h1>
+            <p>August 28th, 2019</p>
 
-            <div id="eventdata">
-               [Event "Phi Kappa Blanca"]<br>
-               [Site "NCSU Student Center, Raleigh NC"]<br>
-               [Date "1993.09.11"]<br>
-               [Round "02"]<br>
-               [White "Lowder, Phil"]<br>
-               [Black "Hauser, Daniel M."]<br>
-               [Result "1/2-1/2"]<br>
-               [WhiteUSCF "1798"]<br>
-               [BlackUSCF "1925"]<br>
-               [ECO "B31"]<br>
-            </div>
-
-            <div id="chess-container">
-               <script>
-                  new PgnViewer({
-                     boardName: "chess",
-                     pgnString: '1. e4 c5 2. Nf3 Nc6 3. Bb5 g6 4. Nc3 Bg7 5. O-O a6 6. Bxc6 dxc6 7. h3 Nf6 8. d3 O-O 9. Be3 Qa5 10. Nd2 Nd7 11. Nb3 Qb6 12. Na4 Qb4 13. Naxc5 Bxb2? 14. Nxd7? (14. a3! Bxa3 15. c3 Qxc3 16. Rxa3) 14...Bxd7 15. Rb1 Qa3 16. c4 Bf6 17. Qc2 Qd6 18. f4 Qc7 19. d4 Rad8 20. Nc5 b5 21. Nxd7 Rxd7 22. e5 Bg7 23. Rfc1 Rc8 24. Qe4 Qd8 25. Rc2 e6 26. Rbc1 Rdc7 27. Bd2 Rd7 28. Be3 Rdc7 29. g3 Bf8 30. Qd3 c5 31. d5?? {Giving Black two connected passed pawns.} 31...bxc4 32. Qxc4 exd5 33. Qxa6 d4 34. Bd2 {Better was Rd2 or Bf2} 34...Qd5 (34...d3!) 35. Bb4?? {Both White and Black miss how bad this move was.} 35...c4 (35...d3!) 36. Bxf8 d3? 37. Qf6 Kxf8? (37...Rxf8 {This maintains a large advantage.} ) 38. Qd6+ {White finds the best move and although Black still has an advantage it\'s not easy to convert into a win.} 38...Qxd6 39. exd6 Rd7 40. Rxc4 Rxc4 41. Rxc4 Rxd6 42. Rc1 Ra6 43. Rd1 Ra3 44. Rd2 1/2-1/2',
-                     pieceSize: 40,
-                     pieceSet: 'merida',
-                     pauseBetweenMoves: 800,
-                     showCoordinates: true,
-                     addVersion: true,
-                     autoScrollMoves: true,
-                     newlineForEachMainMove: false,
-                     showBracketsOnVariation: false,
-                     movesFormat: 'main_on_own_line',
-                     moveAnimationLength: 0.1,
-                     pollPGNMilliseconds: 90000
-                  });
-               </script>
-            </div>
-
-            <div id="chess-moves"></div>
-
+            <br>
+            PHP is a server side scripting language.
+            Kinsta hosting has an explanation of PHP use
+            in <a href="https://kinsta.com/knowledgebase/what-is-php/">Wordpress</a>.
+            I don't use Wordpress, but I use PHP in similar ways on my website.<br>
+            <br>
+            Recently I wanted to convert a website that used PHP to a static HTML site.
+            I created a PHP script that will recurse through my directory tree,
+            finding each PHP file. When a PHP file is found, my script appends and prepends code.
+            That code will convert the file to a static HTML file when the PHP file is
+            loaded in a browser. I was working with around 80 PHP files in many subdirectories.<br>
+            <br>
+            There are other ways to accomplish this task.
+            I could have used a text editor to add the code one file at a time.
+            That would have been quicker than putting a PHP script together, at least for me,
+            but it would have been tedious. I know because I've done that sort of thing.<br>
+            <br>
+            The search and replace function of a text editor such as Notepad++ would do the job.
+            It would have taken less time to find the correct Regex statement for the search.
+            When I finished my PHP script, I tried Notepad++ and proved this to be true.<br>
+            <br>
+            I worked locally on a <a href="http://www.wampserver.com/en/">WAMP</a> server.
+            Working with PHP is difficult without a local server.
+            Writing a PHP script required finding examples of code that would do part of the task.
+            I needed to understand enough to patch and paste some code together.
+            There was a lot of trial and error. That's where the local server makes a huge
+            difference. Without it, for each trial, I would have to FTP the script to a copy
+            of the website on a remote server.<br>
+            <br>
+            The script is below this narrative. I doubt that anyone will find and use it.
+            If you are that person, please TEST on a copy of your target and make sure you are happy
+            with the results.<br>
+            <br>
+            As is, the script will echo all the PHP files in a directory and its sub-directories.
+            You will have to find the line that includes "your path to a directory"
+            and insert your own path to the directory of your choice.
+            I placed my script in the same directory. For me it was the root directory of the website.<br>
+            <br>
+            To append and prepend, remove the commented text inside the 'foreach' statement.<br>
+            When you finish running the script, all PHP files in the path directory and
+            its subdirectories will have a line of PHP code added to their begining and ending.
+            Loading the PHP file into a browser will output a static HTML file named index.html.
+            If you have PHP files that are not named 'index.php', use a text editor to change the appended
+            text before loading the PHP file in your browser.
+            <br>
+            <br>
+            <b>Download</b> <a href="recurse.txt">Recurse Script</a>
 
          </article>
 
-      </main>
+      </main><!-- end main -->
 
- <div class="sig parent">
+      <div class="sig parent">
 
   <div class="fb_page_like child">
 
@@ -150,7 +148,7 @@
 
 </div>
 
-    <div class="footer_row">
+      <div class="footer_row">
 
    <div class="footer_column">
       <ul>
@@ -196,9 +194,9 @@
    </div>
 </div>
 
+ 
+   <script src="/assets/js/combine.js"></script>
 
-<script src="/assets/js/combine.js"></script>
-   
 </body>
 
 </html>

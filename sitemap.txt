@@ -3,21 +3,21 @@ https:\infobucket.com\index.html
 https:\infobucket.com\aboutme\index.html
 
 https:\infobucket.com\blog\index.html
-https:\infobucket.com\blog\enigma-01.html
-https:\infobucket.com\blog\ford-edison-02.html
-https:\infobucket.com\blog\dickville-03.html
-https:\infobucket.com\blog\entrance-04.html
-https:\infobucket.com\blog\out-of-control-05.html
-https:\infobucket.com\blog\beside-06.html
-https:\infobucket.com\blog\maps-07.html
-https:\infobucket.com\blog\low-water-08.html
-https:\infobucket.com\blog\narrows-dam-09.html
-https:\infobucket.com\blog\webspeed-10.html
-https:\infobucket.com\blog\c-programming-11.html
-https:\infobucket.com\blog\more-c-programming-12.html
-https:\infobucket.com\blog\drexel-declaration-13.html
-https:\infobucket.com\blog\phpscript-14.html
-https:\infobucket.com\blog\vps-15.html
+https:\infobucket.com\blog\001-enigma.html
+https:\infobucket.com\blog\002-ford-edison.html
+https:\infobucket.com\blog\003-dickville.html
+https:\infobucket.com\blog\004-entrance.html
+https:\infobucket.com\blog\005-out-of-control.html
+https:\infobucket.com\blog\006-beside.html
+https:\infobucket.com\blog\007-maps.html
+https:\infobucket.com\blog\008-low-water.html
+https:\infobucket.com\blog\009-narrows-dam.html
+https:\infobucket.com\blog\010-webspeed.html
+https:\infobucket.com\blog\011-c--programming.html
+https:\infobucket.com\blog\012-more-c-programming.html
+https:\infobucket.com\blog\013-drexel-declaration.html
+https:\infobucket.com\blog\014-phpscript.html
+https:\infobucket.com\blog\015-vps.html
 https:\infobucket.com\blog\school\index.html
 
 https:\infobucket.com\chess\index.html
@@ -37,13 +37,6 @@ https:\infobucket.com\chess\games\weber.html
 
 https:\infobucket.com\contact\index.html
 
-https:\infobucket.com\gallery\index.html
-https:\infobucket.com\gallery\badin-lake\index.html
-https:\infobucket.com\gallery\falls-dam\index.html
-https:\infobucket.com\gallery\falls-reservoir\index.html
-https:\infobucket.com\gallery\morrowmountain\index.html
-https:\infobucket.com\gallery\narrows\index.html
-https:\infobucket.com\gallery\uwharrie-river\index.html
 https:\infobucket.com\gallery\index.html
 
 https:\infobucket.com\sort\index.html

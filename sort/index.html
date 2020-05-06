@@ -4,14 +4,14 @@
 <head>
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-165123940-1"></script>
+<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-165123940-1"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
   gtag('config', 'UA-165123940-1');
-</script>
+</script> -->
 
 
    <!--
@@ -22,11 +22,7 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
    <meta name="pinterest" content="nopin">
 
-
-
 <title>Basic Tablesorter Demo</title>
-
-
 
 <!-- https://realfavicongenerator.net/ -->
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -40,85 +36,56 @@
 <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 
 
-
 <link href="/assets/css/main.css" rel="stylesheet">
-
-
 
 <link href="table-style.css" rel="stylesheet">
 <link href="css/rounded.css" rel="stylesheet">
-
-
 </head>
 
 <body>
-
-
-	   <div class="navigation">
-      <div class="nav-container">
-         <div class="brand">
-
-            <a href="/">Infobucket</a>
-
-         </div>
-         <nav>
-            <div class="nav-mobile">
-               <a id="nav-toggle" href="#"><span></span></a>
-            </div>
-            <ul class="nav-list">
-               <li><a href="/gallery/">Gallery</a></li>
-               <li><a href="/aboutme/">About</a></li>
-               <li><a href="/contact/">Contact</a></li>
-               <li>
-                  <a href="#">More</a>
-                  <ul class="nav-dropdown">
-                     <li><a href="/sort/" title="simple sort">Sorting columns</a></li>
-                     <li><a href="/chess/" title="local chess">Chess</a></li>
-                     <li><a href="/blog/">Blog</a></li>
-                  </ul>
-               </li>
-            </ul>
-         </nav>
+	<div class="navigation">
+  <div class="nav-container">
+    <div class="brand">
+      <a href="/">Infobucket</a>
+    </div>
+    <nav>
+      <div class="nav-mobile">
+        <a id="nav-toggle" href="#"><span></span></a>
       </div>
-   </div>
+      <ul class="nav-list">
+        <li><a href="/blog/">Commentaries</a></li>
+        <li><a href="/gallery/">Gallery</a></li>
 
-<main>
-
-	<div class="intro">
-
-		<p class="paragraph">
-			This page will function differently depending on the size of the users display.
-		</p>
-
-		<p class="paragraph">
-			Displays wider than 768 pixels will see a demonstration of the Javascript plugin
-			<a href="http://plugins.jquery.com/tablesorter/2.17.1/">TableSorter</a>.
-			This example uses a partial list of games from the book <em>500 Master Games of Chess</em>.
-		</p>
-
-		<p class="paragraph">Click on the headings and that column will be used to sort the table.</p>
-
-		<p class="paragraph">
-			From the <a href="http://mottie.github.io/tablesorter/docs/index.html">TableSorter Docs</a>,
-			"Sort multiple columns simultaneously by holding down the Shift key and
-			clicking a second, third or even fourth column header!" Copyright (c) 2007 Christian Bach.
-		</p>
-
-		<p class="paragraph">
-			Displays below 768 pixels will lose the table sorter function. The data will be available as a list
-			of records.
-		</p>
-
-		<p class="paragraph">
-	This is a quick demo of the columns & zebra widget with the "sortReset" option set to true (clicking on a sort
-		header a third time will reset the sort)</p>
-
-	</div>
-
+        <li>
+          <a href="#">More</a>
+          <ul class="nav-dropdown">
+            <li><a href="/chess/" title="local chess">Chess</a></li>
+            <li><a href="/aboutme/">About</a></li>
+            <li><a href="/contact/">Contact</a></li>
+            <li><a href="/sort/" title="simple sort">Column Sorting demo</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
+	<main>
+		<div class="intro">
+			<p class="paragraph"> This page will function differently depending on the size of the users display. </p>
+			<p class="paragraph"> Displays wider than 768 pixels will see a demonstration of the Javascript plugin <a
+					href="http://plugins.jquery.com/tablesorter/2.17.1/">TableSorter</a>. This example uses a partial list of
+				games from the book <em>500 Master Games of Chess</em>. </p>
+			<p class="paragraph">Click on the headings and that column will be used to sort the table.</p>
+			<p class="paragraph"> From the <a href="http://mottie.github.io/tablesorter/docs/index.html">TableSorter Docs</a>,
+				"Sort multiple columns simultaneously by holding down the Shift key and clicking a second, third or even fourth
+				column header!" Copyright (c) 2007 Christian Bach. </p>
+			<p class="paragraph"> Displays below 768 pixels will lose the table sorter function. The data will be available as
+				a list of records. </p>
+			<p class="paragraph"> This is a quick demo of the columns & zebra widget with the "sortReset" option set to true
+				(clicking on a sort header a third time will reset the sort)</p>
+		</div>
 	</main>
-
 	<div class="table_container">
-
 		<table class="rounded">
 			<thead>
 				<tr>
@@ -130,9 +97,7 @@
 					<th>Game</th>
 				</tr>
 			</thead>
-
 			<tbody>
-
 				<tr>
 					<td> 1st fusiliers </td>
 					<td>Bombay </td>
@@ -565,12 +530,9 @@
 					<td>1907 </td>
 					<td>256 </td>
 				</tr>
-
 			</tbody>
 		</table>
-
 	</div>
-
 	<div class="footer_row">
 
    <div class="footer_column">
@@ -578,7 +540,7 @@
          <li class="footer_label">Site Map </li>
          <li><a href="/">Home</a></li>
          <li><a href="/aboutme/">About Me</a></li>
-         <li><a href="/blog/">Blog</a></li>
+         <li><a href="/blog/">Commentaries</a></li>
          <li><a href="/gallery/">Gallery</a></li>
          <li><a href="/chess/">Chess</a></li>
          <li><a href="/contact/">Contact</a></li>
@@ -588,10 +550,9 @@
       <ul>
          <li class="footer_label">Tools</li>
          <li><a href="https://code.visualstudio.com/">VS Code</a></li>
-         <li><a href="https://sass-lang.com/">Sass</a></li>
-         <li><a href="http://koala-app.com/">Koala</a></li>
+         <li><a href="https://gulpjs.com/">Gulp</a></li>
+         <li><a href="https://github.com/">GitHub</a></li>
          <li><a href="http://www.wampserver.com/en/">WampServer</a></li>
-         <li><a href="https://winscp.net/">WinSCP</a></li>
          <li><a href="https://www.mozilla.org/en-US/firefox/new/">FireFox</a></li>
       </ul>
    </div>
@@ -601,26 +562,23 @@
          <li><a href="https://www.taniarascia.com/responsive-dropdown-navigation-bar/">Tania Rascia</a></li>
          <li><a href="https://www.toptal.com/designers/subtlepatterns/noisy-grid/">Noisy Grid</a></li>
          <li><a href="https://subtlepatterns.com/">Subtle Patterns</a></li>
-         <li><a href="https://www.html-form-guide.com/php-form/php-form-action-self.html">HTML Form Guide</a></li>
          <li><a href="https://varvy.com/">Varvy</a></li>
          <li><a href="https://feathericons.com/">Feather Icons</a></li>
       </ul>
    </div>
    <div class="footer_column">
       <ul>
-       <li><a href="https://www.facebook.com/phil.lowder">
-            <img src="/assets/media/png/FB-f-Logo__white_72.png" width="72" height="72" alt="FaceBook Logo"></a>
-       </li>
-       <li><a href="https://github.com/philwlowder">
-         <img src="/assets/media/png/GitHub-Mark-Light-64px.png" width="64" height="64" alt="GitHub Logo"></a>
-      </li>
-    
+         <li><a href="https://www.facebook.com/phil.lowder">
+               <img src="/assets/media/png/FB-f-Logo__white_72.png" width="72" height="72" alt="FaceBook Logo"></a>
+         </li>
+         <li><a href="https://github.com/philwlowder">
+               <img src="/assets/media/png/GitHub-Mark-Light-64px.png" width="64" height="64" alt="GitHub Logo"></a>
+         </li>
+
       </ul>
    </div>
-	
-<script src="/assets/js/combine.js"></script>
-	
-
+</div>
+	<script src="/assets/js/combine.js"></script>
 	<script src="js/jquery.tablesorter.min.js"></script>
 	<script src="js/jquery.tablesorter.widgets.min.js"></script>
 	<script>
@@ -633,7 +591,6 @@
 			});
 		});
 	</script>
-
 </body>
 
 </html>

@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="en">
 
@@ -24,10 +23,9 @@
    <meta name="pinterest" content="nopin">
 
 
-   <meta name="description" content="chess game ">
+<meta name="description" content="count the words, pages, etc.">
 
-   <title>Lowder vs Hauser | Infobucket</title>
-
+<title>More C Programming</title>
 
 
 <!-- https://realfavicongenerator.net/ -->
@@ -47,19 +45,20 @@
 
 
 
-   <!-- Support libraries from Yahoo YUI project -->
-   <!-- <script type="text/javascript" src="http://chesstempo.com/js/pgnyui.js"></script>   -->
-   <!-- <script type="text/javascript" src="http://chesstempo.com/js/pgnviewer.js"></script> -->
+<style>
+   figure {
+      max-width: 600px;
+   }
 
-   <script type="text/javascript" src="pgnyui.js"></script>
-   <script type="text/javascript" src="pgnviewer.js"></script>
-   <link type="text/css" rel="stylesheet" href="moves.css">
+   main {
+      margin-left: 5px;
+
+   }
+</style>
 
 </head>
 
 <body>
-
-   <!-- This website began 10/6/97 -->
 
    
 
@@ -94,52 +93,72 @@
 
          <article>
 
-            <div id="site_title">
-               <h2>Lowder-Hauser</h2>
-               <p>Game viewer by <a href="https://chesstempo.com/pgn-viewer.html">ChessTempo</a></p>
-            </div>
+            <a href="/blog" class="btn">Back</a>
 
-            <div id="eventdata">
-               [Event "Phi Kappa Blanca"]<br>
-               [Site "NCSU Student Center, Raleigh NC"]<br>
-               [Date "1993.09.11"]<br>
-               [Round "02"]<br>
-               [White "Lowder, Phil"]<br>
-               [Black "Hauser, Daniel M."]<br>
-               [Result "1/2-1/2"]<br>
-               [WhiteUSCF "1798"]<br>
-               [BlackUSCF "1925"]<br>
-               [ECO "B31"]<br>
-            </div>
+            <h1>More C Programming</h1>
+            <p>May 30th, 2019</p>
+            <h2>Doc Info</h2>
 
-            <div id="chess-container">
-               <script>
-                  new PgnViewer({
-                     boardName: "chess",
-                     pgnString: '1. e4 c5 2. Nf3 Nc6 3. Bb5 g6 4. Nc3 Bg7 5. O-O a6 6. Bxc6 dxc6 7. h3 Nf6 8. d3 O-O 9. Be3 Qa5 10. Nd2 Nd7 11. Nb3 Qb6 12. Na4 Qb4 13. Naxc5 Bxb2? 14. Nxd7? (14. a3! Bxa3 15. c3 Qxc3 16. Rxa3) 14...Bxd7 15. Rb1 Qa3 16. c4 Bf6 17. Qc2 Qd6 18. f4 Qc7 19. d4 Rad8 20. Nc5 b5 21. Nxd7 Rxd7 22. e5 Bg7 23. Rfc1 Rc8 24. Qe4 Qd8 25. Rc2 e6 26. Rbc1 Rdc7 27. Bd2 Rd7 28. Be3 Rdc7 29. g3 Bf8 30. Qd3 c5 31. d5?? {Giving Black two connected passed pawns.} 31...bxc4 32. Qxc4 exd5 33. Qxa6 d4 34. Bd2 {Better was Rd2 or Bf2} 34...Qd5 (34...d3!) 35. Bb4?? {Both White and Black miss how bad this move was.} 35...c4 (35...d3!) 36. Bxf8 d3? 37. Qf6 Kxf8? (37...Rxf8 {This maintains a large advantage.} ) 38. Qd6+ {White finds the best move and although Black still has an advantage it\'s not easy to convert into a win.} 38...Qxd6 39. exd6 Rd7 40. Rxc4 Rxc4 41. Rxc4 Rxd6 42. Rc1 Ra6 43. Rd1 Ra3 44. Rd2 1/2-1/2',
-                     pieceSize: 40,
-                     pieceSet: 'merida',
-                     pauseBetweenMoves: 800,
-                     showCoordinates: true,
-                     addVersion: true,
-                     autoScrollMoves: true,
-                     newlineForEachMainMove: false,
-                     showBracketsOnVariation: false,
-                     movesFormat: 'main_on_own_line',
-                     moveAnimationLength: 0.1,
-                     pollPGNMilliseconds: 90000
-                  });
-               </script>
-            </div>
+            <p>
+               I met Scott Dittmer in the Sumter/Shaw Computer Club about 1989.
+               He was a student at Sumter Tech. We shared a desire to learn all we could
+               about PCs. At that time, I think we understood well each file of the computers OS.
+               That ended with Windows.
+            </p>
 
-            <div id="chess-moves"></div>
+            <p>
+               When I bought a copy of QuickC, Scott had a program he wanted to create.
+               Scott named it Docinfo. It counted pages, form feeds, lines, words and characters in a text file.
+               Scott wrote <a href="docinfo.txt">Docinfo.txt</a> to explain the useage.
+            </p>
 
+            <p>
+               Below are three screen shots of the program running
+               in <a href="https://www.dosbox.com/">DOSBox</a> on my PC
+               a few days ago. Old MS-DOS programs will run on Windows using this virtual MS-DOS.
+            </p>
+
+            <p>
+               The Project Gutenberg complete works of Mark Twain is a roughly 16 megabytge text file
+               <a href="http://www.gutenberg.org/cache/epub/3200/pg3200.txt">Twain Text</a>.
+               Docinfo took just less than 3 minutes while running in DosBox on my computer.
+               My 9 year old PC runs Win10 64bit with an Intel Core i5 650 @ 3.20GHz.
+               I don't know if Docinfo could generate results faster with a faster PC.
+               It seems fast enough.
+            </p>
+
+            <p>
+               Install DOSBox and use <a href="/blog/docinfo.exe">Docinfo.exe</a>.
+               You can download the <a href="/blog/docinfo.c">source code</a>,
+               make alterations, and if you like, compile a new executabe.
+            </p>
+
+            <figure>
+               <img src="/blog/media/docinfo-01.jpg" height="504" width="741" alt="screen shot of opening scree">
+               <figcaption>
+                  Opening Screen
+               </figcaption>
+            </figure>
+
+            <figure>
+               <img src="/blog/media/docinfo-02.jpg" width="756" height="495" alt="screen shot of program after input">
+               <figcaption>
+                  Screen after input and program running. It has a spinner to show it is active.
+               </figcaption>
+            </figure>
+
+            <figure>
+               <img src="/blog/media/docinfo-03.jpg" width="756" height="495" alt="screen shot of program after input">
+               <figcaption>
+                  Program finished.
+               </figcaption>
+            </figure>
 
          </article>
 
-      </main>
+      </main><!-- end main -->
 
- <div class="sig parent">
+      <div class="sig parent">
 
   <div class="fb_page_like child">
 
@@ -150,7 +169,7 @@
 
 </div>
 
-    <div class="footer_row">
+      <div class="footer_row">
 
    <div class="footer_column">
       <ul>
@@ -196,9 +215,8 @@
    </div>
 </div>
 
+     <script src="/assets/js/combine.js"></script>
 
-<script src="/assets/js/combine.js"></script>
-   
 </body>
 
 </html>

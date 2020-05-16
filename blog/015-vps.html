@@ -53,9 +53,8 @@
 
 <body>
 
-   
 
-      <div class="navigation">
+   <div class="navigation">
   <div class="nav-container">
     <div class="brand">
       <a href="/">Infobucket</a>
@@ -82,110 +81,108 @@
   </div>
 </div>
 
-      <main>
-         <article>
+   <main>
+      <article>
+         <a href="/blog" class="btn btn_small btn_blue">Index</a>
 
-            <a href="/blog" class="btn">Back</a>
+         <h1>Virtual Private Server</h1>
+         <p>January 18th, 2020</p>
 
-            <h1>Virtual Private Server</h1>
-            <p>January 18th, 2020</p>
+         <br>
+         I am now hosting my website with an affordable Virtual Private Server (VPS)
+         from <a href="https://aws.amazon.com/lightsail/">Amazon Web Services (AWS) Lightsail</a>.
+         </br>
 
-            <br>
-            I am now hosting my website with an affordable Virtual Private Server (VPS)
-            from <a href="https://aws.amazon.com/lightsail/">Amazon Web Services (AWS) Lightsail</a>.
-            </br>
+         <br>
+         Most small, low traffic sites are served from shared hosting accounts.
+         There are advantages to having my own server.
+         With AWS Lightsail, one advantage is lower cost.
+         Another advantage is performance.
+         Testing my new server with <a href="https://www.webpagetest.org/">WebPageTest</a>
+         I have seen an increase in my "page speed".
+         Now I have the ability to work directly with the server software, Apache.
+         </br>
 
-            <br>
-            Most small, low traffic sites are served from shared hosting accounts.
-            There are advantages to having my own server.
-            With AWS Lightsail, one advantage is lower cost.
-            Another advantage is performance.
-            Testing my new server with <a href="https://www.webpagetest.org/">WebPageTest</a>
-            I have seen an increase in my "page speed".
-            Now I have the ability to work directly with the server software, Apache.
-            </br>
+         <br>
+         Amazon calls each virtual server an "instance". I started my first AWS instance
+         December 31st, 2019.
+         With <a href="https://bitnami.com/">Bitnami</a> as a partner,
+         AWS offers a variety of software installations.
+         I first tried the Bitnami LAMP stack (Linux, Apache, Mysql, PHP).
+         My virtual server instance was created almost instantly.
+         My operating system of choice was Ubuntu 18.4 "Bionic" with Apache version 2.4.
+         Picking the most recent versions seemed to make sense.
+         </br>
 
-            <br>
-            Amazon calls each virtual server an "instance". I started my first AWS instance
-            December 31st, 2019.
-            With <a href="https://bitnami.com/">Bitnami</a> as a partner,
-            AWS offers a variety of software installations.
-            I first tried the Bitnami LAMP stack (Linux, Apache, Mysql, PHP).
-            My virtual server instance was created almost instantly.
-            My operating system of choice was Ubuntu 18.4 "Bionic" with Apache version 2.4.
-            Picking the most recent versions seemed to make sense.
-            </br>
+         <br>
+         I had experience with <a href="http://www.wampserver.com/en/">WAMP</a> (Windows, Apache, Mysql, PHP).
+         I installed WAMP on my desktop PC several years ago.
+         WAMP makes it possible to develop websites on my own desktop PC using <a href="https://www.html.net/">PHP</a>.
+         </br>
 
-            <br>
-            I had experience with <a href="http://www.wampserver.com/en/">WAMP</a> (Windows, Apache, Mysql, PHP).
-            I installed WAMP on my desktop PC several years ago.
-            WAMP makes it possible to develop websites on my own desktop PC using <a
-               href="https://www.html.net/">PHP</a>.
-            </br>
+         <br>
+         Once the AWS VPS was created, I began to explore.
+         Looking at Apache 2.4 configuration files, I became confused.
+         I didn't recognize them.
+         I decided to delete the first instance and start over.
+         I created the second instance without Bitnami's help.
+         I wanted to make certain that Bitnami could not be a part of my confusion.
+         </br>
 
-            <br>
-            Once the AWS VPS was created, I began to explore.
-            Looking at Apache 2.4 configuration files, I became confused.
-            I didn't recognize them.
-            I decided to delete the first instance and start over.
-            I created the second instance without Bitnami's help.
-            I wanted to make certain that Bitnami could not be a part of my confusion.
-            </br>
+         <br>
+         Once again I chose Ubuntu 18 "Bionic" for an operating system.
+         Next I manually installed Apache 2.4.
+         I began to realized this new version of Apache used a different configuration system.
+         That was the main source of my confusion.
+         I began to make progress, but 90% of the help found on the internet was for
+         older versions of Apache. My past knowledge was as confusing as it was helpful.
+         </br>
 
-            <br>
-            Once again I chose Ubuntu 18 "Bionic" for an operating system.
-            Next I manually installed Apache 2.4.
-            I began to realized this new version of Apache used a different configuration system.
-            That was the main source of my confusion.
-            I began to make progress, but 90% of the help found on the internet was for
-            older versions of Apache. My past knowledge was as confusing as it was helpful.
-            </br>
+         <br>
+         After some study, I had Apache configured and my website up and running.
+         The next step was to install a <a href="https://letsencrypt.org/">Let's Encrypt</a> certificate.
+         I misread the instructions but the certificate appeared to install correctly.
+         Even though the installation looked correct, an error message popped up.
+         After more work and reading, I suspected a firewall issue.
+         I spent a long time working with Apache and it's firewall looking for a solution.
+         After much head banging, I dimly recalled firewall settings in the
+         Lightsail management pages.
+         Once I found that page again and made the correct adjustments my problem was solved.
+         </br>
 
-            <br>
-            After some study, I had Apache configured and my website up and running.
-            The next step was to install a <a href="https://letsencrypt.org/">Let's Encrypt</a> certificate.
-            I misread the instructions but the certificate appeared to install correctly.
-            Even though the installation looked correct, an error message popped up.
-            After more work and reading, I suspected a firewall issue.
-            I spent a long time working with Apache and it's firewall looking for a solution.
-            After much head banging, I dimly recalled firewall settings in the
-            Lightsail management pages.
-            Once I found that page again and made the correct adjustments my problem was solved.
-            </br>
+         <br>
+         Next <a href="https://www.mysql.com/">Mysql</a> installed without any trouble.
+         Then I installed <a href="https://www.htmlmyadmin.net/">Phpmyadmin</a> and an
+         error message told me I had a missing PHP module.
+         After another long struggle, I solved that problem.
+         I learned something basic.
+         The PHP used by Apache and Ubuntu are separate.
+         Mine were different versions and I had assumed they were the same.
+         </br>
 
-            <br>
-            Next <a href="https://www.mysql.com/">Mysql</a> installed without any trouble.
-            Then I installed <a href="https://www.htmlmyadmin.net/">Phpmyadmin</a> and an
-            error message told me I had a missing PHP module.
-            After another long struggle, I solved that problem.
-            I learned something basic.
-            The PHP used by Apache and Ubuntu are separate.
-            Mine were different versions and I had assumed they were the same.
-            </br>
+         <br>
+         When I began, I selected the $3.50 instance.
+         After installing the above apps, I had used 20% of the drive space and
+         75% of the ram memory.
+         </br>
 
-            <br>
-            When I began, I selected the $3.50 instance.
-            After installing the above apps, I had used 20% of the drive space and
-            75% of the ram memory.
-            </br>
+         <br>
+         I haven't loaded a table into the database yet. There was only one
+         page that needed a database and I temporarily removed it from the menu.
+         </br>
 
-            <br>
-            I haven't loaded a table into the database yet. There was only one
-            page that needed a database and I temporarily removed it from the menu.
-            </br>
-
-            <br>
-            I'm happy with the result.
-            I doubt I have optimized this instance, but the site works well and is fast.
-            </br>
+         <br>
+         I'm happy with the result.
+         I doubt I have optimized this instance, but the site works well and is fast.
+         </br>
 
 
 
-         </article>
+      </article>
 
-      </main><!-- end main -->
+   </main><!-- end main -->
 
-      <div class="sig parent">
+   <div class="sig parent">
 
   <div class="fb_page_like child">
 
@@ -196,7 +193,7 @@
 
 </div>
 
-      <div class="footer_row">
+   <div class="footer_row">
 
    <div class="footer_column">
       <ul>
@@ -242,7 +239,7 @@
    </div>
 </div>
 
-   
+
    <script src="/assets/js/combine.js"></script>
 
 <script>

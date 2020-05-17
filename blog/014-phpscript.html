@@ -83,53 +83,45 @@
          <h1>PHP Script</h1>
          <p>August 28th, 2019</p>
 
-         <br>
-         PHP is a server side scripting language.
-         Kinsta hosting has an explanation of PHP use
-         in <a href="https://kinsta.com/knowledgebase/what-is-php/">Wordpress</a>.
-         I don't use Wordpress, but I use PHP in similar ways on my website.<br>
-         <br>
-         Recently I wanted to convert a website that used PHP to a static HTML site.
-         I created a PHP script that will recurse through my directory tree,
-         finding each PHP file. When a PHP file is found, my script appends and prepends code.
-         That code will convert the file to a static HTML file when the PHP file is
-         loaded in a browser. I was working with around 80 PHP files in many subdirectories.<br>
-         <br>
-         There are other ways to accomplish this task.
-         I could have used a text editor to add the code one file at a time.
-         That would have been quicker than putting a PHP script together, at least for me,
-         but it would have been tedious. I know because I've done that sort of thing.<br>
-         <br>
-         The search and replace function of a text editor such as Notepad++ would do the job.
-         It would have taken less time to find the correct Regex statement for the search.
-         When I finished my PHP script, I tried Notepad++ and proved this to be true.<br>
-         <br>
-         I worked locally on a <a href="http://www.wampserver.com/en/">WAMP</a> server.
-         Working with PHP is difficult without a local server.
-         Writing a PHP script required finding examples of code that would do part of the task.
-         I needed to understand enough to patch and paste some code together.
-         There was a lot of trial and error. That's where the local server makes a huge
-         difference. Without it, for each trial, I would have to FTP the script to a copy
-         of the website on a remote server.<br>
-         <br>
-         The script is below this narrative. I doubt that anyone will find and use it.
-         If you are that person, please TEST on a copy of your target and make sure you are happy
-         with the results.<br>
-         <br>
-         As is, the script will echo all the PHP files in a directory and its sub-directories.
-         You will have to find the line that includes "your path to a directory"
-         and insert your own path to the directory of your choice.
-         I placed my script in the same directory. For me it was the root directory of the website.<br>
-         <br>
-         To append and prepend, remove the commented text inside the 'foreach' statement.<br>
-         When you finish running the script, all PHP files in the path directory and
-         its subdirectories will have a line of PHP code added to their begining and ending.
-         Loading the PHP file into a browser will output a static HTML file named index.html.
-         If you have PHP files that are not named 'index.php', use a text editor to change the appended
-         text before loading the PHP file in your browser.
-         <br>
-         <br>
-         <b>Download</b> <a href="recurse.txt">Recurse Script</a>
+         <br> PHP is a server side scripting language. Kinsta hosting has an
+         explanation of PHP use in <a href="https://kinsta.com/knowledgebase/what-is-php/">Wordpress</a>. I
+         don't use Wordpress, but I use PHP in similar ways on my website.<br>
+         <br> Recently I wanted to convert a website that used PHP to a static
+         HTML site. I created a PHP script that will recurse through my
+         directory tree, finding each PHP file. When a PHP file is found, my
+         script appends and prepends code. That code will convert the file to a
+         static HTML file when the PHP file is loaded in a browser. I was
+         working with around 80 PHP files in many subdirectories.<br> <br>
+         There are other ways to accomplish this task. I could have used a text
+         editor to add the code one file at a time. That would have been
+         quicker than putting a PHP script together, at least for me, but it
+         would have been tedious. I know because I've done that sort of
+         thing.<br> <br> The search and replace function of a text editor such
+         as Notepad++ would do the job. It would have taken less time to find
+         the correct Regex statement for the search. When I finished my PHP
+         script, I tried Notepad++ and proved this to be true.<br> <br> I
+         worked locally on a <a href="http://www.wampserver.com/en/">WAMP</a>
+         server. Working with PHP is difficult without a local server. Writing
+         a PHP script required finding examples of code that would do part of
+         the task. I needed to understand enough to patch and paste some code
+         together. There was a lot of trial and error. That's where the local
+         server makes a huge difference. Without it, for each trial, I would
+         have to FTP the script to a copy of the website on a remote
+         server.<br> <br> The script is below this narrative. I doubt that
+         anyone will find and use it. If you are that person, please TEST on a
+         copy of your target and make sure you are happy with the results.<br>
+         <br> As is, the script will echo all the PHP files in a directory and
+         its sub-directories. You will have to find the line that includes
+         "your path to a directory" and insert your own path to the directory
+         of your choice. I placed my script in the same directory. For me it
+         was the root directory of the website.<br> <br> To append and prepend,
+         remove the commented text inside the 'foreach' statement.<br> When you
+         finish running the script, all PHP files in the path directory and its
+         subdirectories will have a line of PHP code added to their beginning
+         and ending. Loading the PHP file into a browser will output a static
+         HTML file named index.html. If you have PHP files that are not named
+         'index.php', use a text editor to change the appended text before
+         loading the PHP file in your browser. <br> <br> <b>Download</b> <a href="recurse.txt">Recurse Script</a>
 
       </article>
 

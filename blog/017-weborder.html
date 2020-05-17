@@ -70,78 +70,93 @@
 </div>
   <main>
     <article>
+      <a href="/blog" class="btn btn_small btn_blue">Index</a>
+
 
       <div class="article_title">
-        <h1>Water Power</h1>
-        <h3>Close encounter with a near death experience</h3>
+        <h1>A New Web Order</h1>
+        <h3>Out of many messes, one big mess</h3>
       </div>
 
-      <p>May 17th, 2020</p>
+      <p>published May 6th, 2020</p>
 
-      <figure class="figure figure_small">
-        <img src="\gallery\misc\home.made.boat-mix-032" class="rounded_corners" width="600" height="883"
-          alt="wooden boat">
+      <figure class="figure_standard">
+        <a href="\gallery\"><img alt="alt text" src="\assets\media\jpg\canoe-3983.jpg" class="rounded_corners"
+            width="400" height="300"></a>
         <figcaption>
-          Grandfather, father, boat, and me practicing for the gallows.</figcaption>
-      </figure>
-
-      <p class="paragraph"> I'm aware some people are "afraid of water". I've never really understood it.</p>
-
-      <p class="paragraph">My father used to tell a story of taking me to the ocean
-        near Mrytle Beach. I was still an inexperiened toddler. He would tell the story
-        with a mix of fear and pride. He walked into the ocean with me on his
-        shoulders. My small arms were probably reaching around his head and at times
-        covering his eyes. The waves would come and roughly push him back and forth. He
-        turned toward the shore, his back against the waves. Then it happened. An
-        unexpectedly large wave smashed into us. In a moment he was thrown off his feet
-        and I was launched free of his grasp. While going under he quickly streched out
-        his hand and blindly grabbed one of my ankles. He regained his footing and
-        pulled me above the water into his arms. If he hadn't grabbed my ankle, I might
-        have grown up afraid of water. </p>
-
-      <p class="paragraph"> For over 30 years, my mother's father worked for Alcoa
-        Badin Works. Much of his free time was spent hunting and fishing. </p>
-
-      <p class="paragraph"> When I was just a child, 6 or 7, my grandfather along
-        with my uncle took me fishing "between the dams". I know it today as Falls
-        Reservoir. This trip took his small homemade wooden boat straight to the side
-        of Narrows Dam powerhouse. We may have been there to catch bait. Sticking out
-        of the wall was a short piece of rebar. With a rope they tied the side of the
-        boat to the rebar. The boat rocked gently against the wall of the powerhouse.
-      </p>
-
-      <p class="paragraph"> There beside the powerhouse I was a silent observer. I
-        was unaware of any danger. I'm sure my grandfather had been there many times
-        and knew the danger. He also knew a horn would blow to give warning and time to
-        move to safety. I don't remember my grandfather ever using life jackets. We sat
-        on square cushions intended to be thrown to anyone that fell out of the boat.
-      </p>
-
-
-      <figure class="figure figure_small">
-        <img src="\gallery\misc\01-5083" class="rounded_corners" width="600" height="450" alt="Narrows Powerhouse">
-        <figcaption>
-          Powerhouse at Narrows Dam, relatively calm water. November 2007.
+          At Morrow Mountain State Park<br>
+          <a href="\gallery\">Check out my Gallery</a>
         </figcaption>
       </figure>
 
-      <p class="paragraph"> Without warning the boat was lifted upward on a turbulent
-        mound of water. Water had been released and it flowed downward from Badin Lake. It
-        passed through the turbines and entered the river underneath our boat, lifting
-        it several feet. The water was mixed with air. It was whitewater and no
-        longer provided the expected buoyancy. In that instant, water spilled over the
-        sides and into the boat. I would guess there were at least three inches of water
-        in the bottom of the boat. With one pull my uncle started the motor, my
-        grandfather began to bail and we quickly moved off the mound of water and into
-        calmer water. They didn't panic. I was too young to be afraid. I remained a
-        silent but wet observer.</p>
 
-      <p class="paragraph"> They didn't panic, but that was the end of that day's
-        fishing trip. They went straight home. Later they commented that the only thing
-        preventing the boat from flipping had been the old rotten rope. The rope
-        snapped as the boat was lifted up. If it had not snapped there would have been
-        three lives in the water without lifejackets. </p>
+      <p class="paragraph">For several years I've allowed my website to stagnate.
+        In early January I started to make changes. I moved my site to <abbr title="Amazon Web Services">AWS</abbr>
+        LightSail. I describe that in this <a href="/blog/015-vps.html">post</a>.
+      </p>
 
+      <p class="paragraph">
+        LightSail is wonderful, fast, inexpensive, but it's not free.
+        I've been reading that all the cool kids were switching to static websites. There are
+        several reasons, one reason is free hosting. Another reason is that static sites are fast.
+        Finally and importantly, new tools have made multiple page static sites easier to manage than in the past.
+      </p>
+
+      <p class="paragraph">
+        When sites have more than a few pages they become difficult to manage.
+        If a change needs to be made to every page, making those changes becomes tedious
+        and time consuming.
+      </p>
+
+      <p class="paragraph">
+        I learned to use PHP include statements. By creating each page with PHP include statements, files with pieces of
+        HTML can be inserted into every page. PHP enables the alteration of one file to be duplicated
+        in many files.
+      </p>
+
+      <p class="paragraph">
+        There is a downside to the use of PHP include statements. Unless the page is cached, the server must take the
+        time to run PHP include statements each time a page is requested by a browser. Today developers are using
+        JavaScript tools to build each page before uploading to a live server. Static sites sit on the server fully
+        built and ready to be served.
+      </p>
+
+      <p class="paragraph">
+        <a href="https://gulpjs.com/">Gulp</a> is the JavaScript tool that I'm learning to use. Gulp plugins allow me to
+        insert HTML as I did with PHP include statements. It also builds a finished CSS file from SCSS partial
+        files. I hope to streamline the process as I learn from experience. With Gulp I can build a multi-page static
+        site and manage it as well as with PHP.
+      </p>
+
+      <p class="paragraph">
+        I'm also using <a href="https://github.com/">GitHub</a>. I've experimented with Git and GitHub in the past.
+        Git is version control software. I've always thought good backups where all I needed.
+        I've learned that GitHub is an excellent replacement for <abbr title="File Transfer Protocol">FTP</abbr>
+        programs. I can change multiple files on my local computer and GitHub will track those changes until
+        I'm ready to upload them to my server.</p>
+
+      <p class="paragraph">
+        GitHub is a free host for static sites. Free is good, and it means I can archive sites with GitHub pages.
+        They may remain after I am remains. I will not receive a bill in the afterlife.
+      </p>
+
+      <p class="paragraph">
+        This site is hosted on <a href="https://www.netlify.com/">Netlify</a> and deploys from a private GitHub
+        repository. Netlify has a free plan for static sites.
+      </p>
+
+      <p class="paragraph">
+        Those are behind the scene changes. A visitor will be unaware of them. If someone told you "blog" was an
+        onomatopoeia, what would the word describe? I'm guessing something disgusting.
+        For now I'm calling my post, commentaries. It sounds nicer. There a few older post that will be broken by
+        the changes in this home page. I intend to work on that next.
+      </p>
+
+      <p class="paragraph">
+        I have tried to improve my image gallery. It now takes fewer clicks to crank up a slideshow with Lightbox.
+        In the past I've used thumbnails. I liked the look, but they seemed without any function. The thumbnails
+        are gone. I have many photos I could add to my gallery. I have so many choices, no direction, and it all takes
+        time.
     </article>
   </main>
 

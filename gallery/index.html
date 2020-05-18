@@ -413,20 +413,30 @@
       </ul>
    </div>
 </div>
-  <script src="/assets/js/combine.js"></script>
 
-<script>
-  var sc_project = 12254161;
-  var sc_invisible = 1;
-  var sc_security = "c340161b";
-  var sc_https = 1;
-  var sc_remove_link = 1; 
-</script>
-<script src="https://www.statcounter.com/counter/counter.js" async></script>
-<noscript>
-  <div class="statcounter"><img class="statcounter" src="https://c.statcounter.com/12254161/0/c340161b/1/"
-      alt="site stats"></div>
-</noscript>
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox-plus-jquery.min.js"></script>
+
+  <script>
+
+    /* defer images */
+
+    function init() {
+      var imgDefer = document.getElementsByTagName('img');
+      for (var i = 0; i < imgDefer.length; i++) {
+        if (imgDefer[i].getAttribute('data-src')) {
+          imgDefer[i].setAttribute('src', imgDefer[i].getAttribute('data-src'));
+        }
+      }
+    }
+    window.onload = init;
+
+
+    /* nav.js for menu */
+
+    !function (n) { n(function () { n("nav ul li > a:not(:only-child)").click(function (i) { n(this).siblings(".nav-dropdown").toggle(), n(".nav-dropdown").not(n(this).siblings()).hide(), i.stopPropagation() }), n("html").click(function () { n(".nav-dropdown").hide() }) }), document.querySelector("#nav-toggle").addEventListener("click", function () { this.classList.toggle("active") }), n("#nav-toggle").click(function () { n("nav ul").toggle() }) }(jQuery);
+
+  </script>
 
 </body>
 

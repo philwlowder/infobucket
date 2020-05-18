@@ -14,12 +14,6 @@ imgDefer[i].setAttribute('src',imgDefer[i].getAttribute('data-src'));
 window.onload = init;
 
 
-/* defer facebook  */
-
-/*
-!function(e,n,t){var o,c=e.getElementsByTagName(n)[0];e.getElementById(t)||((o=e.createElement(n)).id=t,o.src="//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.9",c.parentNode.insertBefore(o,c))}(document,"script","facebook-jssdk");
-*/
-
 /* nav.js for menu */
 
 !function(n){n(function(){n("nav ul li > a:not(:only-child)").click(function(i){n(this).siblings(".nav-dropdown").toggle(),n(".nav-dropdown").not(n(this).siblings()).hide(),i.stopPropagation()}),n("html").click(function(){n(".nav-dropdown").hide()})}),document.querySelector("#nav-toggle").addEventListener("click",function(){this.classList.toggle("active")}),n("#nav-toggle").click(function(){n("nav ul").toggle()})}(jQuery);

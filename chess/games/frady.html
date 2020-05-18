@@ -42,9 +42,9 @@
 
 <body>
 
-   
 
-      <div class="navigation">
+
+   <div class="navigation">
   <div class="nav-container">
     <div class="brand">
       <a href="/">Infobucket</a>
@@ -70,51 +70,52 @@
     </nav>
   </div>
 </div>
-      <main>
-         <article>
+   <main>
+      <article>
 
-            <div id="site_title">
-               <h2>Lowder-Frady</h2>
-               <p>Game viewer by <a href="https://chesstempo.com/pgn-viewer.html">ChessTempo</a></p>
-            </div>
+         <div id="site_title">
+            <h2>Lowder-Frady</h2>
+            <p>Game viewer by <a href="https://chesstempo.com/pgn-viewer.html">ChessTempo</a></p>
+         </div>
 
-            <div id="eventdata">
-               [Event "SC Closed"]<br>
-               [Site "Tremont Inn, Columbia, SC"]<br>
-               [Date "1987.10.16"]<br>
-               [Round "05"]<br>
-               [White "Lowder, Phil"]<br>
-               [Black "Frady, Greg"]<br>
-               [Result "1-0"]<br>
-               [WhiteUSCF "17??"]<br>
-               [BlackUSCF "1891"]<br>
-               [ECO "B54"]<br>
-            </div>
+         <div id="eventdata">
+            [Event "SC Closed"]<br>
+            [Site "Tremont Inn, Columbia, SC"]<br>
+            [Date "1987.10.16"]<br>
+            [Round "05"]<br>
+            [White "Lowder, Phil"]<br>
+            [Black "Frady, Greg"]<br>
+            [Result "1-0"]<br>
+            [WhiteUSCF "17??"]<br>
+            [BlackUSCF "1891"]<br>
+            [ECO "B54"]<br>
+         </div>
 
-            <div id="chess-container">
-               <script>
-                  new PgnViewer({
-                     boardName: "chess",
-                     pgnString: '1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Bc4 d5 6. exd5 Nxd5 7. Bb5+ Bd7 8. Qh5 Bxb5 9. Nxb5 Nc6 10. O-O Nf6 11. Qe2 a6 12. Rd1 Qc8 13. Nd6+ 1-0',
-                     pieceSize: 40,
-                     pieceSet: 'merida',
-                     pauseBetweenMoves: 800,
-                     showCoordinates: true,
-                     addVersion: true,
-                     autoScrollMoves: true,
-                     newlineForEachMainMove: false,
-                     showBracketsOnVariation: false,
-                     movesFormat: 'main_on_own_line',
-                     moveAnimationLength: 0.1,
-                     pollPGNMilliseconds: 90000
-                  });
-               </script>
-            </div>
-            <div id="chess-moves"></div>
-         </article>
-      </main>
+         <div id="chess-container">
+            <script>
+               new PgnViewer({
+                  boardName: "chess",
+                  pgnString: '1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Bc4 d5 6. exd5 Nxd5 7. Bb5+ Bd7 8. Qh5 Bxb5 9. Nxb5 Nc6 10. O-O Nf6 11. Qe2 a6 12. Rd1 Qc8 13. Nd6+ 1-0',
+                  pieceSize: 40,
+                  pieceSet: 'merida',
+                  pauseBetweenMoves: 800,
+                  boardImagePath: "https://infobucket.com/chess",
+                  showCoordinates: true,
+                  addVersion: true,
+                  autoScrollMoves: true,
+                  newlineForEachMainMove: false,
+                  showBracketsOnVariation: false,
+                  movesFormat: 'main_on_own_line',
+                  moveAnimationLength: 0.1,
+                  pollPGNMilliseconds: 90000
+               });
+            </script>
+         </div>
+         <div id="chess-moves"></div>
+      </article>
+   </main>
 
-      <div class="sig parent">
+   <div class="sig parent">
 
   <div class="fb_page_like child">
 
@@ -125,7 +126,7 @@
 
 </div>
 
-      <div class="footer_row">
+   <div class="footer_row">
 
    <div class="footer_column">
       <ul>
@@ -170,7 +171,7 @@
       </ul>
    </div>
 </div>
-      
+
    <script src="/assets/js/combine.js"></script>
 
 <script>

@@ -1,0 +1,140 @@
+
+/* Nivo Slider css */
+
+
+/* * jQuery Nivo Slider v3.2  * http://nivo.dev7studios.com  * 
+ * Copyright 2012, Dev7studios  * Free to use and abuse under the MIT license. 
+ * http://www.opensource.org/licenses/mit-license.php  */  /* The Nivo Slider styles */
+ 
+ 
+ 
+ .nivoSlider { position:relative; width:100%; height:auto; overflow: hidden; } 
+ .nivoSlider img { position:absolute; 	top:0px; left:0px; 	max-width: none; } 
+ .nivo-main-image { display: block !important; position: relative !important; width: 100% !important; }  
+ 
+ /* If an image is wrapped in a link */ 
+ 
+ .nivoSlider a.nivo-imageLink { position:absolute; top:0px; left:0px;
+ width:100%; height:100%; border:0;	padding:0; 	margin:0; z-index:6; display:none; 
+ background:white; filter:alpha(opacity=0);	opacity:0; } 
+ 
+ /* The slices and boxes in the Slider */
+ 
+ .nivo-slice { display:block; position:absolute; z-index:5;	height:100%; top:0; } 
+ .nivo-box { display:block; position:absolute;	z-index:5; 	overflow:hidden; } 
+ .nivo-box img { display:block; }  
+ 
+ /* Caption styles */ 
+ 
+ .nivo-caption { position:absolute; 
+ left:0px; bottom:0px; background:#000; color:#fff;	width:100%;	
+ z-index:8; 
+ padding: 5px 10px; opacity: 0.8;	
+ overflow: hidden; display: none; -moz-opacity: 0.8; filter:alpha(opacity=8);
+ box-sizing: border-box; 
+  
+  /* Opera/IE 8+ */ } 
+ 
+ .nivo-caption p { padding:5px;	margin:0; }
+ .nivo-caption a { display:inline !important; } 
+ .nivo-html-caption { display:none; }
+
+ /* Direction nav styles (e.g. Next & Prev) */ 
+ 
+ .nivo-directionNav a { position:absolute;	top:45%; 
+ z-index:9;	cursor:pointer; } 
+ 
+ .nivo-prevNav { left: 0px; } 
+ .nivo-nextNav { right: 0px; } 
+ 
+ /* Control nav styles (e.g. 1,2,3...) */ 
+ 
+ .nivo-controlNav {	text-align:center; 	padding: 15px 0; } 
+ .nivo-controlNav a { cursor:pointer; } 
+ .nivo-controlNav a.active { font-weight: 400; }
+
+/* Skin Name: Nivo Slider Light Theme Skin URI: http://nivo.dev7studios.com Description: A light skin for the Nivo Slider. 
+Version: 1.0 Author: Gilbert Pellegrom Author URI: http://dev7studios.com Supports Thumbs: true */ 
+
+ .theme-light.slider-wrapper { background: #fff; padding: 0; }
+ .theme-light .nivoSlider { position:relative; 	background:#fff url(../theme/light/loading.gif) no-repeat 50% 50%; 
+ margin-bottom:10px; overflow: visible; }
+ 
+ .theme-light .nivoSlider img { position:absolute; top:0px; left:0px; display:none; }  
+ .theme-light .nivo-controlNav { text-align: left; padding: 0; position: relative; z-index: 10; } 
+ .theme-light .nivo-controlNav a { display:inline-block; width:10px;  height:10px;
+
+ background:url(../theme/light/bullets.png) no-repeat; 
+ text-indent:-9999px; border:0; margin: 0 2px; } 
+
+ .theme-light .nivo-controlNav a.active { background-position:0 100%; }  
+ 
+ .theme-light .nivo-directionNav a { display:block;	width:30px;	height:30px; 
+ background: url(../theme/light/arrows.png) no-repeat; 	text-indent:-9999px; border:0; 
+ top: auto; bottom: -36px; z-index: 11; }  
+ 
+ .theme-light .nivo-directionNav a:hover { background-color: #eee;  
+  border-radius: 2px; }
+ 
+ .theme-light a.nivo-nextNav { background-position:160% 50%; right:0px; } 
+ .theme-light a.nivo-prevNav { background-position:-60% 50%; left: auto; right: 35px; } 
+ .theme-light .nivo-controlNav.nivo-thumbs-enabled { width: 80%; } 
+ .theme-light .nivo-controlNav.nivo-thumbs-enabled a {width: auto; height: auto;
+ background: none; 	margin-bottom: 5px; } 
+ .theme-light .nivo-controlNav.nivo-thumbs-enabled img { display: block; width: 120px; height: auto; }
+
+/*custom-nivo.css */
+
+ /* #slider {background:url(../theme/light/loading.gif) no-repeat 50% 50%; } */
+ 
+ .theme-light.slider-wrapper { background: none repeat scroll 0 0 #FFFFFF; 
+ background-color: transparent; padding-right: 15px; }
+ 
+ .slider-wrapper { 
+ min-width: 325px; 
+ max-width: 960px; 
+ float: left;
+ padding-left: 0; 
+ background-color: transparent; 
+ margin-top: 20px;
+ margin-bottom: 20px; 
+ margin-left: 20px; 
+ margin-right: 20px;
+ } 
+
+ /* The Nivo Slider styles */ 
+ 
+ .nivoSlider { 	position:relative; 	width: 100%; height:auto; overflow: hidden;	} 
+ 
+ .nivoSlider img { border-radius: 8px 8px 8px 8px;
+ 
+ } 
+ .nivo-main-image {width: 960px;} 
+
+ /* The slices and boxes in the Slider */ 
+ 
+ .nivo-slice { width: 100%; } 
+ .nivo-box {width: 100%; }  
+ 
+ /* Caption styles */ 
+ 
+ .nivo-caption { position:absolute; left:0px; bottom:0px;
+	background: #000;color:#fff; width: 100%;
+ z-index:8; padding: 5px 10px; opacity: 0.5; 
+	overflow: hidden; border-radius: 0 0 8px 8px; 
+	filter:alpha(opacity=5); box-sizing: border-box;}
+ 
+ 
+ .nivo-caption p { 	padding:1%; margin:0; } 
+ .nivo-caption a { 	display:inline !important; } 
+ .nivo-caption { font-size: 14px;}
+ 
+ .nivo-html-caption { height: 4%; } 
+ 
+ .theme-light a.nivo-nextNav { background-position: 160% 50%; right: 0; } 	
+
+ /* Direction nav styles (e.g. Next & Prev) */ 
+ .nivo-directionNav a { opacity: .9; } 
+ .theme-light .nivo-controlNav { margin-top: 20px; } 
+
+

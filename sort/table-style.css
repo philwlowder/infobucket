@@ -13,6 +13,7 @@
 	margin-top: 30px;
 	margin-left: auto;
 	margin-right: auto;
+	margin-bottom: 20px;
 }
 
 /*
@@ -22,20 +23,19 @@ Generic Styling, for Desktops/Laptops
 
 .intro {
 	grid-column: 1-9;
-	width: 95%;
-	max-width: 900px;
-	margin-left: 0;
+	width: auto;
+	max-width: 800px;
+	margin-left: 0px;
 	margin-right: 25px;
-	grid-row: 2;
+	
 }
 
 
 table {
-  width:100%;
-  min-width: 800px;
+  
+  min-width: 300px;
 	border-collapse: collapse;
-	margin: 25px;
-	margin-right: 20px;
+
 }
 
 /*Zebra Striping*/

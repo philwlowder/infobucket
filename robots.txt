@@ -1,9 +1,6 @@
 
 Sitemap: https://infobucket.com/sitemap.txt
 
-User-Agent: W3C-checklink
-Disallow:
-
 #Baiduspider
 User-agent: Baiduspider
 Disallow: /

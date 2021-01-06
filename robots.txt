@@ -1,11 +1,11 @@
 
 Sitemap: https://infobucket.com/sitemap.txt
 
+User-Agent: W3C-checklink
+Disallow:
+
 #Baiduspider
 User-agent: Baiduspider
-Disallow: /
-
-User-agent: Googlebot-News
 Disallow: /
 
 User-agent: Yahoo-MMCrawler
@@ -79,5 +79,3 @@ Disallow: /
 
 User-agent: psbot
 Disallow: /
-
-# WebMatrix 1.0

@@ -1,0 +1,20 @@
+[Event "Cobb County Championship"]
+[Site "Kennesaw, Ga."]
+[Date "1991.08.10"]
+[Round "02"]
+[White "Smith, John"]
+[Black "Lowder, Phil"]
+[Result "0-1"]
+[WhiteUSCF "2124"]
+[BlackUSCF "1831"]
+[ECO "A16"]
+[TimeControl "Game 60"]
+[SetUp "1"]
+[FEN "3rk2r/pp3pp1/2p5/2b1P2p/2P3nq/P1N4P/1P2QPP1/R1B2RK1 b - - 0 1"]
+
+1...Qg3! 2. Qxg4 hxg4 3. Ne4 Bxf2+ 4. Nxf2 gxh3 5. Nxh3 Rd4 6. Bf4
+Rxf4 7. Rxf4 Rxh3 8. Rf3 Qh2+ 9. Kf2 Rxf3+ 10. Kxf3 Qxe5 11. Rd1
+Qh5+ 12. g4 Qh2 13. b3 Qh3+ 14. Kf4 Qxb3 15. Re1+ Kf8 16. Kg5
+Qxa3 17. Re5 Qe7+
+   {White resigned}
+

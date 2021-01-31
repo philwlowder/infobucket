@@ -1,0 +1,14 @@
+[Event "?"]
+[Site "?"]
+[Date "2003.??.??"]
+[Round "?"]
+[White "Y.Afek"]
+[Black "?"]
+[Result "1/2-1/2"]
+[SetUp "1"]
+[FEN "5N1K/1p4pn/6p1/8/8/8/8/2k5 w - - 0 1"]
+[PlyCount "27"]
+[EventDate "2003.??.??"]
+[SourceDate "2005.01.24"]
+
+1. Nxg6 $1 (1. Kxh7 $2 g5 2. Ne6 g4 3. Kxg7 g3 4. Kf6 b5 5. Ke5 b4 6. Ke4 g2 7. Nf4 b3 $19) (1. Nxh7 $2 b5 2. Kxg7 b4 3. Ng5 b3 4. Ne4 b2 5. Nc3 g5 $19) 1... Nf8 $1 (1... b5 2. Kxh7 b4 3. Kxg7 b3 4. Ne5 $11) 2. Nxf8 g5 3. Nh7 $1 g4 4. Nf6 g3 5. Nh5 $1 g2 6. Nf4 g1=Q (6... g1=N 7. Nd5 $11) 7. Ne2+ Kd2 8. Nxg1 Ke3 $1 9. Nh3 b5 10. Ng5 b4 11. Nf7 $1 b3 12. Nd6 (12. Ne5 $2 Kd4 $1 13. Nf3+ Kc3 $18) 12... Kd3 13. Nb5 b2 14. Na3 1/2-1/2 

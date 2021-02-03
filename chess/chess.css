@@ -74,7 +74,6 @@ border:0px solid black;
 #tempo-box {
 position: relative;
 float: left;
-line-height: 22px;
 margin-left: 0px;
 margin-top: 10px;
 margin-bottom: 20px;
@@ -99,8 +98,6 @@ border: 0 solid black;
 #demo-container {
 position: relative;
 float: left;
-/* margin-top: 10px; */
-/* margin-left: 10px; */
 margin-right: 5px;
 padding-top: 5px;
 border: 0 solid red;  
@@ -130,13 +127,4 @@ padding-right: 5px;
     -moz-box-sizing: content-box;
 }
  */
-
-#demo-container.ct-board-container {
-  -moz-box-sizing: content-box;
-}
-
-#demo-container.ct-board-container #demo-boardBorder.ct-board-border {
--moz-box-sizing: content-box;
-}
-
 

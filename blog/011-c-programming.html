@@ -1,125 +1,87 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta name="description" content="" />
+    <title>C Programming</title>
 
-<head>
+    <!-- Before it was infobucket it was a page of links that began 10/6/97 -->
 
-  <!--
-  Before it was infobucket it was a page of links that began 10/6/97
-  -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="pinterest" content="nopin">
-  <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'"> -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="pinterest" content="nopin" />
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'"> -->
 
+    <!-- https://realfavicongenerator.net/ -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
 
-<meta name="description" content="">
-<title>C Programming</title>
+    <link rel="preload" as="font" type="font/woff2" href="https://infobucket.com/assets/gfonts/roboto-v20-latin-regular.woff2" crossorigin />
 
-<!-- https://realfavicongenerator.net/ -->
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="icon" href="/favicon.ico">
-<meta name="msapplication-TileColor" content="#da532c">
-<meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="/assets/css/main.css" />
 
-<link rel="preload" as="font" type="font/woff2" 
-  href="https://infobucket.com/assets/gfonts/roboto-v20-latin-regular.woff2" crossorigin>
+    <style>
+      figure {
+        max-width: 600px;
+      }
 
+      main {
+        margin-left: 5px;
+      }
+    </style>
+  </head>
 
-
-<link href="/assets/css/main.css" rel="stylesheet">
-
-
-<style>
-   figure {
-      max-width: 600px;
-   }
-
-   main {
-      margin-left: 5px;
-   }
-</style>
-
-</head>
-
-<body>
-
-   <div class="navigation">
-  <div class="nav-container">
-    <div class="brand">
-      <a href="/">Infobucket</a>
-    </div>
+  <body>
     <nav>
-      <div class="nav-mobile">
-        <a id="nav-toggle" href="#"><span></span></a>
+      <div class="nav_wrap">
+        <ul>
+          <li>
+            <a href="/" class="home"><img src="/assets/media/svg/home.svg" width="42" height="42" /></a>
+          </li>
+          <li><a href="/gallery/">Images</a></li>
+          <li><a href="/blog/">Blog</a></li>
+          <li><a href="/chess/" title="local chess">Chess</a></li>
+          <li><a href="/contact/">Email</a></li>
+          <li><a href="/aboutme/">About</a></li>
+        </ul>
       </div>
-      <ul class="nav-list">
-        <li><a href="/contact/">Contact</a></li>
-        <li><a href="/gallery/">Gallery</a></li>
-
-        <li>
-          <a href="#">More</a>
-          <ul class="nav-dropdown">
-            <li><a href="/blog/">Commentaries</a></li>
-            <li><a href="/chess/" title="local chess">Chess</a></li>
-            <li><a href="/aboutme/">About</a></li>
-          </ul>
-        </li>
-      </ul>
     </nav>
-  </div>
-</div>
 
-   <main>
-
+    <main>
       <a href="/blog/008-low-water.html" class="btn_nav btn_small btn_blue">Previous</a>
       <a href="/blog/index.html" class="btn_nav btn_small btn_blue">Index</a>
       <a href="/blog/012-more-c-programming.html" class="btn_nav btn_small btn_blue">Next</a>
 
       <article>
+        <h1>C Programming</h1>
+        <p>April 10th, 2019</p>
+        <!-- 1:30pm -->
+        <h2>Contact Lens Calculations</h2>
 
-         <h1>C Programming</h1>
-         <p>April 10th, 2019</p> <!-- 1:30pm -->
-         <h2>Contact Lens Calculations</h2>
+        <p>By the end of 1992 MS-DOS was in its last days of glory. I had begun writing programs with C and compiling them with MS-Quick C.</p>
 
-         <p>
-            By the end of 1992 MS-DOS was in its last days of glory. I had
-            begun writing programs with C and compiling them with MS-Quick C.
-         </p>
+        <p>I knew an optometrist in the Sumter, SC computer club. He had a 'BASIC' program that I converted to an executable C program.</p>
 
-         <p>
-            I knew an optometrist in the Sumter, SC computer club.
-            He had a 'BASIC' program that I converted to an executable C program.
-         </p>
+        <p>Below are two screen shots of the program running in <a href="https://www.dosbox.com/">DOSBox</a>. Old MS-DOS programs will run on new computers using this virtual MS-DOS.</p>
 
-         <p>
-            Below are two screen shots of the program running
-            in <a href="https://www.dosbox.com/">DOSBox</a>.
-            Old MS-DOS programs will run on new computers using this virtual MS-DOS.
-         </p>
+        <p>
+          Install DOSBox and check out <a href="eye10.exe">eye10.exe</a>. And if you really want to have fun, download the <a href="eye10.c">source code</a>
+          make some alterations and compile it.
+        </p>
 
-         <p>
-            Install DOSBox and check out <a href="eye10.exe">eye10.exe</a>.
-            And if you really want to have fun, download the <a href="eye10.c">source code</a>
-            make some alterations and compile it.
-         </p>
+        <figure>
+          <img src="media/opening-screen.jpg" height="504" width="741" alt="screen shot of opening scree" />
+          <figcaption>Opening Screen</figcaption>
+        </figure>
 
-         <figure>
-            <img src="media/opening-screen.jpg" height="504" width="741" alt="screen shot of opening scree">
-            <figcaption>
-               Opening Screen
-            </figcaption>
-         </figure>
-
-         <figure>
-            <img src="media/eye_screen.jpg" width="756" height="495" alt="screen shot of program after input">
-            <figcaption>
-               Screen after input
-            </figcaption>
-         </figure>
-
+        <figure>
+          <img src="media/eye_screen.jpg" width="756" height="495" alt="screen shot of program after input" />
+          <figcaption>Screen after input</figcaption>
+        </figure>
       </article>
 
       <pre>
@@ -402,74 +364,59 @@ static void determine_video( void )
      }
 }
 
-</pre>
+</pre
+      >
+    </main>
+    <!-- end main -->
 
-   </main><!-- end main -->
+    <div class="footer_row">
+      <div class="footer_column">
+        <ul>
+          <li class="footer_label">Site Map</li>
+          <li class="single_space"><a href="/">Home</a></li>
+          <li class="single_space"><a href="/blog/">Text</a></li>
+          <li class="single_space"><a href="/gallery/">Gallery</a></li>
+          <li class="single_space"><a href="/chess/">Chess</a></li>
+          <li class="single_space"><a href="/contact/">Contact</a></li>
+          <li class="single_space"><a href="/aboutme/">About</a></li>
+        </ul>
+      </div>
+      <div class="footer_column">
+        <ul>
+          <li class="footer_label">Tools</li>
+          <li class="single_space"><a href="https://code.visualstudio.com/">VS Code</a></li>
+          <li class="single_space"><a href="https://gulpjs.com/">Gulp</a></li>
+          <li class="single_space"><a href="https://github.com/">GitHub</a></li>
+          <li class="single_space"><a href="https://www.mozilla.org/en-US/firefox/new/">FireFox</a></li>
+          <li class="single_space"><a href="https://www.netlify.com/">Netlify</a></li>
+        </ul>
+      </div>
+      <div class="footer_column">
+        <ul>
+          <li class="footer_label">Tip of the Hat</li>
+          <li class="single_space"><a href="https://www.toptal.com/designers/subtlepatterns/noisy-grid/">Noisy Grid</a></li>
+          <li class="single_space"><a href="https://www.toptal.com/designers/subtlepatterns/">Subtle Patterns</a></li>
+          <li class="single_space"><a href="https://material.io/resources/icons/?style=baseline">Material Icons</a></li>
+          <li class="single_space"><a href="https://lokeshdhakar.com/projects/lightbox2/">Lightbox</a></li>
+        </ul>
+      </div>
+      <div class="footer_column">
+        <ul>
+          <li class="triple_space">
+            <a href="https://www.facebook.com/phil.lowder"><img src="/assets/media/png/facebook-logo.png" width="48" height="48" alt="FaceBook Logo" /></a>
+          </li>
+          <li class="double_space">
+            <a href="https://github.com/philwlowder"><img src="/assets/media/png/github-logo.png" width="48" height="48" alt="GitHub Logo" /></a>
+          </li>
+          <li class="double_space">
+            <a href="https://www.youtube.com/channel/UCv5iKKZheeq_AREt3fCrc9w"><img src="/assets/media/png/youtube_social_squircle_white.png" width="48" height="48" alt="GitHub Logo" /></a>
+          </li>
+        </ul>
+      </div>
+    </div>
 
-   <div class="footer_row">
-
-   <div class="footer_column">
-      <ul>
-         <li class="footer_label">Site Map </li>
-         <li class="single_space" ><a href="/">Home</a></li>
-         <li class="single_space"><a href="/blog/">Commentaries</a></li>
-         <li class="single_space"><a href="/gallery/">Gallery</a></li>
-         <li class="single_space"><a href="/chess/">Chess</a></li>
-         <li class="single_space"><a href="/contact/">Contact</a></li>
-         <li class="single_space"><a href="/aboutme/">About Me</a></li>
-      </ul>
-   </div>
-   <div class="footer_column">
-      <ul>
-         <li class="footer_label">Tools</li>
-         <li class="single_space"><a href="https://code.visualstudio.com/">VS Code</a></li>
-         <li class="single_space"><a href="https://gulpjs.com/">Gulp</a></li>
-         <li class="single_space"><a href="https://github.com/">GitHub</a></li>
-         <li class="single_space"><a href="https://www.wampserver.com/en/">WampServer</a></li>
-         <li class="single_space"><a href="https://www.mozilla.org/en-US/firefox/new/">FireFox</a></li>
-         <li class="single_space"><a href="https://www.netlify.com/">Netlify</a></li>    
-       </ul>
-   </div>
-   <div class="footer_column">
-      <ul>
-         <li class="footer_label">Tip of the Hat</li>
-         <li class="single_space"><a href="https://www.taniarascia.com/responsive-dropdown-navigation-bar/">Tania Rascia</a></li>
-         <li class="single_space"><a href="https://www.toptal.com/designers/subtlepatterns/noisy-grid/">Noisy Grid</a></li>
-         <li class="single_space"><a href="https://www.toptal.com/designers/subtlepatterns/">Subtle Patterns</a></li>
-         <li class="single_space"><a href="https://feathericons.com/">Feather Icons</a></li>
-         <li class="single_space"><a href="https://lokeshdhakar.com/projects/lightbox2/">Lightbox</a></li>
-
-      </ul>
-   </div>
-   <div class="footer_column">
-      <ul>
-         
-         <li class="triple_space"><a href="https://www.facebook.com/phil.lowder">
-               <img src="/assets/media/png/facebook-logo.png" width="48" height="48" alt="FaceBook Logo"></a>
-         </li>
-         <li class="double_space"><a href="https://github.com/philwlowder">
-               <img src="/assets/media/png/github-logo.png" width="48" height="48" alt="GitHub Logo"></a>
-         </li>
-
-         <li class="double_space"><a href="https://www.youtube.com/channel/UCv5iKKZheeq_AREt3fCrc9w">
-            <img src="/assets/media/png/youtube_social_squircle_white.png" width="48" height="48" alt="GitHub Logo"></a>
-      </li>
-
-      </ul>
-   </div>
-  
-</div>
-
-   <div class="sig">
-
-    <img src="/assets/media/gif/copyright.gif" width="200" height="34" alt="copyright Phil W. Lowder" class="center">
-
-</div>
-
-
-    <script src="/assets/js/combine.js"></script>
-
-
-</body>
-
+    <div class="sig">
+      <img src="/assets/media/gif/copyright.gif" width="200" height="34" alt="copyright Phil W. Lowder" class="center" />
+    </div>
+  </body>
 </html>

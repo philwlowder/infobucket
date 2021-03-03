@@ -1,200 +1,144 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta name="description" content="chess game " />
 
-<head>
+    <title>InfoBucket | Hayes-Lowder</title>
 
-  <!--
-  Before it was infobucket it was a page of links that began 10/6/97
-  -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="pinterest" content="nopin">
-  <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'"> -->
+    <!-- Before it was infobucket it was a page of links that began 10/6/97 -->
 
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="pinterest" content="nopin" />
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'"> -->
 
-<meta name="description" content="chess game ">
+    <!-- https://realfavicongenerator.net/ -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
 
-<title>InfoBucket | Hayes-Lowder</title>
+    <link rel="preload" as="font" type="font/woff2" href="https://infobucket.com/assets/gfonts/roboto-v20-latin-regular.woff2" crossorigin />
 
+    <link rel="stylesheet" href="/assets/css/main.css" />
 
-<!-- https://realfavicongenerator.net/ -->
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="icon" href="/favicon.ico">
-<meta name="msapplication-TileColor" content="#da532c">
-<meta name="theme-color" content="#ffffff">
+    <script type="text/javascript" src="pgnyui.js"></script>
+    <script type="text/javascript" src="pgnviewer.js"></script>
 
-<link rel="preload" as="font" type="font/woff2" 
-  href="https://infobucket.com/assets/gfonts/roboto-v20-latin-regular.woff2" crossorigin>
+    <link type="text/css" rel="stylesheet" href="moves.css" />
+  </head>
 
-
-
-<link href="/assets/css/main.css" rel="stylesheet">
-
-
-<script type="text/javascript" src="pgnyui.js"></script>
-<script type="text/javascript" src="pgnviewer.js"></script>
-
-<link type="text/css" rel="stylesheet" href="moves.css">
-
-</head>
-
-<body>
-
-   <div class="navigation">
-      <div class="nav-container">
-         <div class="brand">
-
-            <a href="/.">Infobucket</a>
-         </div>
-         <nav>
-            <div class="nav-mobile">
-               <a id="nav-toggle" href="#"><span></span></a>
-            </div>
-            <ul class="nav-list">
-               <li>
-                  <a href="/gallery/">Gallery</a>
-
-               </li>
-
-               <li><a href="/aboutme/">About</a></li>
-
-               <li><a href="/contact/">Contact</a></li>
-
-
-
-               <li>
-                  <a href="#">More</a>
-                  <ul class="nav-dropdown">
-                     <li><a href="/demo/sort/" title="simple sort">Sorting columns</a></li>
-
-
-                     <li><a href="/chess/" title="local chess">Chess</a></li>
-                     <li><a href="/blog/">Blog</a></li>
-                  </ul>
-               </li>
-            </ul>
-         </nav>
+  <body>
+    <nav>
+      <div class="nav_wrap">
+        <ul>
+          <li>
+            <a href="/" class="home"><img src="/assets/media/svg/home.svg" width="42" height="42" /></a>
+          </li>
+          <li><a href="/gallery/">Images</a></li>
+          <li><a href="/blog/">Blog</a></li>
+          <li><a href="/chess/" title="local chess">Chess</a></li>
+          <li><a href="/contact/">Email</a></li>
+          <li><a href="/aboutme/">About</a></li>
+        </ul>
       </div>
-   </div>
-   <main>
-
+    </nav>
+    <main>
       <article>
+        <div id="site_title">
+          <h2>Hayes-Lowder</h2>
+          <p>Game viewer by <a href="https://chesstempo.com/">ChessTempo</a></p>
+        </div>
 
-         <div id="site_title">
-            <h2>Hayes-Lowder</h2>
-            <p>Game viewer by <a href="https://chesstempo.com/">ChessTempo</a></p>
-         </div>
+        <div id="eventdata">
+          [Event "Midtown XXI"]<br />
+          [Site "Charlotte"]<br />
+          [Date "1999.08.07"]<br />
+          [Round "3"]<br />
+          [White "Hayes, Thomas"]<br />
+          [Black "Lowder, Phil"]<br />
+          [WhiteUSCF "1409"]<br />
+          [BlackUSCF "1627"]<br />
+          [Result "0-1"]<br />
+          [ECO "A00"]<br />
+          [TimeControl "30:60 SD15"]<br />
+        </div>
 
-         <div id="eventdata">
-            [Event "Midtown XXI"]<br>
-            [Site "Charlotte"]<br>
-            [Date "1999.08.07"]<br>
-            [Round "3"]<br>
-            [White "Hayes, Thomas"]<br>
-            [Black "Lowder, Phil"]<br>
-            [WhiteUSCF "1409"]<br>
-            [BlackUSCF "1627"]<br>
-            [Result "0-1"]<br>
-            [ECO "A00"]<br>
-            [TimeControl "30:60 SD15"]<br>
-         </div>
+        <div id="chess-container">
+          <script>
+            new PgnViewer({
+              boardName: 'chess',
+              pgnString: "1. g3 e5 2. e4 Nf6 3. Bg2 Nc6 4. a3 Bc5 5. d3 d6 6. h3 Be6 7. Nf3 h6 8. Nc3 Qe7 9. Na4 d5 10. Nxc5 Qxc5 11. exd5 Bxd5 12. c4 Be6 13. b4 Qe7? (13...Qd6 14. O-O $14) 14. b5 $16 e4 15. bxc6 exf3 16. cxb7 Bd5+ 17. Be3 Bxb7 18. Bxf3 Bxf3 19. Qxf3 O-O 20. O-O Nd7 21. Qb7 Nb6 22. Qc6 Rfd8 23. a4 Rab8 24. a5 Nc8 25. Rfb1 (25. Bc5!) 25...Rd6 26. Qc5 Rxb1+ 27. Rxb1 Qd7 28. d4 Rc6 29. Qb5 (29. Qd5!) 29...Nd6 30. Qb8+ Kh7 31. c5 Nc4 32. Qxa7? Nxe3 33. fxe3? (33. Qb7 {A better move, that leaves Black with a modest advantage that will be difficult to maintain. } ) 33...Qxh3 34. Qb7 Qxg3+ 35. Kf1 Rf6+ (35...Qf3+ 36. Ke1 Qxe3+ {The third round and toward the end of this game, Black can't find this move and the next.} 37. Kd1 Qxd4+ {My computer says Black has a mate in 6.} ) 36. Ke2 Rf2+ 37. Kd3 Qg6+ 38. Qe4? Rd2+ 39. Kxd2 Qxe4 40. Ra1 h5 41. a6 Qa8 42. Kd3 h4 43. e4 c6 44. a7 g5 45. d5 cxd5 46. exd5 (46. e5 {would prolong the game} ) 46...Qxd5+ 47. Ke3 Qe5+ 0-1",
+              pieceSize: 40,
+              pieceSet: 'merida',
+              pauseBetweenMoves: 800,
+              boardImagePath: 'https://infobucket.com/chess',
+              showCoordinates: true,
+              addVersion: true,
+              autoScrollMoves: true,
+              newlineForEachMainMove: false,
+              showBracketsOnVariation: true,
+              movesFormat: 'main_on_own_line',
+              moveAnimationLength: 0.1,
+              pollPGNMilliseconds: 90000,
+            });
+          </script>
+        </div>
 
-
-         <div id="chess-container">
-
-            <script>
-               new PgnViewer({
-                  boardName: "chess",
-                  pgnString: '1. g3 e5 2. e4 Nf6 3. Bg2 Nc6 4. a3 Bc5 5. d3 d6 6. h3 Be6 7. Nf3 h6 8. Nc3 Qe7 9. Na4 d5 10. Nxc5 Qxc5 11. exd5 Bxd5 12. c4 Be6 13. b4 Qe7? (13...Qd6 14. O-O $14) 14. b5 $16 e4 15. bxc6 exf3 16. cxb7 Bd5+ 17. Be3 Bxb7 18. Bxf3 Bxf3 19. Qxf3 O-O 20. O-O Nd7 21. Qb7 Nb6 22. Qc6 Rfd8 23. a4 Rab8 24. a5 Nc8 25. Rfb1 (25. Bc5!) 25...Rd6 26. Qc5 Rxb1+ 27. Rxb1 Qd7 28. d4 Rc6 29. Qb5 (29. Qd5!) 29...Nd6 30. Qb8+ Kh7 31. c5 Nc4 32. Qxa7? Nxe3 33. fxe3? (33. Qb7 {A better move, that leaves Black with a modest advantage that will be difficult to maintain. } ) 33...Qxh3 34. Qb7 Qxg3+ 35. Kf1 Rf6+ (35...Qf3+ 36. Ke1 Qxe3+ {The third round and toward the end of this game, Black can\'t find this move and the next.} 37. Kd1 Qxd4+ {My computer says Black has a mate in 6.} ) 36. Ke2 Rf2+ 37. Kd3 Qg6+ 38. Qe4? Rd2+ 39. Kxd2 Qxe4 40. Ra1 h5 41. a6 Qa8 42. Kd3 h4 43. e4 c6 44. a7 g5 45. d5 cxd5 46. exd5 (46. e5 {would prolong the game} ) 46...Qxd5+ 47. Ke3 Qe5+ 0-1',
-                  pieceSize: 40,
-                  pieceSet: 'merida',
-                  pauseBetweenMoves: 800,
-                  boardImagePath: "https://infobucket.com/chess",
-                  showCoordinates: true,
-                  addVersion: true,
-                  autoScrollMoves: true,
-                  newlineForEachMainMove: false,
-                  showBracketsOnVariation: true,
-                  movesFormat: 'main_on_own_line',
-                  moveAnimationLength: 0.1,
-                  pollPGNMilliseconds: 90000
-               });
-            </script>
-         </div>
-
-         <div id="chess-moves"></div>
-
+        <div id="chess-moves"></div>
       </article>
+    </main>
 
-   </main>
-
-   <div class="footer_row">
-
-   <div class="footer_column">
-      <ul>
-         <li class="footer_label">Site Map </li>
-         <li class="single_space" ><a href="/">Home</a></li>
-         <li class="single_space"><a href="/blog/">Commentaries</a></li>
-         <li class="single_space"><a href="/gallery/">Gallery</a></li>
-         <li class="single_space"><a href="/chess/">Chess</a></li>
-         <li class="single_space"><a href="/contact/">Contact</a></li>
-         <li class="single_space"><a href="/aboutme/">About Me</a></li>
-      </ul>
-   </div>
-   <div class="footer_column">
-      <ul>
-         <li class="footer_label">Tools</li>
-         <li class="single_space"><a href="https://code.visualstudio.com/">VS Code</a></li>
-         <li class="single_space"><a href="https://gulpjs.com/">Gulp</a></li>
-         <li class="single_space"><a href="https://github.com/">GitHub</a></li>
-         <li class="single_space"><a href="https://www.wampserver.com/en/">WampServer</a></li>
-         <li class="single_space"><a href="https://www.mozilla.org/en-US/firefox/new/">FireFox</a></li>
-         <li class="single_space"><a href="https://www.netlify.com/">Netlify</a></li>    
-       </ul>
-   </div>
-   <div class="footer_column">
-      <ul>
-         <li class="footer_label">Tip of the Hat</li>
-         <li class="single_space"><a href="https://www.taniarascia.com/responsive-dropdown-navigation-bar/">Tania Rascia</a></li>
-         <li class="single_space"><a href="https://www.toptal.com/designers/subtlepatterns/noisy-grid/">Noisy Grid</a></li>
-         <li class="single_space"><a href="https://www.toptal.com/designers/subtlepatterns/">Subtle Patterns</a></li>
-         <li class="single_space"><a href="https://feathericons.com/">Feather Icons</a></li>
-         <li class="single_space"><a href="https://lokeshdhakar.com/projects/lightbox2/">Lightbox</a></li>
-
-      </ul>
-   </div>
-   <div class="footer_column">
-      <ul>
-         
-         <li class="triple_space"><a href="https://www.facebook.com/phil.lowder">
-               <img src="/assets/media/png/facebook-logo.png" width="48" height="48" alt="FaceBook Logo"></a>
-         </li>
-         <li class="double_space"><a href="https://github.com/philwlowder">
-               <img src="/assets/media/png/github-logo.png" width="48" height="48" alt="GitHub Logo"></a>
-         </li>
-
-         <li class="double_space"><a href="https://www.youtube.com/channel/UCv5iKKZheeq_AREt3fCrc9w">
-            <img src="/assets/media/png/youtube_social_squircle_white.png" width="48" height="48" alt="GitHub Logo"></a>
-      </li>
-
-      </ul>
-   </div>
-  
-</div>
-
-   <div class="sig">
-
-    <img src="/assets/media/gif/copyright.gif" width="200" height="34" alt="copyright Phil W. Lowder" class="center">
-
-</div>
-
-
-    <script src="/assets/js/combine.js"></script>
-
-
-</body>
-
+    <div class="footer_row">
+      <div class="footer_column">
+        <ul>
+          <li class="footer_label">Site Map</li>
+          <li class="single_space"><a href="/">Home</a></li>
+          <li class="single_space"><a href="/blog/">Text</a></li>
+          <li class="single_space"><a href="/gallery/">Gallery</a></li>
+          <li class="single_space"><a href="/chess/">Chess</a></li>
+          <li class="single_space"><a href="/contact/">Contact</a></li>
+          <li class="single_space"><a href="/aboutme/">About</a></li>
+        </ul>
+      </div>
+      <div class="footer_column">
+        <ul>
+          <li class="footer_label">Tools</li>
+          <li class="single_space"><a href="https://code.visualstudio.com/">VS Code</a></li>
+          <li class="single_space"><a href="https://gulpjs.com/">Gulp</a></li>
+          <li class="single_space"><a href="https://github.com/">GitHub</a></li>
+          <li class="single_space"><a href="https://www.mozilla.org/en-US/firefox/new/">FireFox</a></li>
+          <li class="single_space"><a href="https://www.netlify.com/">Netlify</a></li>
+        </ul>
+      </div>
+      <div class="footer_column">
+        <ul>
+          <li class="footer_label">Tip of the Hat</li>
+          <li class="single_space"><a href="https://www.toptal.com/designers/subtlepatterns/noisy-grid/">Noisy Grid</a></li>
+          <li class="single_space"><a href="https://www.toptal.com/designers/subtlepatterns/">Subtle Patterns</a></li>
+          <li class="single_space"><a href="https://material.io/resources/icons/?style=baseline">Material Icons</a></li>
+          <li class="single_space"><a href="https://lokeshdhakar.com/projects/lightbox2/">Lightbox</a></li>
+        </ul>
+      </div>
+      <div class="footer_column">
+        <ul>
+          <li class="triple_space">
+            <a href="https://www.facebook.com/phil.lowder"><img src="/assets/media/png/facebook-logo.png" width="48" height="48" alt="FaceBook Logo" /></a>
+          </li>
+          <li class="double_space">
+            <a href="https://github.com/philwlowder"><img src="/assets/media/png/github-logo.png" width="48" height="48" alt="GitHub Logo" /></a>
+          </li>
+          <li class="double_space">
+            <a href="https://www.youtube.com/channel/UCv5iKKZheeq_AREt3fCrc9w"><img src="/assets/media/png/youtube_social_squircle_white.png" width="48" height="48" alt="GitHub Logo" /></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="sig">
+      <img src="/assets/media/gif/copyright.gif" width="200" height="34" alt="copyright Phil W. Lowder" class="center" />
+    </div>
+  </body>
 </html>

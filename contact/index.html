@@ -1,290 +1,219 @@
- <!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta name="description" content="this page provides an email address" />
+    <title>Contact | Infobucket</title>
 
-<head>
+    <!-- Before it was infobucket it was a page of links that began 10/6/97 -->
 
-  <!--
-  Before it was infobucket it was a page of links that began 10/6/97
-  -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="pinterest" content="nopin">
-  <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'"> -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="pinterest" content="nopin" />
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'"> -->
 
+    <!-- https://realfavicongenerator.net/ -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
 
- <meta name="description" content="this page provides an email address">
- <title>Contact | Infobucket</title>
+    <link rel="preload" as="font" type="font/woff2" href="https://infobucket.com/assets/gfonts/roboto-v20-latin-regular.woff2" crossorigin />
 
- <!-- https://realfavicongenerator.net/ -->
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="icon" href="/favicon.ico">
-<meta name="msapplication-TileColor" content="#da532c">
-<meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="/assets/css/main.css" />
 
-<link rel="preload" as="font" type="font/woff2" 
-  href="https://infobucket.com/assets/gfonts/roboto-v20-latin-regular.woff2" crossorigin>
+    <style>
+      .email-container {
+        margin-top: 25px;
+        margin-bottom: 25px;
+      }
 
+      .form-container {
+        float: left;
+        margin-top: 50px;
+        width: 100%;
+        max-width: 800px;
+        height: 600px;
+        font-size: 18px;
+      }
 
- 
-<link href="/assets/css/main.css" rel="stylesheet">
+      label.error {
+        display: block;
+        color: red;
+        font-size: 14px;
+        font-weight: bold;
+      }
 
-
- <style>
-
-.email-container{
-
-margin-top: 25px;
-margin-bottom: 25px;   
-
-}
-
-
-.form-container {
-float: left;
-margin-top: 50px;
-width: 100%;
-max-width: 800px;
-height: 600px;
-font-size: 18px;
-}
-
-
-label.error {
-	display: block;
-	color: red;
-	font-size: 14px;
-	font-weight: bold;
-}
-
-/*-------------------------------------
+      /*-------------------------------------
 FORM CORE
 ------------------------------------------*/
+      form {
+        padding: 10px 20px 20px 20px;
+        margin: 0;
+        border: 1px solid #358aca;
+        background-color: #fff;
+        text-align: left;
+        border-radius: 8px;
+        box-shadow: 0px 0px 10px #d3d3d3;
+      }
 
-form {
-	padding: 10px 20px 20px 20px;
-	margin: 0;
-	border: 1px solid #358ACA;
-	background-color: #fff;
-	text-align: left;
-	border-radius: 8px;
-	box-shadow: 0px 0px 10px #d3d3d3;
-}
+      input[type='text'],
+      input[type='email'],
+      textarea {
+        margin: 5px 0 10px 0;
+        padding: 6px;
+        width: 50%;
+        font-size: 18px;
+        border: 1px solid #ccc;
+        background: -moz-linear-gradient(top, #ffffff, #f4f4f4 1px, #ffffff 15px);
+      }
 
-input[type="text"],
-input[type="email"],
- textarea {
-	margin: 5px 0 10px 0;
-	padding: 6px;
-	width: 50%;
-	font-size: 18px;
-	border: 1px solid #ccc;
-  background: -moz-linear-gradient(top, #FFFFFF, #f4f4f4 1px, #FFFFFF 15px);
-}
+      input[type='text']:focus,
+      input[type='email']:focus,
+      textarea:focus {
+        font-size: 18px;
+        box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+        border: 1px solid rgba(81, 203, 238, 1);
+      }
 
+      textarea {
+        width: 100%;
+        height: 150px;
+        font-size: 18px;
+      }
 
-input[type=text]:focus, input[type=email]:focus, textarea:focus {
-font-size: 18px;
-box-shadow: 0 0 5px rgba(81, 203, 238, 1);
-border: 1px solid rgba(81, 203, 238, 1);
-}
+      label {
+        display: block;
+        color: #358aca;
+        margin-top: 10px;
+        font-weight: normal;
+      }
 
-textarea {
-	width: 100%;
-	height: 150px;
-	font-size: 18px;
-}
+      label.error {
+        width: 50%;
+        margin: 3px 0 0 0;
+        display: block;
+        color: #cf0101;
+        font-size: 16px;
+        text-align: right;
+      }
 
-label {
-	display: block;
-	color: #358ACA;
-	margin-top: 10px;
-	font-weight: normal;
-}
+      .placeholder {
+        color: #aaa;
+        font-size: 18px;
+      }
 
-label.error {
-	width: 50%;
-	margin: 3px 0 0 0;
-	display: block;
-	color: #cf0101;
-	font-size: 16px;
-	text-align: right;
-}
+      button {
+        display: inline-block;
+        margin: 15px 0 0 25px;
+        padding: 5px 15px 5px 15px;
+        background-color: #6cbcf0;
+        border: none;
+        color: #ffffff;
+        border-radius: 10px;
+        font-size: 18px;
+        letter-spacing: 0.5px;
+      }
 
-.placeholder {
-	color: #aaa;
-	font-size: 18px;
-}
+      button:hover {
+        background-color: #358aca;
+        cursor: pointer;
+      }
 
+      button:active {
+        margin-top: 16px;
+        background-color: #6cbcf0;
+        cursor: pointer;
+      }
+    </style>
+  </head>
 
-button
- {
-	display: inline-block;
-	margin: 15px 0 0 25px;
-	padding: 5px 15px 5px 15px;
-	background-color: #6CBCF0;
-	border: none;
-	color: #ffffff;
-	border-radius: 10px;
-	font-size: 18px;
-	letter-spacing: .5px;
-}
-
-button:hover {
-	background-color: #358ACA;
-	cursor: pointer;
-}
-
-button:active {
-	margin-top: 16px;
-	background-color: #6CBCF0;
-	cursor: pointer;
-}
- 
-
- </style>
-
-
- </head>
-
- <body>
-  
-
-       <div class="navigation">
-  <div class="nav-container">
-    <div class="brand">
-      <a href="/">Infobucket</a>
-    </div>
+  <body>
     <nav>
-      <div class="nav-mobile">
-        <a id="nav-toggle" href="#"><span></span></a>
+      <div class="nav_wrap">
+        <ul>
+          <li>
+            <a href="/" class="home"><img src="/assets/media/svg/home.svg" width="42" height="42" /></a>
+          </li>
+          <li><a href="/gallery/">Images</a></li>
+          <li><a href="/blog/">Blog</a></li>
+          <li><a href="/chess/" title="local chess">Chess</a></li>
+          <li><a href="/contact/">Email</a></li>
+          <li><a href="/aboutme/">About</a></li>
+        </ul>
       </div>
-      <ul class="nav-list">
-        <li><a href="/contact/">Contact</a></li>
-        <li><a href="/gallery/">Gallery</a></li>
-
-        <li>
-          <a href="#">More</a>
-          <ul class="nav-dropdown">
-            <li><a href="/blog/">Commentaries</a></li>
-            <li><a href="/chess/" title="local chess">Chess</a></li>
-            <li><a href="/aboutme/">About</a></li>
-          </ul>
-        </li>
-      </ul>
     </nav>
-  </div>
-</div>
 
-       <main>
+    <main>
+      <article>
+        <p class="paragraph">I'd enjoy feedback good or bad. If you find a problem with this site, large or small, please let me know. Mistakes slip past me and remain until I stumble across them. Click on the obfuscated email link below, or use the contact form.</p>
 
-          <article>
+        <div class="email-container">
+          <div class="email_link" style="font-size: 26px"><img src="/assets/media/svg/mail.svg" style="vertical-align: middle" width="100" height="100" />Email:<a href="mailto:&#108;&#111;&#119;&#100;&#101;&#114;&#046;&#112;&#104;&#105;&#108;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;">Phil W. Lowder</a></div>
+        </div>
 
-            <p class="paragraph">
-               I'd enjoy feedback good or bad. If you find a problem with this site, large or small, please let me know.
-               Mistakes slip past me and remain until I stumble across them. Click on the obfuscated email link below, or use the contact form.
-             </p>
+        <div class="form-container">
+          <form name="contact" method="POST" data-netlify="true">
+            <label>Your Name: <input type="text" name="name" /></label>
+            <label>Your Email: <input type="email" name="email" /></label>
+            <label>Message: <textarea name="message"></textarea></label>
+            <div data-netlify-recaptcha="true"></div>
+            <button type="submit">Send</button>
+          </form>
+        </div>
+      </article>
+    </main>
 
-             <div class="email-container">
-             <div class="email_link" style="font-size: 26px">
-               <img src="/assets/media/svg/mail.svg"  style="vertical-align:middle" width="100" height="100">
-                       
-                Email:
-                <a href="mailto:&#108;&#111;&#119;&#100;&#101;&#114;&#046;&#112;&#104;&#105;&#108;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109">Phil
-                   W. Lowder</a>
-                </div>
-             
-            </div>
-
-				<div class="form-container">
-           
-             <form name="contact" method="POST" data-netlify="true">          
-           
-                 <label>Your Name: <input type="text" name="name" /></label>   
-               
-                 <label>Your Email: <input type="email" name="email" /></label>
-               
-                 <label>Message: <textarea name="message"></textarea></label>
-              
-                 <div data-netlify-recaptcha="true"></div>
-
-               <button type="submit">Send</button>
-
-               
-             </form>
-
-		</div>
-
-     </article>
-
-			 </main>
-			 
-			<div class="footer_row">
-
-   <div class="footer_column">
-      <ul>
-         <li class="footer_label">Site Map </li>
-         <li class="single_space" ><a href="/">Home</a></li>
-         <li class="single_space"><a href="/blog/">Commentaries</a></li>
-         <li class="single_space"><a href="/gallery/">Gallery</a></li>
-         <li class="single_space"><a href="/chess/">Chess</a></li>
-         <li class="single_space"><a href="/contact/">Contact</a></li>
-         <li class="single_space"><a href="/aboutme/">About Me</a></li>
-      </ul>
-   </div>
-   <div class="footer_column">
-      <ul>
-         <li class="footer_label">Tools</li>
-         <li class="single_space"><a href="https://code.visualstudio.com/">VS Code</a></li>
-         <li class="single_space"><a href="https://gulpjs.com/">Gulp</a></li>
-         <li class="single_space"><a href="https://github.com/">GitHub</a></li>
-         <li class="single_space"><a href="https://www.wampserver.com/en/">WampServer</a></li>
-         <li class="single_space"><a href="https://www.mozilla.org/en-US/firefox/new/">FireFox</a></li>
-         <li class="single_space"><a href="https://www.netlify.com/">Netlify</a></li>    
-       </ul>
-   </div>
-   <div class="footer_column">
-      <ul>
-         <li class="footer_label">Tip of the Hat</li>
-         <li class="single_space"><a href="https://www.taniarascia.com/responsive-dropdown-navigation-bar/">Tania Rascia</a></li>
-         <li class="single_space"><a href="https://www.toptal.com/designers/subtlepatterns/noisy-grid/">Noisy Grid</a></li>
-         <li class="single_space"><a href="https://www.toptal.com/designers/subtlepatterns/">Subtle Patterns</a></li>
-         <li class="single_space"><a href="https://feathericons.com/">Feather Icons</a></li>
-         <li class="single_space"><a href="https://lokeshdhakar.com/projects/lightbox2/">Lightbox</a></li>
-
-      </ul>
-   </div>
-   <div class="footer_column">
-      <ul>
-         
-         <li class="triple_space"><a href="https://www.facebook.com/phil.lowder">
-               <img src="/assets/media/png/facebook-logo.png" width="48" height="48" alt="FaceBook Logo"></a>
-         </li>
-         <li class="double_space"><a href="https://github.com/philwlowder">
-               <img src="/assets/media/png/github-logo.png" width="48" height="48" alt="GitHub Logo"></a>
-         </li>
-
-         <li class="double_space"><a href="https://www.youtube.com/channel/UCv5iKKZheeq_AREt3fCrc9w">
-            <img src="/assets/media/png/youtube_social_squircle_white.png" width="48" height="48" alt="GitHub Logo"></a>
-      </li>
-
-      </ul>
-   </div>
-  
-</div>
-
-			<div class="sig">
-
-    <img src="/assets/media/gif/copyright.gif" width="200" height="34" alt="copyright Phil W. Lowder" class="center">
-
-</div>
-
-	  
-   		 <script src="/assets/js/combine.js"></script>
-
-
- </body>
-
- </html>
+    <div class="footer_row">
+      <div class="footer_column">
+        <ul>
+          <li class="footer_label">Site Map</li>
+          <li class="single_space"><a href="/">Home</a></li>
+          <li class="single_space"><a href="/blog/">Text</a></li>
+          <li class="single_space"><a href="/gallery/">Gallery</a></li>
+          <li class="single_space"><a href="/chess/">Chess</a></li>
+          <li class="single_space"><a href="/contact/">Contact</a></li>
+          <li class="single_space"><a href="/aboutme/">About</a></li>
+        </ul>
+      </div>
+      <div class="footer_column">
+        <ul>
+          <li class="footer_label">Tools</li>
+          <li class="single_space"><a href="https://code.visualstudio.com/">VS Code</a></li>
+          <li class="single_space"><a href="https://gulpjs.com/">Gulp</a></li>
+          <li class="single_space"><a href="https://github.com/">GitHub</a></li>
+          <li class="single_space"><a href="https://www.mozilla.org/en-US/firefox/new/">FireFox</a></li>
+          <li class="single_space"><a href="https://www.netlify.com/">Netlify</a></li>
+        </ul>
+      </div>
+      <div class="footer_column">
+        <ul>
+          <li class="footer_label">Tip of the Hat</li>
+          <li class="single_space"><a href="https://www.toptal.com/designers/subtlepatterns/noisy-grid/">Noisy Grid</a></li>
+          <li class="single_space"><a href="https://www.toptal.com/designers/subtlepatterns/">Subtle Patterns</a></li>
+          <li class="single_space"><a href="https://material.io/resources/icons/?style=baseline">Material Icons</a></li>
+          <li class="single_space"><a href="https://lokeshdhakar.com/projects/lightbox2/">Lightbox</a></li>
+        </ul>
+      </div>
+      <div class="footer_column">
+        <ul>
+          <li class="triple_space">
+            <a href="https://www.facebook.com/phil.lowder"><img src="/assets/media/png/facebook-logo.png" width="48" height="48" alt="FaceBook Logo" /></a>
+          </li>
+          <li class="double_space">
+            <a href="https://github.com/philwlowder"><img src="/assets/media/png/github-logo.png" width="48" height="48" alt="GitHub Logo" /></a>
+          </li>
+          <li class="double_space">
+            <a href="https://www.youtube.com/channel/UCv5iKKZheeq_AREt3fCrc9w"><img src="/assets/media/png/youtube_social_squircle_white.png" width="48" height="48" alt="GitHub Logo" /></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="sig">
+      <img src="/assets/media/gif/copyright.gif" width="200" height="34" alt="copyright Phil W. Lowder" class="center" />
+    </div>
+    <script src="/assets/js/jquery-3.5.1.js"></script>
+  </body>
+</html>

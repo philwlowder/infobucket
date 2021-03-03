@@ -1,211 +1,137 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta name="description" content=" " />
+    <title>Infobucket</title>
 
-<head>
+    <!-- Before it was infobucket it was a page of links that began 10/6/97 -->
 
-  <!--
-  Before it was infobucket it was a page of links that began 10/6/97
-  -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="pinterest" content="nopin">
-  <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'"> -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="pinterest" content="nopin" />
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'"> -->
 
-<meta name="description" content=" ">
-<title>Infobucket</title>
-<!-- https://realfavicongenerator.net/ -->
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="icon" href="/favicon.ico">
-<meta name="msapplication-TileColor" content="#da532c">
-<meta name="theme-color" content="#ffffff">
+    <!-- https://realfavicongenerator.net/ -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
 
-<link rel="preload" as="font" type="font/woff2" 
-  href="https://infobucket.com/assets/gfonts/roboto-v20-latin-regular.woff2" crossorigin>
+    <link rel="preload" as="font" type="font/woff2" href="https://infobucket.com/assets/gfonts/roboto-v20-latin-regular.woff2" crossorigin />
 
+    <link rel="stylesheet" href="/assets/css/main.css" />
+  </head>
 
-<link href="/assets/css/main.css" rel="stylesheet">
-
-</head>
-
-<body>
-  <div class="navigation">
-  <div class="nav-container">
-    <div class="brand">
-      <a href="/">Infobucket</a>
-    </div>
+  <body>
     <nav>
-      <div class="nav-mobile">
-        <a id="nav-toggle" href="#"><span></span></a>
+      <div class="nav_wrap">
+        <ul>
+          <li>
+            <a href="/" class="home"><img src="/assets/media/svg/home.svg" width="42" height="42" /></a>
+          </li>
+          <li><a href="/gallery/">Images</a></li>
+          <li><a href="/blog/">Blog</a></li>
+          <li><a href="/chess/" title="local chess">Chess</a></li>
+          <li><a href="/contact/">Email</a></li>
+          <li><a href="/aboutme/">About</a></li>
+        </ul>
       </div>
-      <ul class="nav-list">
-        <li><a href="/contact/">Contact</a></li>
-        <li><a href="/gallery/">Gallery</a></li>
-
-        <li>
-          <a href="#">More</a>
-          <ul class="nav-dropdown">
-            <li><a href="/blog/">Commentaries</a></li>
-            <li><a href="/chess/" title="local chess">Chess</a></li>
-            <li><a href="/aboutme/">About</a></li>
-          </ul>
-        </li>
-      </ul>
     </nav>
-  </div>
-</div>
-  <main>
+    <main>
+      <a href="/blog/016-nivo-slider.html" class="btn_nav btn_small btn_blue">Previous</a>
+      <a href="/blog/index.html" class="btn_nav btn_small btn_blue">Index</a>
+      <a href="/blog/018-waterpower.html" class="btn_nav btn_small btn_blue">Next</a>
 
-    <a href="/blog/016-nivo-slider.html" class="btn_nav btn_small btn_blue">Previous</a>
-    <a href="/blog/index.html" class="btn_nav btn_small btn_blue">Index</a>
-    <a href="/blog/018-waterpower.html" class="btn_nav btn_small btn_blue">Next</a>
+      <article>
+        <div class="article_title">
+          <h1>A New Web Order</h1>
+          <h3>Out of many messes, one big mess</h3>
+        </div>
 
-    <article>
+        <p>published May 6th, 2020</p>
 
-      <div class="article_title">
-        <h1>A New Web Order</h1>
-        <h3>Out of many messes, one big mess</h3>
+        <figure class="figure_standard">
+          <a href="/gallery/"><img alt="canoe at morrow mountain" src="/assets/media/jpg/canoe-3983.jpg" class="rounded_corners" width="400" height="300" /></a>
+          <figcaption>
+            At Morrow Mountain State Park<br />
+            <a href="/gallery/">Check out my Gallery</a>
+          </figcaption>
+        </figure>
+
+        <p class="paragraph">For several years I've allowed my website to stagnate. In early January I started to make changes. I moved my site to <abbr title="Amazon Web Services">AWS</abbr> LightSail. I describe that in this <a href="/blog/015-vps.html">post</a>.</p>
+
+        <p class="paragraph">LightSail is wonderful, fast, inexpensive, but it's not free. I've been reading that all the cool kids were switching to static websites. There are several reasons, one reason is free hosting. Another reason is that static sites are fast. Finally and importantly, new tools have made multiple page static sites easier to manage than in the past.</p>
+
+        <p class="paragraph">When sites have more than a few pages they become difficult to manage. If a change needs to be made to every page, making those changes becomes tedious and time consuming.</p>
+
+        <p class="paragraph">I learned to use PHP include statements. By creating each page with PHP include statements, files with pieces of HTML can be inserted into every page. PHP enables the alteration of one file to be duplicated in many files.</p>
+
+        <p class="paragraph">There is a downside to the use of PHP include statements. Unless the page is cached, the server must take the time to run PHP include statements each time a page is requested by a browser. Today developers are using JavaScript tools to build each page before uploading to a live server. Static sites sit on the server fully built and ready to be served.</p>
+
+        <p class="paragraph"><a href="https://gulpjs.com/">Gulp</a> is the JavaScript tool that I'm learning to use. Gulp plugins allow me to insert HTML as I did with PHP include statements. It also builds a finished CSS file from SCSS partial files. I hope to streamline the process as I learn from experience. With Gulp I can build a multi-page static site and manage it as well as with PHP.</p>
+
+        <p class="paragraph">I'm also using <a href="https://github.com/">GitHub</a>. I've experimented with Git and GitHub in the past. Git is version control software. I've always thought good backups were all I needed. I've learned that GitHub is an excellent replacement for <abbr title="File Transfer Protocol">FTP</abbr> programs. I can change multiple files on my local computer and GitHub will track those changes until I'm ready to upload them to my server.</p>
+
+        <p class="paragraph">GitHub is a free host for static sites. Free is good, and it means I can archive sites with GitHub pages. They may remain after I am remains. I will not receive a bill in the afterlife.</p>
+
+        <p class="paragraph">This site is hosted on <a href="https://www.netlify.com/">Netlify</a> and deploys from a private GitHub repository. Netlify has a free plan for static sites.</p>
+
+        <p class="paragraph">Those are behind the scene changes. A visitor will be unaware of them. If someone told you "blog" was an onomatopoeia, what would the word describe? I'm guessing something disgusting. For now I'm calling my post, commentaries. It sounds nicer.</p>
+
+        <p class="paragraph">I have tried to improve my image gallery. It now takes fewer clicks to crank up a slideshow with Lightbox. In the past I've used thumbnails. I liked the look, but they seemed to have no function. The thumbnails are gone. I have many photos I could add to my gallery. I have so many choices, no direction, and it all takes time.</p>
+      </article>
+    </main>
+
+    <div class="footer_row">
+      <div class="footer_column">
+        <ul>
+          <li class="footer_label">Site Map</li>
+          <li class="single_space"><a href="/">Home</a></li>
+          <li class="single_space"><a href="/blog/">Text</a></li>
+          <li class="single_space"><a href="/gallery/">Gallery</a></li>
+          <li class="single_space"><a href="/chess/">Chess</a></li>
+          <li class="single_space"><a href="/contact/">Contact</a></li>
+          <li class="single_space"><a href="/aboutme/">About</a></li>
+        </ul>
       </div>
-
-      <p>published May 6th, 2020</p>
-
-      <figure class="figure_standard">
-        <a href="/gallery/"><img alt="canoe at morrow mountain" src="/assets/media/jpg/canoe-3983.jpg"
-            class="rounded_corners" width="400" height="300"></a>
-        <figcaption>
-          At Morrow Mountain State Park<br>
-          <a href="/gallery/">Check out my Gallery</a>
-        </figcaption>
-      </figure>
-
-
-      <p class="paragraph">For several years I've allowed my website to stagnate. In
-        early January I started to make changes. I moved my site to <abbr title="Amazon
-Web Services">AWS</abbr> LightSail. I describe that in this <a href="/blog/015-vps.html">post</a>. </p>
-
-      <p class="paragraph"> LightSail is wonderful, fast, inexpensive, but it's not
-        free. I've been reading that all the cool kids were switching to static
-        websites. There are several reasons, one reason is free hosting. Another reason
-        is that static sites are fast. Finally and importantly, new tools have made
-        multiple page static sites easier to manage than in the past. </p>
-
-      <p class="paragraph"> When sites have more than a few pages they become
-        difficult to manage. If a change needs to be made to every page, making those
-        changes becomes tedious and time consuming. </p>
-
-      <p class="paragraph"> I learned to use PHP include statements. By creating each
-        page with PHP include statements, files with pieces of HTML can be inserted
-        into every page. PHP enables the alteration of one file to be duplicated in
-        many files. </p>
-
-      <p class="paragraph"> There is a downside to the use of PHP include statements.
-        Unless the page is cached, the server must take the time to run PHP include
-        statements each time a page is requested by a browser. Today developers are
-        using JavaScript tools to build each page before uploading to a live server.
-        Static sites sit on the server fully built and ready to be served. </p>
-
-      <p class="paragraph"> <a href="https://gulpjs.com/">Gulp</a> is the JavaScript
-        tool that I'm learning to use. Gulp plugins allow me to insert HTML as I did
-        with PHP include statements. It also builds a finished CSS file from SCSS
-        partial files. I hope to streamline the process as I learn from experience.
-        With Gulp I can build a multi-page static site and manage it as well as with
-        PHP. </p>
-
-      <p class="paragraph"> I'm also using <a href="https://github.com/">GitHub</a>.
-        I've experimented with Git and GitHub in the past. Git is version control
-        software. I've always thought good backups were all I needed. I've learned
-        that GitHub is an excellent replacement for <abbr title="File Transfer
-Protocol">FTP</abbr> programs. I can change multiple files on my local computer
-        and GitHub will track those changes until I'm ready to upload them to my
-        server.</p>
-
-      <p class="paragraph"> GitHub is a free host for static sites. Free is good, and
-        it means I can archive sites with GitHub pages. They may remain after I am
-        remains. I will not receive a bill in the afterlife. </p>
-
-      <p class="paragraph"> This site is hosted on <a href="https://www.netlify.com/">Netlify</a> and deploys from a
-        private GitHub
-        repository. Netlify has a free plan for static sites. </p>
-
-      <p class="paragraph"> Those are behind the scene changes. A visitor will be
-        unaware of them. If someone told you "blog" was an onomatopoeia, what would the
-        word describe? I'm guessing something disgusting. For now I'm calling my post,
-        commentaries. It sounds nicer. </p>
-
-      <p class="paragraph"> I have tried to improve my image gallery. It now takes
-        fewer clicks to crank up a slideshow with Lightbox. In the past I've used
-        thumbnails. I liked the look, but they seemed to have no function. The
-        thumbnails are gone. I have many photos I could add to my gallery. I have so
-        many choices, no direction, and it all takes time.
-    </article>
-  </main>
-  
-  <div class="footer_row">
-
-   <div class="footer_column">
-      <ul>
-         <li class="footer_label">Site Map </li>
-         <li class="single_space" ><a href="/">Home</a></li>
-         <li class="single_space"><a href="/blog/">Commentaries</a></li>
-         <li class="single_space"><a href="/gallery/">Gallery</a></li>
-         <li class="single_space"><a href="/chess/">Chess</a></li>
-         <li class="single_space"><a href="/contact/">Contact</a></li>
-         <li class="single_space"><a href="/aboutme/">About Me</a></li>
-      </ul>
-   </div>
-   <div class="footer_column">
-      <ul>
-         <li class="footer_label">Tools</li>
-         <li class="single_space"><a href="https://code.visualstudio.com/">VS Code</a></li>
-         <li class="single_space"><a href="https://gulpjs.com/">Gulp</a></li>
-         <li class="single_space"><a href="https://github.com/">GitHub</a></li>
-         <li class="single_space"><a href="https://www.wampserver.com/en/">WampServer</a></li>
-         <li class="single_space"><a href="https://www.mozilla.org/en-US/firefox/new/">FireFox</a></li>
-         <li class="single_space"><a href="https://www.netlify.com/">Netlify</a></li>    
-       </ul>
-   </div>
-   <div class="footer_column">
-      <ul>
-         <li class="footer_label">Tip of the Hat</li>
-         <li class="single_space"><a href="https://www.taniarascia.com/responsive-dropdown-navigation-bar/">Tania Rascia</a></li>
-         <li class="single_space"><a href="https://www.toptal.com/designers/subtlepatterns/noisy-grid/">Noisy Grid</a></li>
-         <li class="single_space"><a href="https://www.toptal.com/designers/subtlepatterns/">Subtle Patterns</a></li>
-         <li class="single_space"><a href="https://feathericons.com/">Feather Icons</a></li>
-         <li class="single_space"><a href="https://lokeshdhakar.com/projects/lightbox2/">Lightbox</a></li>
-
-      </ul>
-   </div>
-   <div class="footer_column">
-      <ul>
-         
-         <li class="triple_space"><a href="https://www.facebook.com/phil.lowder">
-               <img src="/assets/media/png/facebook-logo.png" width="48" height="48" alt="FaceBook Logo"></a>
-         </li>
-         <li class="double_space"><a href="https://github.com/philwlowder">
-               <img src="/assets/media/png/github-logo.png" width="48" height="48" alt="GitHub Logo"></a>
-         </li>
-
-         <li class="double_space"><a href="https://www.youtube.com/channel/UCv5iKKZheeq_AREt3fCrc9w">
-            <img src="/assets/media/png/youtube_social_squircle_white.png" width="48" height="48" alt="GitHub Logo"></a>
-      </li>
-
-      </ul>
-   </div>
-  
-</div>
-
-  <div class="sig">
-
-    <img src="/assets/media/gif/copyright.gif" width="200" height="34" alt="copyright Phil W. Lowder" class="center">
-
-</div>
-
-  
-   <script src="/assets/js/combine.js"></script>
-
-
-</body>
-
+      <div class="footer_column">
+        <ul>
+          <li class="footer_label">Tools</li>
+          <li class="single_space"><a href="https://code.visualstudio.com/">VS Code</a></li>
+          <li class="single_space"><a href="https://gulpjs.com/">Gulp</a></li>
+          <li class="single_space"><a href="https://github.com/">GitHub</a></li>
+          <li class="single_space"><a href="https://www.mozilla.org/en-US/firefox/new/">FireFox</a></li>
+          <li class="single_space"><a href="https://www.netlify.com/">Netlify</a></li>
+        </ul>
+      </div>
+      <div class="footer_column">
+        <ul>
+          <li class="footer_label">Tip of the Hat</li>
+          <li class="single_space"><a href="https://www.toptal.com/designers/subtlepatterns/noisy-grid/">Noisy Grid</a></li>
+          <li class="single_space"><a href="https://www.toptal.com/designers/subtlepatterns/">Subtle Patterns</a></li>
+          <li class="single_space"><a href="https://material.io/resources/icons/?style=baseline">Material Icons</a></li>
+          <li class="single_space"><a href="https://lokeshdhakar.com/projects/lightbox2/">Lightbox</a></li>
+        </ul>
+      </div>
+      <div class="footer_column">
+        <ul>
+          <li class="triple_space">
+            <a href="https://www.facebook.com/phil.lowder"><img src="/assets/media/png/facebook-logo.png" width="48" height="48" alt="FaceBook Logo" /></a>
+          </li>
+          <li class="double_space">
+            <a href="https://github.com/philwlowder"><img src="/assets/media/png/github-logo.png" width="48" height="48" alt="GitHub Logo" /></a>
+          </li>
+          <li class="double_space">
+            <a href="https://www.youtube.com/channel/UCv5iKKZheeq_AREt3fCrc9w"><img src="/assets/media/png/youtube_social_squircle_white.png" width="48" height="48" alt="GitHub Logo" /></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="sig">
+      <img src="/assets/media/gif/copyright.gif" width="200" height="34" alt="copyright Phil W. Lowder" class="center" />
+    </div>
+  </body>
 </html>

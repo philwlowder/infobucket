@@ -85,14 +85,14 @@ body {
   color: blue;
 }
 .ct-board-move-mainline {
-  font-weight: 600;
+  font-weight: 400;
   cursor: pointer;
   font-family: Arial, Tahoma, Verdana;
-  font-size: 13px;
+  font-size: 16px;
 }
 .ct-board-move-comment {
   color: green;
-  font-size: 13px;
+  font-size: 16px;
 }
 .ct-board-move-current {
   color: red;
@@ -108,7 +108,7 @@ body {
 /*.ct-opt-move-score{color:#ADFFC3;}*/
 
 #eventdata {
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.4;
   width: 250px;
   height: 250px;

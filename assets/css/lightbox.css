@@ -155,11 +155,11 @@ body.lb-disable-scrolling {
   width: 85%;
   float: left;
   text-align: left;
-  line-height: 1.1em;
+  line-height: 1.5em;
 }
 
 .lb-data .lb-caption {
-  font-size: 14px;
+  font-size: 16px;
   /* font-weight: bold; */
   line-height: 1em;
 }
@@ -172,7 +172,7 @@ body.lb-disable-scrolling {
   display: block;
   clear: left;
   padding-bottom: 1em;
-  font-size: 12px;
+  font-size: 16px;
   color: #999999;
 }
 

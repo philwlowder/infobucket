@@ -45,16 +45,24 @@
 
   <body>
     <!-- This website began 10/6/97 -->
-    <nav>
-      <div class="nav_wrap">
+    <nav role="navigation">
+      <div class="wrapnav">
         <ul>
-          <li>
+          <li class="home">
             <a href="/" class="home"><img src="/assets/media/svg/home.svg" width="42" height="42" alt="home icon" /></a>
           </li>
           <li><a href="/gallery/">Images</a></li>
           <li><a href="/blog/">Blog</a></li>
-          <li><a href="/chess/" title="local chess">Chess</a></li>
-          <li><a href="/contact/">Email</a></li>
+
+          <li>
+            <a href="#" aria-haspopup="true">More</a>
+            <ul class="dropdown" aria-label="submenu">
+              <li><a href="/chess/">Chess</a></li>
+              <li><a href="/sort/" title="demo of table sorting">Sort</a></li>
+              <li><a href="/aboutme/">About</a></li>
+              <li><a href="/contact/">Contact</a></li>
+            </ul>
+          </li>
         </ul>
       </div>
     </nav>

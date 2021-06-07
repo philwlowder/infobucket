@@ -131,23 +131,31 @@ FORM CORE
   </head>
 
   <body>
-    <nav>
-      <div class="nav_wrap">
+    <nav role="navigation">
+      <div class="wrapnav">
         <ul>
-          <li>
+          <li class="home">
             <a href="/" class="home"><img src="/assets/media/svg/home.svg" width="42" height="42" alt="home icon" /></a>
           </li>
           <li><a href="/gallery/">Images</a></li>
           <li><a href="/blog/">Blog</a></li>
-          <li><a href="/chess/" title="local chess">Chess</a></li>
-          <li><a href="/contact/">Email</a></li>
+
+          <li>
+            <a href="#" aria-haspopup="true">More</a>
+            <ul class="dropdown" aria-label="submenu">
+              <li><a href="/chess/">Chess</a></li>
+              <li><a href="/sort/" title="demo of table sorting">Sort</a></li>
+              <li><a href="/aboutme/">About</a></li>
+              <li><a href="/contact/">Contact</a></li>
+            </ul>
+          </li>
         </ul>
       </div>
     </nav>
 
     <main>
       <article>
-        <p class="paragraph">I'd enjoy feedback good or bad. If you find a problem with this site, large or small, please let me know. Mistakes slip past me and remain until I stumble across them. Click on the obfuscated email link below, or use the contact form.</p>
+        <p class="paragraph">I'd enjoy feedback good or bad. If you find a problem with this site, large or small, please let me know. Mistakes slip past me and remain until I stumble across them. Click on the email link below, or use the contact form.</p>
 
         <div class="email-container">
           <div class="email_link" style="font-size: 26px"><img src="/assets/media/svg/mail.svg" style="vertical-align: middle" width="100" height="100" />Email:<a href="mailto:&#108;&#111;&#119;&#100;&#101;&#114;&#046;&#112;&#104;&#105;&#108;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;">Phil W. Lowder</a></div>

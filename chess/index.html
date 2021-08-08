@@ -71,86 +71,61 @@
     </nav>
 
     <main>
-      <div class="flex_holder">
-        <div class="flex_item">
-          <div id="site_title">
-            <h1>Stanly County Chess</h1>
-          </div>
-          <!-- This webpage began 10/6/97 -->
-
-          <p class="paragraph">To find out how you <a href="https://www.uschess.org/msa/">rate</a>. Play in <a href="https://www.uschess.org">USCF</a> tournaments and get a <a href="https://www.uschess.org/msa/MbrDtlMain.php?12333730">rating</a>. Anyone can play in the tournaments. The only requirement is an entry fee.</p>
-
-          <h3>Local clubs and tournaments</h3>
-
-          <ul class="chess_ul">
-            <li class="chess_li"><a href="https://ncchess.org">North Carolina Chess Association</a></li>
-            <li class="chess_li"><a href="https://www.scchess.org">South Carolina Chess Association</a></li>
-          </ul>
-
-          <h3>Examples</h3>
-          <p class="paragraph">of <a href="https://www.uschess.org/">USCF</a> tournament games.</p>
-
-          <ul class="chess_ul">
-            <li class="chess_li"><a href="/chess/games/hayes.html">Hayes-Lowder</a></li>
-            <li class="chess_li"><a href="/chess/games/keller.html">Lowder-Keller</a></li>
-            <li class="chess_li"><a href="/chess/games/daniel.html">Daniel-Lowder</a></li>
-            <li class="chess_li"><a href="/chess/games/michael.html">Lowder-Michael</a></li>
-            <li class="chess_li"><a href="/chess/games/obryant.html">O'Bryant-Lowder</a></li>
-            <li class="chess_li"><a href="/chess/games/smith.html">Smith-Lowder</a></li>
-            <li class="chess_li"><a href="/chess/games/hauser.html">Lowder-Hauser</a></li>
-            <li class="chess_li"><a href="/chess/games/vicary.html">Vicary-Lowder</a></li>
-            <li class="chess_li"><a href="/chess/games/lindsay.html">Lowder-Lindsay</a></li>
-            <li class="chess_li"><a href="/chess/games/bridges.html">Lowder-Bridges</a></li>
-            <li class="chess_li"><a href="/chess/games/frady.html">Lowder-Frady</a></li>
-            <li class="chess_li"><a href="/chess/games/hellstein.html">Lowder-Hellstein</a></li>
-            <li class="chess_li"><a href="/chess/games/weber.html">Lowder-Weber</a></li>
-          </ul>
-
-          <p class="paragraph">Here is the <a href="/chess/games/lowder.pgn">PGN file</a>.</p>
-
-          <h3>A Few Essential Chess Links</h3>
-
-          <ul class="chess_ul">
-            <li class="chess_li"><a href="https://en.chessbase.com/">ChessBase </a> - Chess news and more</li>
-            <li class="chess_li"><a href="https://theweekinchess.com/">The Week In Chess</a> - A must for Chess news.</li>
-          </ul>
-        </div>
-
-        <div class="flex_item">
-          <div id="tempo-box">
-            <p class="paragraph">From the game <a href="/chess/games/smith.html">Smith-Lowder</a> what's Black's best move? Game viewer by <a href="https://chesstempo.com/">ChessTempo</a>.</p>
-          </div>
-
-          <div id="demo-container">
-            <script>
-              new PgnViewer({
-                boardName: 'demo',
-                pgnFile: 'fensmith.pgn',
-                pieceSize: 35,
-                pieceSet: 'merida',
-                pauseBetweenMoves: 800,
-                boardImagePath: 'https://infobucket.com/chess',
-                showCoordinates: true,
-                addVersion: true,
-                autoScrollMoves: true,
-                newlineForEachMainMove: false,
-                showBracketsOnVariation: false,
-                movesFormat: 'main_on_own_line',
-                moveAnimationLength: 0.1,
-              });
-            </script>
-          </div>
-
-          <div id="meck">
-            <a href="https://www.cmsca.org"><img src="cmsclogo.gif" alt="CMSCA logo" width="130" height="130" /></a>
-
-            <p class="paragraph">
-              Scholastic tournaments are held by the <a href="http://www.cmsca.org/">Charlotte-Mecklenburg Scholastic Chess Association.</a>
-              Scholastic players from other counties may compete without joining the CMSCA. Anyone can take part. Beginners are welcome.
-            </p>
-          </div>
-        </div>
+      <div id="site_title">
+        <h1>Stanly County Chess</h1>
       </div>
+      <!-- This webpage began 10/6/97 -->
+
+      <div id="demo-container">
+        <script>
+          new PgnViewer({
+            boardName: 'demo',
+            pgnFile: 'fensmith.pgn',
+            pieceSize: 35,
+            pieceSet: 'merida',
+            pauseBetweenMoves: 800,
+            boardImagePath: 'https://infobucket.com/chess',
+            showCoordinates: true,
+            addVersion: true,
+            autoScrollMoves: true,
+            newlineForEachMainMove: false,
+            showBracketsOnVariation: false,
+            movesFormat: 'main_on_own_line',
+            moveAnimationLength: 0.1,
+          });
+        </script>
+      </div>
+
+      <p class="paragraph">From the game <a href="/chess/games/smith.html">Smith-Lowder</a> Black to move. Chess viewer by <a href="https://chesstempo.com/">ChessTempo</a>.</p>
+
+      <p class="paragraph">To find out how you <a href="https://www.uschess.org/msa/">rate</a>. Play in <a href="https://www.uschess.org">USCF</a> tournaments and get a <a href="https://www.uschess.org/msa/MbrDtlMain.php?12333730">rating</a>. Anyone can play in the tournaments. The only requirement is an entry fee.</p>
+
+      <h3>A Few Essential Chess Links</h3>
+
+      <ul class="chess_ul">
+        <li class="chess_li"><a href="https://ncchess.org">NC Chess Association</a></li>
+        <li class="chess_li"><a href="https://www.scchess.org">SC Chess Association</a></li>
+        <li class="chess_li"><a href="https://en.chessbase.com/">ChessBase </a></li>
+        <li class="chess_li"><a href="https://theweekinchess.com/">The Week In Chess</a></li>
+      </ul>
+
+      <p class="paragraph"><a href="https://www.uschess.org/">USCF</a> tournament games.</p>
+
+      <ul class="chess_ul">
+        <li class="chess_li"><a href="/chess/games/hayes.html">Hayes-Lowder</a></li>
+        <li class="chess_li"><a href="/chess/games/keller.html">Lowder-Keller</a></li>
+        <li class="chess_li"><a href="/chess/games/daniel.html">Daniel-Lowder</a></li>
+        <li class="chess_li"><a href="/chess/games/michael.html">Lowder-Michael</a></li>
+        <li class="chess_li"><a href="/chess/games/obryant.html">O'Bryant-Lowder</a></li>
+        <li class="chess_li"><a href="/chess/games/smith.html">Smith-Lowder</a></li>
+        <li class="chess_li"><a href="/chess/games/hauser.html">Lowder-Hauser</a></li>
+        <li class="chess_li"><a href="/chess/games/vicary.html">Vicary-Lowder</a></li>
+        <li class="chess_li"><a href="/chess/games/lindsay.html">Lowder-Lindsay</a></li>
+        <li class="chess_li"><a href="/chess/games/bridges.html">Lowder-Bridges</a></li>
+        <li class="chess_li"><a href="/chess/games/frady.html">Lowder-Frady</a></li>
+        <li class="chess_li"><a href="/chess/games/hellstein.html">Lowder-Hellstein</a></li>
+        <li class="chess_li"><a href="/chess/games/weber.html">Lowder-Weber</a></li>
+      </ul>
     </main>
 
     <div class="footer_row">

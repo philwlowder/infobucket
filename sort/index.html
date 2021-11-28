@@ -1,574 +1,572 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <title>Basic Tablesorter Demo</title>
+    <!-- Before it was infobucket it was a page of links that began 10/6/97 -->
 
-<head>
-  <title>Basic Tablesorter Demo</title>
-  <!-- Before it was infobucket it was a page of links that began 10/6/97 -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="pinterest" content="nopin" />
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'"> -->
 
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="pinterest" content="nopin" />
-  <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'"> -->
+    <!-- https://realfavicongenerator.net/ -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
 
-  <!-- https://realfavicongenerator.net/ -->
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-  <link rel="icon" href="/favicon.ico" />
-  <meta name="msapplication-TileColor" content="#da532c" />
-  <meta name="theme-color" content="#ffffff" />
+    <link rel="stylesheet" href="/assets/css/main.css" />
+    <link rel="stylesheet" href="/assets/css/main.css" />
+    <link href="table-style.css" rel="stylesheet" />
+    <link href="css/rounded.css" rel="stylesheet" />
+  </head>
 
-  <link rel="stylesheet" href="/assets/css/main.css" />
-  <link rel="stylesheet" href="/assets/css/main.css" />
-  <link href="table-style.css" rel="stylesheet" />
-  <link href="css/rounded.css" rel="stylesheet" />
-</head>
+  <body>
+    <nav>
+      <div class="wrapnav">
+        <ul>
+          <li class="home">
+            <a href="/" class="home"><img src="/assets/media/svg/home.svg" width="42" height="42" alt="home icon" /></a>
+          </li>
+          <li><a href="/gallery/">Images</a></li>
+          <li><a href="/blog/">Blog</a></li>
 
-<body>
-  <nav>
-    <div class="wrapnav">
-      <ul>
-        <li class="home">
-          <a href="/" class="home"><img src="/assets/media/svg/home.svg" width="42" height="42" alt="home icon" /></a>
-        </li>
-        <li><a href="/gallery/">Images</a></li>
-        <li><a href="/blog/">Blog</a></li>
+          <li>
+            <a href="#" aria-haspopup="true">More</a>
+            <ul class="dropdown" aria-label="submenu">
+              <li><a href="/chess/">Chess</a></li>
+              <li><a href="/sort/" title="demo of table sorting">Sort</a></li>
+              <li><a href="/aboutme/">About</a></li>
+              <li><a href="/contact/">Contact</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <main>
+      <div class="intro">
+        <p class="paragraph">This page will function differently depending on the size of the users display.</p>
+        <p class="paragraph">Displays wider than 768 pixels will see a demonstration of the Javascript plugin <a href="https://plugins.jquery.com/tablesorter/2.17.1/">TableSorter</a>. This example uses a partial list of games from the book <em>500 Master Games of Chess</em>.</p>
+        <p class="paragraph">Click on the headings and that column will be used to sort the table.</p>
+        <p class="paragraph">From the <a href="https://mottie.github.io/tablesorter/docs/index.html">TableSorter Docs</a>, "Sort multiple columns simultaneously by holding down the Shift key and clicking a second, third or even fourth column header!" Copyright (c) 2007 Christian Bach.</p>
+        <p class="paragraph">Displays below 768 pixels will lose the table sorter function. The data will be available as a list of records.</p>
+        <p class="paragraph">This is a quick demo of the columns & zebra widget with the "sortReset" option set to true (clicking on a sort header a third time will reset the sort)</p>
+      </div>
 
-        <li>
-          <a href="#" aria-haspopup="true">More</a>
-          <ul class="dropdown" aria-label="submenu">
-            <li><a href="/chess/">Chess</a></li>
-            <li><a href="/sort/" title="demo of table sorting">Sort</a></li>
-            <li><a href="/aboutme/">About</a></li>
-            <li><a href="/contact/">Contact</a></li>
-          </ul>
-        </li>
-      </ul>
+      <div class="table_container">
+        <table class="rounded">
+          <thead>
+            <tr>
+              <th>White</th>
+              <th>Black</th>
+              <th>Opening</th>
+              <th>Site</th>
+              <th>Year</th>
+              <th>Game</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1st fusiliers</td>
+              <td>Bombay</td>
+              <td>Giuoco Piano</td>
+              <td>Bombay</td>
+              <td>1853</td>
+              <td>013</td>
+            </tr>
+            <tr>
+              <td>Adams</td>
+              <td>Torre</td>
+              <td>Philidor's</td>
+              <td>New Orleans</td>
+              <td>1920</td>
+              <td>157</td>
+            </tr>
+            <tr>
+              <td>Ahues</td>
+              <td>Monticelli</td>
+              <td>Ruy Lopez</td>
+              <td>San Remo</td>
+              <td>1930</td>
+              <td>072+</td>
+            </tr>
+            <tr>
+              <td>Aitken</td>
+              <td>Reshevsky</td>
+              <td>Ruy Lopez</td>
+              <td>Stockholm</td>
+              <td>1937</td>
+              <td>082</td>
+            </tr>
+            <tr>
+              <td>Alatorzeff</td>
+              <td>Capablanca</td>
+              <td>QGD</td>
+              <td>Moscow</td>
+              <td>1935</td>
+              <td>378</td>
+            </tr>
+            <tr>
+              <td>Alatorzeff</td>
+              <td>Panov</td>
+              <td>Benoni</td>
+              <td>Moscow</td>
+              <td>1937</td>
+              <td>435</td>
+            </tr>
+            <tr>
+              <td>Alekhine</td>
+              <td>Blumich</td>
+              <td>King's Indian</td>
+              <td>Dresden</td>
+              <td>1926</td>
+              <td>448</td>
+            </tr>
+            <tr>
+              <td>Alekhine</td>
+              <td>Bogoljubow</td>
+              <td>Queen's Indian</td>
+              <td>Triberg</td>
+              <td>1921</td>
+              <td>452</td>
+            </tr>
+            <tr>
+              <td>Alekhine</td>
+              <td>Book</td>
+              <td>QGA</td>
+              <td>Margate</td>
+              <td>1938</td>
+              <td>358</td>
+            </tr>
+            <tr>
+              <td>Alekhine</td>
+              <td>Botvinnik</td>
+              <td>Sicilian</td>
+              <td>Notingham</td>
+              <td>1936</td>
+              <td>306</td>
+            </tr>
+            <tr>
+              <td>Alekhine</td>
+              <td>Capablanca</td>
+              <td>QGD</td>
+              <td>Match</td>
+              <td>1927</td>
+              <td>382</td>
+            </tr>
+            <tr>
+              <td>Alekhine</td>
+              <td>Desler</td>
+              <td>Sicilian</td>
+              <td>Hamburg</td>
+              <td>1930</td>
+              <td>308+</td>
+            </tr>
+            <tr>
+              <td>Alekhine</td>
+              <td>Drewitt</td>
+              <td>Reti</td>
+              <td>Portsmouth</td>
+              <td>1923</td>
+              <td>494+</td>
+            </tr>
+            <tr>
+              <td>Alekhine</td>
+              <td>Eliskases</td>
+              <td>Ruy Lopez</td>
+              <td>Podjebrad</td>
+              <td>1936</td>
+              <td>077</td>
+            </tr>
+            <tr>
+              <td>Alekhine</td>
+              <td>Euwe</td>
+              <td>French</td>
+              <td>Match</td>
+              <td>1935</td>
+              <td>250</td>
+            </tr>
+            <tr>
+              <td>Alekhine</td>
+              <td>Euwe</td>
+              <td>Ruy Lopez</td>
+              <td>Match</td>
+              <td>1935</td>
+              <td>072</td>
+            </tr>
+            <tr>
+              <td>Alekhine</td>
+              <td>Euwe</td>
+              <td>Slav</td>
+              <td>Match</td>
+              <td>1935</td>
+              <td>405</td>
+            </tr>
+            <tr>
+              <td>Alekhine</td>
+              <td>Euwe</td>
+              <td>Slav</td>
+              <td>Match</td>
+              <td>1937</td>
+              <td>411</td>
+            </tr>
+            <tr>
+              <td>Alekhine</td>
+              <td>Euwe</td>
+              <td>Vienna</td>
+              <td>The Hague</td>
+              <td>1921</td>
+              <td>202+</td>
+            </tr>
+            <tr>
+              <td>Alekhine</td>
+              <td>Fahrni</td>
+              <td>French</td>
+              <td>Mannheim</td>
+              <td>1914</td>
+              <td>258</td>
+            </tr>
+            <tr>
+              <td>Alekhine</td>
+              <td>Fine</td>
+              <td>Ruy Lopez</td>
+              <td>Hastings</td>
+              <td>1937</td>
+              <td>079</td>
+            </tr>
+            <tr>
+              <td>Alekhine</td>
+              <td>Koltanowski</td>
+              <td>Ruy Lopez</td>
+              <td>London</td>
+              <td>1932</td>
+              <td>106</td>
+            </tr>
+            <tr>
+              <td>Alekhine</td>
+              <td>Lasker</td>
+              <td>QGD</td>
+              <td>New York</td>
+              <td>1924</td>
+              <td>389</td>
+            </tr>
+            <tr>
+              <td>Alekhine</td>
+              <td>Lasker</td>
+              <td>QGD</td>
+              <td>Zurich</td>
+              <td>1934</td>
+              <td>370+</td>
+            </tr>
+            <tr>
+              <td>Alekhine</td>
+              <td>Lasker</td>
+              <td>Scotch</td>
+              <td>Moscow</td>
+              <td>1914</td>
+              <td>128+</td>
+            </tr>
+            <tr>
+              <td>Alekhine</td>
+              <td>Marco</td>
+              <td>Philidor's</td>
+              <td>Stockholm</td>
+              <td>1912</td>
+              <td>162</td>
+            </tr>
+            <tr>
+              <td>Alekhine</td>
+              <td>Marshall</td>
+              <td>American</td>
+              <td>Baden-Baden</td>
+              <td>1925</td>
+              <td>412</td>
+            </tr>
+            <tr>
+              <td>Alekhine</td>
+              <td>Monticelli</td>
+              <td>Ruy Lopez</td>
+              <td>San Remo</td>
+              <td>1930</td>
+              <td>089</td>
+            </tr>
+            <tr>
+              <td>Alekhine</td>
+              <td>Nimzowitsch</td>
+              <td>French</td>
+              <td>San Remo</td>
+              <td>1930</td>
+              <td>249</td>
+            </tr>
+            <tr>
+              <td>Alekhine</td>
+              <td>Reshevsky</td>
+              <td>Alekhine's</td>
+              <td>Kemeri</td>
+              <td>1937</td>
+              <td>332</td>
+            </tr>
+            <tr>
+              <td>Alekhine</td>
+              <td>Rubinstein</td>
+              <td>Ruy Lopez</td>
+              <td>Vilna</td>
+              <td>1912</td>
+              <td>069</td>
+            </tr>
+            <tr>
+              <td>Alekhine</td>
+              <td>Schroeder</td>
+              <td>Centre Counter</td>
+              <td>New York</td>
+              <td>1924</td>
+              <td>320+</td>
+            </tr>
+            <tr>
+              <td>Alekhine</td>
+              <td>Silva da Rocha</td>
+              <td>Sicilian</td>
+              <td>Montevideo</td>
+              <td>1938</td>
+              <td>308</td>
+            </tr>
+            <tr>
+              <td>Alekhine</td>
+              <td>Sultan Khan</td>
+              <td>Queen's Indian</td>
+              <td>Prague</td>
+              <td>1931</td>
+              <td>453</td>
+            </tr>
+            <tr>
+              <td>Alekhine</td>
+              <td>Tartakower</td>
+              <td>Budapest</td>
+              <td>London</td>
+              <td>1932</td>
+              <td>480</td>
+            </tr>
+            <tr>
+              <td>Alekhine</td>
+              <td>Tartakower</td>
+              <td>Caro-Kann</td>
+              <td>Kecskemet</td>
+              <td>1927</td>
+              <td>279</td>
+            </tr>
+            <tr>
+              <td>Alekhine</td>
+              <td>Winter</td>
+              <td>Caro-Kann</td>
+              <td>London</td>
+              <td>1932</td>
+              <td>287</td>
+            </tr>
+            <tr>
+              <td>Alekhine</td>
+              <td>Yates</td>
+              <td>French</td>
+              <td>Hastings</td>
+              <td>1925</td>
+              <td>246</td>
+            </tr>
+            <tr>
+              <td>Alekhine</td>
+              <td>Yates</td>
+              <td>King's Indian</td>
+              <td>Carlsbad</td>
+              <td>1923</td>
+              <td>441</td>
+            </tr>
+            <tr>
+              <td>Alexander</td>
+              <td>Fine</td>
+              <td>English</td>
+              <td>Nottingham</td>
+              <td>1936</td>
+              <td>486</td>
+            </tr>
+            <tr>
+              <td>Alexander</td>
+              <td>Keres</td>
+              <td>Ruy Lopez</td>
+              <td>Hastings</td>
+              <td>1937</td>
+              <td>085</td>
+            </tr>
+            <tr>
+              <td>Alexander</td>
+              <td>Tylor</td>
+              <td>Evans</td>
+              <td>Hastings</td>
+              <td>1935</td>
+              <td>032</td>
+            </tr>
+            <tr>
+              <td>Anderssen</td>
+              <td>Dufresne</td>
+              <td>Evans</td>
+              <td>Berlin</td>
+              <td>1853</td>
+              <td>029+</td>
+            </tr>
+            <tr>
+              <td>Anderssen</td>
+              <td>Kieseritzky</td>
+              <td>King's Gambit</td>
+              <td>London</td>
+              <td>1851</td>
+              <td>227</td>
+            </tr>
+            <tr>
+              <td>Anderssen</td>
+              <td>Lowenthal</td>
+              <td>Petroff's</td>
+              <td>London</td>
+              <td>1851</td>
+              <td>166</td>
+            </tr>
+            <tr>
+              <td>Anderssen</td>
+              <td>Neumann</td>
+              <td>King's Gambit</td>
+              <td>Berlin</td>
+              <td>1865</td>
+              <td>222</td>
+            </tr>
+            <tr>
+              <td>Anderssen</td>
+              <td>Paulsen</td>
+              <td>Philidor's</td>
+              <td>Vienna</td>
+              <td>1873</td>
+              <td>156</td>
+            </tr>
+            <tr>
+              <td>Anderssen</td>
+              <td>Schallopp</td>
+              <td>K.G.Declined</td>
+              <td>Berlin</td>
+              <td>1864</td>
+              <td>237+</td>
+            </tr>
+            <tr>
+              <td>Anderssen</td>
+              <td>Steinitz</td>
+              <td>Ruy Lopez</td>
+              <td>Vienna</td>
+              <td>1873</td>
+              <td>093</td>
+            </tr>
+            <tr>
+              <td>Anderssen</td>
+              <td>Wyvil</td>
+              <td>Sicilian</td>
+              <td>London</td>
+              <td>1851</td>
+              <td>295</td>
+            </tr>
+            <tr>
+              <td>Anderssen</td>
+              <td>Wyvil</td>
+              <td>Sicilian</td>
+              <td>London</td>
+              <td>1851</td>
+              <td>296</td>
+            </tr>
+            <tr>
+              <td>Appel</td>
+              <td>Tartakower</td>
+              <td>Old Indian</td>
+              <td>Lodz</td>
+              <td>1938</td>
+              <td>462</td>
+            </tr>
+            <tr>
+              <td>Arnold</td>
+              <td>Bohm</td>
+              <td>Caro-Kann</td>
+              <td>Munich</td>
+              <td>1932</td>
+              <td>277+</td>
+            </tr>
+            <tr>
+              <td>Atkins</td>
+              <td>Barry</td>
+              <td>French</td>
+              <td>Cable Match</td>
+              <td>1907</td>
+              <td>256</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+
+    <div class="footer_row">
+      <div class="footer_column">
+        <ul>
+          <li class="footer_label">Site Map</li>
+          <li><a href="/">Home</a></li>
+          <li><a href="/blog/">Blog</a></li>
+          <li><a href="/gallery/">Images</a></li>
+          <li><a href="/chess/">Chess</a></li>
+          <li><a href="/sort/">Sort</a></li>
+          <li><a href="/contact/">Email</a></li>
+          <li><a href="/aboutme/">About Me</a></li>
+        </ul>
+      </div>
+      <div class="footer_column">
+        <ul>
+          <li class="footer_label">Tools</li>
+          <li><a href="https://code.visualstudio.com/">VS Code</a></li>
+          <li><a href="https://gulpjs.com/">Gulp</a></li>
+          <li><a href="https://github.com/">GitHub</a></li>
+          <li><a href="https://www.mozilla.org/en-US/firefox/new/">FireFox</a></li>
+          <li><a href="https://lokeshdhakar.com/projects/lightbox2/">Lightbox</a></li>
+          <li><a href="https://www.npmjs.com/package/lite-youtube-embed">lite-youtube-embed</a></li>
+        </ul>
+      </div>
+      <div class="footer_column">
+        <ul>
+          <li class="footer_label">Resources</li>
+          <li><a href="https://www.netlify.com/">Netlify</a></li>
+          <li><a href="https://www.toptal.com/designers/subtlepatterns/noisy-grid/">Noisy Grid</a></li>
+          <li><a href="https://www.toptal.com/designers/subtlepatterns/">Subtle Patterns</a></li>
+          <li><a href="https://material.io/resources/icons/?style=baseline">Material Icons</a></li>
+        </ul>
+      </div>
+      <div class="footer_column">
+        <ul>
+          <li class="footer_label">Media</li>
+          <li>
+            <a href="https://www.facebook.com/phil.lowder"><img src="/assets/media/png/facebook-logo.png" title="Visit my Facebook page" width="48" height="48" alt="FaceBook Logo" /></a>
+          </li>
+          <li>
+            <a href="https://github.com/philwlowder"><img src="/assets/media/png/github-logo.png" title="Visit my GitHub repositories" width="48" height="48" alt="GitHub Logo" /></a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/channel/UCv5iKKZheeq_AREt3fCrc9w"><img src="/assets/media/png/youtube_social_squircle_white.png" title="Visit my YouTube channel" width="48" height="48" alt="GitHub Logo" /></a>
+          </li>
+        </ul>
+      </div>
     </div>
-  </nav>
-  <main>
-    <div class="intro">
-      <p class="paragraph">This page will function differently depending on the size of the users display.</p>
-      <p class="paragraph">Displays wider than 768 pixels will see a demonstration of the Javascript plugin <a href="https://plugins.jquery.com/tablesorter/2.17.1/">TableSorter</a>. This example uses a partial list of games from the book <em>500 Master Games of Chess</em>.</p>
-      <p class="paragraph">Click on the headings and that column will be used to sort the table.</p>
-      <p class="paragraph">From the <a href="https://mottie.github.io/tablesorter/docs/index.html">TableSorter Docs</a>, "Sort multiple columns simultaneously by holding down the Shift key and clicking a second, third or even fourth column header!" Copyright (c) 2007 Christian Bach.</p>
-      <p class="paragraph">Displays below 768 pixels will lose the table sorter function. The data will be available as a list of records.</p>
-      <p class="paragraph">This is a quick demo of the columns & zebra widget with the "sortReset" option set to true (clicking on a sort header a third time will reset the sort)</p>
-    </div>
+    <script src="/assets/js/jquery-3.5.1.js"></script>
+    <script src="js/jquery.tablesorter.min.js"></script>
+    <script src="js/jquery.tablesorter.widgets.min.js"></script>
 
-    <div class="table_container">
-      <table class="rounded">
-        <thead>
-          <tr>
-            <th>White</th>
-            <th>Black</th>
-            <th>Opening</th>
-            <th>Site</th>
-            <th>Year</th>
-            <th>Game</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>1st fusiliers</td>
-            <td>Bombay</td>
-            <td>Giuoco Piano</td>
-            <td>Bombay</td>
-            <td>1853</td>
-            <td>013</td>
-          </tr>
-          <tr>
-            <td>Adams</td>
-            <td>Torre</td>
-            <td>Philidor's</td>
-            <td>New Orleans</td>
-            <td>1920</td>
-            <td>157</td>
-          </tr>
-          <tr>
-            <td>Ahues</td>
-            <td>Monticelli</td>
-            <td>Ruy Lopez</td>
-            <td>San Remo</td>
-            <td>1930</td>
-            <td>072+</td>
-          </tr>
-          <tr>
-            <td>Aitken</td>
-            <td>Reshevsky</td>
-            <td>Ruy Lopez</td>
-            <td>Stockholm</td>
-            <td>1937</td>
-            <td>082</td>
-          </tr>
-          <tr>
-            <td>Alatorzeff</td>
-            <td>Capablanca</td>
-            <td>QGD</td>
-            <td>Moscow</td>
-            <td>1935</td>
-            <td>378</td>
-          </tr>
-          <tr>
-            <td>Alatorzeff</td>
-            <td>Panov</td>
-            <td>Benoni</td>
-            <td>Moscow</td>
-            <td>1937</td>
-            <td>435</td>
-          </tr>
-          <tr>
-            <td>Alekhine</td>
-            <td>Blumich</td>
-            <td>King's Indian</td>
-            <td>Dresden</td>
-            <td>1926</td>
-            <td>448</td>
-          </tr>
-          <tr>
-            <td>Alekhine</td>
-            <td>Bogoljubow</td>
-            <td>Queen's Indian</td>
-            <td>Triberg</td>
-            <td>1921</td>
-            <td>452</td>
-          </tr>
-          <tr>
-            <td>Alekhine</td>
-            <td>Book</td>
-            <td>QGA</td>
-            <td>Margate</td>
-            <td>1938</td>
-            <td>358</td>
-          </tr>
-          <tr>
-            <td>Alekhine</td>
-            <td>Botvinnik</td>
-            <td>Sicilian</td>
-            <td>Notingham</td>
-            <td>1936</td>
-            <td>306</td>
-          </tr>
-          <tr>
-            <td>Alekhine</td>
-            <td>Capablanca</td>
-            <td>QGD</td>
-            <td>Match</td>
-            <td>1927</td>
-            <td>382</td>
-          </tr>
-          <tr>
-            <td>Alekhine</td>
-            <td>Desler</td>
-            <td>Sicilian</td>
-            <td>Hamburg</td>
-            <td>1930</td>
-            <td>308+</td>
-          </tr>
-          <tr>
-            <td>Alekhine</td>
-            <td>Drewitt</td>
-            <td>Reti</td>
-            <td>Portsmouth</td>
-            <td>1923</td>
-            <td>494+</td>
-          </tr>
-          <tr>
-            <td>Alekhine</td>
-            <td>Eliskases</td>
-            <td>Ruy Lopez</td>
-            <td>Podjebrad</td>
-            <td>1936</td>
-            <td>077</td>
-          </tr>
-          <tr>
-            <td>Alekhine</td>
-            <td>Euwe</td>
-            <td>French</td>
-            <td>Match</td>
-            <td>1935</td>
-            <td>250</td>
-          </tr>
-          <tr>
-            <td>Alekhine</td>
-            <td>Euwe</td>
-            <td>Ruy Lopez</td>
-            <td>Match</td>
-            <td>1935</td>
-            <td>072</td>
-          </tr>
-          <tr>
-            <td>Alekhine</td>
-            <td>Euwe</td>
-            <td>Slav</td>
-            <td>Match</td>
-            <td>1935</td>
-            <td>405</td>
-          </tr>
-          <tr>
-            <td>Alekhine</td>
-            <td>Euwe</td>
-            <td>Slav</td>
-            <td>Match</td>
-            <td>1937</td>
-            <td>411</td>
-          </tr>
-          <tr>
-            <td>Alekhine</td>
-            <td>Euwe</td>
-            <td>Vienna</td>
-            <td>The Hague</td>
-            <td>1921</td>
-            <td>202+</td>
-          </tr>
-          <tr>
-            <td>Alekhine</td>
-            <td>Fahrni</td>
-            <td>French</td>
-            <td>Mannheim</td>
-            <td>1914</td>
-            <td>258</td>
-          </tr>
-          <tr>
-            <td>Alekhine</td>
-            <td>Fine</td>
-            <td>Ruy Lopez</td>
-            <td>Hastings</td>
-            <td>1937</td>
-            <td>079</td>
-          </tr>
-          <tr>
-            <td>Alekhine</td>
-            <td>Koltanowski</td>
-            <td>Ruy Lopez</td>
-            <td>London</td>
-            <td>1932</td>
-            <td>106</td>
-          </tr>
-          <tr>
-            <td>Alekhine</td>
-            <td>Lasker</td>
-            <td>QGD</td>
-            <td>New York</td>
-            <td>1924</td>
-            <td>389</td>
-          </tr>
-          <tr>
-            <td>Alekhine</td>
-            <td>Lasker</td>
-            <td>QGD</td>
-            <td>Zurich</td>
-            <td>1934</td>
-            <td>370+</td>
-          </tr>
-          <tr>
-            <td>Alekhine</td>
-            <td>Lasker</td>
-            <td>Scotch</td>
-            <td>Moscow</td>
-            <td>1914</td>
-            <td>128+</td>
-          </tr>
-          <tr>
-            <td>Alekhine</td>
-            <td>Marco</td>
-            <td>Philidor's</td>
-            <td>Stockholm</td>
-            <td>1912</td>
-            <td>162</td>
-          </tr>
-          <tr>
-            <td>Alekhine</td>
-            <td>Marshall</td>
-            <td>American</td>
-            <td>Baden-Baden</td>
-            <td>1925</td>
-            <td>412</td>
-          </tr>
-          <tr>
-            <td>Alekhine</td>
-            <td>Monticelli</td>
-            <td>Ruy Lopez</td>
-            <td>San Remo</td>
-            <td>1930</td>
-            <td>089</td>
-          </tr>
-          <tr>
-            <td>Alekhine</td>
-            <td>Nimzowitsch</td>
-            <td>French</td>
-            <td>San Remo</td>
-            <td>1930</td>
-            <td>249</td>
-          </tr>
-          <tr>
-            <td>Alekhine</td>
-            <td>Reshevsky</td>
-            <td>Alekhine's</td>
-            <td>Kemeri</td>
-            <td>1937</td>
-            <td>332</td>
-          </tr>
-          <tr>
-            <td>Alekhine</td>
-            <td>Rubinstein</td>
-            <td>Ruy Lopez</td>
-            <td>Vilna</td>
-            <td>1912</td>
-            <td>069</td>
-          </tr>
-          <tr>
-            <td>Alekhine</td>
-            <td>Schroeder</td>
-            <td>Centre Counter</td>
-            <td>New York</td>
-            <td>1924</td>
-            <td>320+</td>
-          </tr>
-          <tr>
-            <td>Alekhine</td>
-            <td>Silva da Rocha</td>
-            <td>Sicilian</td>
-            <td>Montevideo</td>
-            <td>1938</td>
-            <td>308</td>
-          </tr>
-          <tr>
-            <td>Alekhine</td>
-            <td>Sultan Khan</td>
-            <td>Queen's Indian</td>
-            <td>Prague</td>
-            <td>1931</td>
-            <td>453</td>
-          </tr>
-          <tr>
-            <td>Alekhine</td>
-            <td>Tartakower</td>
-            <td>Budapest</td>
-            <td>London</td>
-            <td>1932</td>
-            <td>480</td>
-          </tr>
-          <tr>
-            <td>Alekhine</td>
-            <td>Tartakower</td>
-            <td>Caro-Kann</td>
-            <td>Kecskemet</td>
-            <td>1927</td>
-            <td>279</td>
-          </tr>
-          <tr>
-            <td>Alekhine</td>
-            <td>Winter</td>
-            <td>Caro-Kann</td>
-            <td>London</td>
-            <td>1932</td>
-            <td>287</td>
-          </tr>
-          <tr>
-            <td>Alekhine</td>
-            <td>Yates</td>
-            <td>French</td>
-            <td>Hastings</td>
-            <td>1925</td>
-            <td>246</td>
-          </tr>
-          <tr>
-            <td>Alekhine</td>
-            <td>Yates</td>
-            <td>King's Indian</td>
-            <td>Carlsbad</td>
-            <td>1923</td>
-            <td>441</td>
-          </tr>
-          <tr>
-            <td>Alexander</td>
-            <td>Fine</td>
-            <td>English</td>
-            <td>Nottingham</td>
-            <td>1936</td>
-            <td>486</td>
-          </tr>
-          <tr>
-            <td>Alexander</td>
-            <td>Keres</td>
-            <td>Ruy Lopez</td>
-            <td>Hastings</td>
-            <td>1937</td>
-            <td>085</td>
-          </tr>
-          <tr>
-            <td>Alexander</td>
-            <td>Tylor</td>
-            <td>Evans</td>
-            <td>Hastings</td>
-            <td>1935</td>
-            <td>032</td>
-          </tr>
-          <tr>
-            <td>Anderssen</td>
-            <td>Dufresne</td>
-            <td>Evans</td>
-            <td>Berlin</td>
-            <td>1853</td>
-            <td>029+</td>
-          </tr>
-          <tr>
-            <td>Anderssen</td>
-            <td>Kieseritzky</td>
-            <td>King's Gambit</td>
-            <td>London</td>
-            <td>1851</td>
-            <td>227</td>
-          </tr>
-          <tr>
-            <td>Anderssen</td>
-            <td>Lowenthal</td>
-            <td>Petroff's</td>
-            <td>London</td>
-            <td>1851</td>
-            <td>166</td>
-          </tr>
-          <tr>
-            <td>Anderssen</td>
-            <td>Neumann</td>
-            <td>King's Gambit</td>
-            <td>Berlin</td>
-            <td>1865</td>
-            <td>222</td>
-          </tr>
-          <tr>
-            <td>Anderssen</td>
-            <td>Paulsen</td>
-            <td>Philidor's</td>
-            <td>Vienna</td>
-            <td>1873</td>
-            <td>156</td>
-          </tr>
-          <tr>
-            <td>Anderssen</td>
-            <td>Schallopp</td>
-            <td>K.G.Declined</td>
-            <td>Berlin</td>
-            <td>1864</td>
-            <td>237+</td>
-          </tr>
-          <tr>
-            <td>Anderssen</td>
-            <td>Steinitz</td>
-            <td>Ruy Lopez</td>
-            <td>Vienna</td>
-            <td>1873</td>
-            <td>093</td>
-          </tr>
-          <tr>
-            <td>Anderssen</td>
-            <td>Wyvil</td>
-            <td>Sicilian</td>
-            <td>London</td>
-            <td>1851</td>
-            <td>295</td>
-          </tr>
-          <tr>
-            <td>Anderssen</td>
-            <td>Wyvil</td>
-            <td>Sicilian</td>
-            <td>London</td>
-            <td>1851</td>
-            <td>296</td>
-          </tr>
-          <tr>
-            <td>Appel</td>
-            <td>Tartakower</td>
-            <td>Old Indian</td>
-            <td>Lodz</td>
-            <td>1938</td>
-            <td>462</td>
-          </tr>
-          <tr>
-            <td>Arnold</td>
-            <td>Bohm</td>
-            <td>Caro-Kann</td>
-            <td>Munich</td>
-            <td>1932</td>
-            <td>277+</td>
-          </tr>
-          <tr>
-            <td>Atkins</td>
-            <td>Barry</td>
-            <td>French</td>
-            <td>Cable Match</td>
-            <td>1907</td>
-            <td>256</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </main>
-
-  <div class="footer_row">
-    <div class="footer_column">
-      <ul>
-        <li class="footer_label">Site Map</li>
-        <li><a href="/">Home</a></li>
-        <li><a href="/blog/">Blog</a></li>
-        <li><a href="/gallery/">Images</a></li>
-        <li><a href="/chess/">Chess</a></li>
-        <li><a href="/sort/">Sort</a></li>
-        <li><a href="/contact/">Email</a></li>
-        <li><a href="/aboutme/">About Me</a></li>
-      </ul>
-    </div>
-    <div class="footer_column">
-      <ul>
-        <li class="footer_label">Tools</li>
-        <li><a href="https://code.visualstudio.com/">VS Code</a></li>
-        <li><a href="https://gulpjs.com/">Gulp</a></li>
-        <li><a href="https://github.com/">GitHub</a></li>
-        <li><a href="https://www.mozilla.org/en-US/firefox/new/">FireFox</a></li>
-        <li><a href="https://lokeshdhakar.com/projects/lightbox2/">Lightbox</a></li>
-        <li><a href="https://www.npmjs.com/package/lite-youtube-embed">lite-youtube-embed</a></li>
-      </ul>
-    </div>
-    <div class="footer_column">
-      <ul>
-        <li class="footer_label">Resources</li>
-        <li><a href="https://www.netlify.com/">Netlify</a></li>
-        <li><a href="https://www.toptal.com/designers/subtlepatterns/noisy-grid/">Noisy Grid</a></li>
-        <li><a href="https://www.toptal.com/designers/subtlepatterns/">Subtle Patterns</a></li>
-        <li><a href="https://material.io/resources/icons/?style=baseline">Material Icons</a></li>
-      </ul>
-    </div>
-    <div class="footer_column">
-      <ul>
-        <li class="footer_label">Media</li>
-        <li>
-          <a href="https://www.facebook.com/phil.lowder"><img src="/assets/media/png/facebook-logo.png" title="Visit my Facebook page" width="48" height="48" alt="FaceBook Logo" /></a>
-        </li>
-        <li>
-          <a href="https://github.com/philwlowder"><img src="/assets/media/png/github-logo.png" title="Visit my GitHub repositories" width="48" height="48" alt="GitHub Logo" /></a>
-        </li>
-        <li>
-          <a href="https://www.youtube.com/channel/UCv5iKKZheeq_AREt3fCrc9w"><img src="/assets/media/png/youtube_social_squircle_white.png" title="Visit my YouTube channel" width="48" height="48" alt="GitHub Logo" /></a>
-        </li>
-      </ul>
-    </div>
-  </div>
-  <script src="/assets/js/jquery-3.6.0.js"></script>
-  <script src="js/jquery.tablesorter.min.js"></script>
-  <script src="js/jquery.tablesorter.widgets.min.js"></script>
-
-  <script>
-    $(function () {
-      $('table').tablesorter({
-        widgets: ['columns'],
-        usNumberFormat: false,
-        sortReset: true,
-        sortRestart: true,
+    <script>
+      $(function () {
+        $('table').tablesorter({
+          widgets: ['columns'],
+          usNumberFormat: false,
+          sortReset: true,
+          sortRestart: true,
+        });
       });
-    });
-  </script>
-</body>
-
+    </script>
+  </body>
 </html>

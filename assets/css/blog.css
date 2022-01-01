@@ -1,0 +1,37 @@
+.content_title {
+  margin-top: 25px;
+  margin-left: 0;
+}
+
+.archive_list {
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.article {
+  border: 0 solid black;
+  margin-bottom: 50px;
+  margin-right: 0;
+}
+
+.article_title {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.preface {
+  width: 80%;
+}
+
+.remove_indent p {
+  font-size: 16px;
+}
+
+.post p {
+  font-size: 100%;
+}
+
+.post {
+  margin-bottom: 25px;
+  width: 400px;
+}

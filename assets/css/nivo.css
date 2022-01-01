@@ -2,9 +2,9 @@
 /* Nivo Slider css */
 
 
-/* * jQuery Nivo Slider v3.2  * http://nivo.dev7studios.com  * 
+/* * jQuery Nivo Slider v3.2  * https://nivo.dev7studios.com  * 
  * Copyright 2012, Dev7studios  * Free to use and abuse under the MIT license. 
- * http://www.opensource.org/licenses/mit-license.php  */  /* The Nivo Slider styles */
+ * https://www.opensource.org/licenses/mit-license.php  */  /* The Nivo Slider styles */
  
  
  
@@ -53,8 +53,8 @@
  .nivo-controlNav a { cursor:pointer; } 
  .nivo-controlNav a.active { font-weight: 400; }
 
-/* Skin Name: Nivo Slider Light Theme Skin URI: http://nivo.dev7studios.com Description: A light skin for the Nivo Slider. 
-Version: 1.0 Author: Gilbert Pellegrom Author URI: http://dev7studios.com Supports Thumbs: true */ 
+/* Skin Name: Nivo Slider Light Theme Skin URI: https://nivo.dev7studios.com Description: A light skin for the Nivo Slider. 
+Version: 1.0 Author: Gilbert Pellegrom Author URI: https://dev7studios.com Supports Thumbs: true */ 
 
  .theme-light.slider-wrapper { background: #fff; padding: 0; }
  .theme-light .nivoSlider { position:relative; 	background:#fff url(../theme/light/loading.gif) no-repeat 50% 50%; 

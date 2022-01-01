@@ -71,7 +71,7 @@ Disallow: /
 User-agent: FAST-WebCrawler/3.x Multimedia
 Disallow: /
 
-User-agent: http://www.almaden.ibm.com/cs/crawler
+User-agent: https://www.almaden.ibm.com/cs/crawler
 Disallow: /
 
 User-agent: Uptimebot

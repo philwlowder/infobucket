@@ -1,156 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta name="description" content="count the words, pages, etc." />
 
-    <title>More C Programming</title>
+<head>
+  <meta name="description" content="count the words, pages, etc.">
 
-    <!-- Before it was infobucket it was a page of links that began 10/6/97 -->
+  <title>More C Programming</title>
 
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="pinterest" content="nopin" />
+  <!-- Before it was infobucket it was a page of links that began 10/6/97 -->
 
-    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'"> -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="pinterest" content="nopin">
 
-    <!-- https://realfavicongenerator.net/ -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-    <link rel="icon" href="/favicon.ico" />
-    <meta name="msapplication-TileColor" content="#da532c" />
-    <meta name="theme-color" content="#ffffff" />
+<!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'"> -->
 
-    <link rel="stylesheet" href="/assets/css/main.css" />
+<!-- https://realfavicongenerator.net/ -->
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="icon" href="/favicon.ico">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
 
-    <style>
-      figure {
-        max-width: 600px;
-      }
+<link rel="stylesheet" href="/assets/css/main.css">
 
-      main {
-        margin-left: 5px;
-      }
-    </style>
-  </head>
+  <style>
+    figure {
+      max-width: 600px;
+    }
 
-  <body>
-    <nav>
-      <div class="wrapnav">
+    main {
+      margin-left: 5px;
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <div class="wrapnav">
         <ul>
-          <li class="home">
-            <a href="/" class="home"><img src="/assets/media/svg/home.svg" width="42" height="42" alt="home icon" /></a>
-          </li>
-          <li><a href="/gallery/">Images</a></li>
-          <li><a href="/blog/">Blog</a></li>
+            <li class="home"><a href="/" class="home"><img src="/assets/media/svg/home.svg" width=42 height=42 alt="home icon"></a></li>
+            <li><a href="/gallery/">Images</a></li>
+            <li><a href="/blog/">Blog</a></li>
 
-          <li>
-            <a href="#" aria-haspopup="true">More</a>
-            <ul class="dropdown" aria-label="submenu">
-              <li><a href="/chess/">Chess</a></li>
-              <li><a href="/aboutme/">About</a></li>
-              <li><a href="/contact/">Contact</a></li>
-            </ul>
-          </li>
+            <li><a href="#" aria-haspopup="true">More</a>
+                <ul class="dropdown" aria-label="submenu">
+                    <li><a href="/chess/">Chess</a></li>
+                    <li><a href="/aboutme/">About</a></li>
+                    <li><a href="/contact/">Contact</a></li>
+                </ul>
+            </li>
         </ul>
-      </div>
-    </nav>
-
-    <main>
-      <a href="/blog/011-c-programming.html" class="btn_nav btn_small btn_blue">Previous</a>
-      <a href="/blog/index.html" class="btn_nav btn_small btn_blue">Index</a>
-      <a href="/blog/015-vps.html" class="btn_nav btn_small btn_blue">Next</a>
-
-      <article>
-        <h1>More C Programming</h1>
-        <p>May 30th, 2019</p>
-        <h2>Doc Info</h2>
-
-        <p>I met Scott Dittmer in the Sumter/Shaw Computer Club about 1989. He was a student at Sumter Tech. We shared a desire to learn all we could about PCs. At that time, I think we understood well each file of the computers OS. That ended with Windows.</p>
-
-        <p>When I bought a copy of QuickC, Scott had a program he wanted to create. Scott named it Docinfo. It counted pages, form feeds, lines, words and characters in a text file. Scott wrote <a href="docinfo.txt">Docinfo.txt</a> to explain the usage.</p>
-
-        <p>Below are three screen shots of the program running in <a href="https://www.dosbox.com/">DOSBox</a> on my PC a few days ago. Old MS-DOS programs will run on Windows using this virtual MS-DOS.</p>
-
-        <p>
-          The Project Gutenberg complete works of Mark Twain is a roughly 16 megabyte text file
-          <a href="http://www.gutenberg.org/cache/epub/3200/pg3200.txt">Twain Text</a>. Docinfo took just less than 3 minutes while running in DosBox on my computer. My 9 year old PC runs Win10 64bit with an Intel Core i5 650 @ 3.20GHz. I don't know if Docinfo could generate results faster with a faster PC. It seems fast enough.
-        </p>
-
-        <p>Install DOSBox and use <a href="/blog/docinfo.exe">Docinfo.exe</a>. You can download the <a href="/blog/docinfo.c">source code</a>, make alterations, and if you like, compile a new executable.</p>
-
-        <figure>
-          <img src="/blog/media/docinfo-01.jpg" height="504" width="741" alt="screen shot of opening scree" />
-          <figcaption>Opening Screen</figcaption>
-        </figure>
-
-        <figure>
-          <img src="/blog/media/docinfo-02.jpg" width="756" height="495" alt="screen shot of program after input" />
-          <figcaption>Screen after input and program running. It has a spinner to show it is active.</figcaption>
-        </figure>
-
-        <figure>
-          <img src="/blog/media/docinfo-03.jpg" width="756" height="495" alt="screen shot of program after input" />
-          <figcaption>Program finished.</figcaption>
-        </figure>
-      </article>
-    </main>
-    <!-- end main -->
-    <div class="footer_row">
-      <div class="footer_column">
-        <ul>
-          <li class="footer_label">Media</li>
-          <li>
-            <a href="https://www.facebook.com/phil.lowder"><img src="/assets/media/png/f_logo.png" title="Visit my Facebook page" width="52" height="52" alt="FaceBook Logo" /></a>
-          </li>
-          <li>
-            <a href="https://github.com/philwlowder"><img src="/assets/media/png/github-logo.png" title="Visit my GitHub repositories" width="48" height="48" alt="GitHub Logo" /></a>
-          </li>
-          <li>
-            <a href="https://www.youtube.com/@phil.lowder"><img src="/assets/media/png/youtube_social_squircle_white.png" title="Visit my YouTube channel" width="48" height="48" alt="GitHub Logo" /></a>
-          </li>
-          <li>
-            <a href="https://www.instagram.com/philw.lowder/"><img src="/assets/media/png/instagram_01.png" title="Visit my Instagram" width="48" height="48" alt="Instagram Logo" /></a>
-          </li>
-        </ul>
-      </div>
-
-      <div class="footer_column">
-        <ul>
-          <li class="footer_label">Tools</li>
-          <li><a href="https://code.visualstudio.com/">VS Code</a></li>
-          <li><a href="https://gulpjs.com/">Gulp</a></li>
-          <li><a href="https://github.com/">GitHub</a></li>
-          <li><a href="https://www.mozilla.org/en-US/firefox/new/">FireFox</a></li>
-          <li><a href="https://lokeshdhakar.com/projects/lightbox2/">Lightbox</a></li>
-        </ul>
-      </div>
-      <div class="footer_column">
-        <ul>
-          <li class="footer_label">Resources</li>
-          <li><a href="https://www.netlify.com/">Netlify</a></li>
-          <li><a href="https://www.toptal.com/designers/subtlepatterns/noisy-grid/">Noisy Grid</a></li>
-          <li><a href="https://www.toptal.com/designers/subtlepatterns/">Subtle Patterns</a></li>
-          <li><a href="https://material.io/resources/icons/?style=baseline">Material Icons</a></li>
-        </ul>
-      </div>
-
-      <div class="footer_column">
-        <ul>
-          <li class="footer_label">Site Map</li>
-          <li><a href="/">Home</a></li>
-          <li><a href="/blog/">Blog</a></li>
-          <li><a href="/gallery/">Images</a></li>
-          <li><a href="/chess/">Chess</a></li>
-          <li><a href="/contact/">Email</a></li>
-          <li><a href="/aboutme/">About Me</a></li>
-          <li><a href="/links/">Links</a></li>
-        </ul>
-      </div>
     </div>
-    <div class="sig">
-      <img src="/assets/media/gif/copyright.gif" width="200" height="34" alt="copyright Phil W. Lowder" class="center" />
-    </div>
-  </body>
+</nav>
+
+  <main>
+    <a href="/blog/011-c-programming.html" class="btn_nav btn_small btn_blue">Previous</a>
+    <a href="/blog/index.html" class="btn_nav btn_small btn_blue">Index</a>
+    <a href="/blog/015-vps.html" class="btn_nav btn_small btn_blue">Next</a>
+
+    <article>
+      <h1>More C Programming</h1>
+      <p>May 30th, 2019</p>
+      <h2>Doc Info</h2>
+
+      <p>I met Scott Dittmer in the Sumter/Shaw Computer Club about 1989. He was a student at Sumter Tech. We shared a desire to learn all we could about PCs. At that time, I think we understood well
+        each file of the computers OS. That ended with Windows.</p>
+
+      <p>When I bought a copy of QuickC, Scott had a program he wanted to create. Scott named it Docinfo. It counted pages, form feeds, lines, words and characters in a text file. Scott wrote <a
+           href="docinfo.txt">Docinfo.txt</a> to explain the usage.</p>
+
+      <p>Below are three screen shots of the program running in <a href="https://www.dosbox.com/">DOSBox</a> on my PC a few days ago. Old MS-DOS programs will run on Windows using this virtual MS-DOS.
+      </p>
+
+      <p>
+        The Project Gutenberg complete works of Mark Twain is a roughly 16 megabyte text file
+        <a href="http://www.gutenberg.org/cache/epub/3200/pg3200.txt">Twain Text</a>. Docinfo took just less than 3 minutes while running in DosBox on my computer. My 9 year old PC runs Win10 64bit
+        with an Intel Core i5 650 @ 3.20GHz. I don't know if Docinfo could generate results faster with a faster PC. It seems fast enough.
+      </p>
+
+      <p>Install DOSBox and use <a href="/blog/docinfo.exe">Docinfo.exe</a>. You can download the <a href="/blog/docinfo.c">source code</a>, make alterations, and if you like, compile a new
+        executable.</p>
+
+      <figure>
+        <img src="/blog/media/docinfo-01.jpg" height="504" width="741" alt="screen shot of opening scree">
+        <figcaption>Opening Screen</figcaption>
+      </figure>
+
+      <figure>
+        <img src="/blog/media/docinfo-02.jpg" width="756" height="495" alt="screen shot of program after input">
+        <figcaption>Screen after input and program running. It has a spinner to show it is active.</figcaption>
+      </figure>
+
+      <figure>
+        <img src="/blog/media/docinfo-03.jpg" width="756" height="495" alt="screen shot of program after input">
+        <figcaption>Program finished.</figcaption>
+      </figure>
+    </article>
+  </main>
+  <!-- end main -->
+  <div class="footer_row">
+   <div class="footer_column">
+      <ul>
+         <li class="footer_label">Media</li>
+         <li><a href="https://www.facebook.com/phil.lowder"><img src="/assets/media/png/f_logo.png" title="Visit my Facebook page" width="52" height="52" alt="FaceBook Logo"></a></li>
+         <li><a href="https://github.com/philwlowder"><img src="/assets/media/png/github-logo.png" title="Visit my GitHub repositories" width="48" height="48" alt="GitHub Logo"></a></li>
+         <li><a href="https://www.youtube.com/@phil.lowder"><img src="/assets/media/png/youtube_social_squircle_white.png" title="Visit my YouTube channel" width="48" height="48"
+                    alt="GitHub Logo"></a></li>
+         <li><a href="https://www.instagram.com/philw.lowder/"><img src="/assets/media/png/instagram_01.png" title="Visit my Instagram" width="48" height="48" alt="Instagram Logo"></a></li>
+      </ul>
+
+   </div>
+
+   <div class="footer_column">
+      <ul>
+         <li class="footer_label">Tools</li>
+         <li><a href="https://code.visualstudio.com/">VS Code</a></li>
+         <li><a href="https://gulpjs.com/">Gulp</a></li>
+         <li><a href="https://github.com/">GitHub</a></li>
+         <li><a href="https://www.mozilla.org/en-US/firefox/new/">FireFox</a></li>
+         <li><a href="https://lokeshdhakar.com/projects/lightbox2/">Lightbox</a></li>
+      </ul>
+   </div>
+   <div class="footer_column">
+      <ul>
+         <li class="footer_label">Resources</li>
+         <li><a href="https://www.netlify.com/">Netlify</a></li>
+         <li><a href="https://www.toptal.com/designers/subtlepatterns/noisy-grid/">Noisy Grid</a></li>
+         <li><a href="https://www.toptal.com/designers/subtlepatterns/">Subtle Patterns</a></li>
+         <li><a href="https://material.io/resources/icons/?style=baseline">Material Icons</a></li>
+      </ul>
+   </div>
+
+   <div class="footer_column">
+      <ul>
+         <li class="footer_label">Site Map </li>
+         <li><a href="/">Home</a></li>
+         <li><a href="/blog/">Blog</a></li>
+         <li><a href="/gallery/">Images</a></li>
+         <li><a href="/chess/">Chess</a></li>
+         <li><a href="/contact/">Email</a></li>
+         <li><a href="/aboutme/">About Me</a></li>
+         <li><a href="/links/">Links</a>
+
+      </ul>
+   </div>
+</div>
+  <div class="sig">
+    <img src="/assets/media/gif/copyright.gif" width="200" height="34" alt="copyright Phil W. Lowder" class="center">
+</div>
+</body>
+
 </html>

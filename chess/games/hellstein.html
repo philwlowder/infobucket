@@ -1,159 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta name="description" content="chess game " />
 
-    <title>Lowder vs Hellstein | Infobucket</title>
+<head>
+  <meta name="description" content="chess game ">
 
-    <!-- Before it was infobucket it was a page of links that began 10/6/97 -->
+  <title> Lowder vs Hellstein | Infobucket</title>
 
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="pinterest" content="nopin" />
+  <!-- Before it was infobucket it was a page of links that began 10/6/97 -->
 
-    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'"> -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="pinterest" content="nopin">
 
-    <!-- https://realfavicongenerator.net/ -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-    <link rel="icon" href="/favicon.ico" />
-    <meta name="msapplication-TileColor" content="#da532c" />
-    <meta name="theme-color" content="#ffffff" />
+<!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'"> -->
 
-    <link rel="stylesheet" href="/assets/css/main.css" />
+<!-- https://realfavicongenerator.net/ -->
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="icon" href="/favicon.ico">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
 
-    <!--  pgnviewer.js and usage can be found at Chess Tempo 
+<link rel="stylesheet" href="/assets/css/main.css">
+
+  <!--  pgnviewer.js and usage can be found at Chess Tempo
       https://old.chesstempo.com/pgn-usage.html  -->
 
-    <script type="text/javascript" src="pgnyui.js"></script>
-    <script type="text/javascript" src="pgnviewer.js"></script>
+  <script type="text/javascript" src="pgnyui.js"></script>
+  <script type="text/javascript" src="pgnviewer.js"></script>
 
-    <link type="text/css" rel="stylesheet" href="moves.css" />
-  </head>
+  <link type="text/css" rel="stylesheet" href="moves.css">
+</head>
 
-  <body>
-    <nav>
-      <div class="wrapnav">
+<body>
+  <nav>
+    <div class="wrapnav">
         <ul>
-          <li class="home">
-            <a href="/" class="home"><img src="/assets/media/svg/home.svg" width="42" height="42" alt="home icon" /></a>
-          </li>
-          <li><a href="/gallery/">Images</a></li>
-          <li><a href="/blog/">Blog</a></li>
+            <li class="home"><a href="/" class="home"><img src="/assets/media/svg/home.svg" width=42 height=42 alt="home icon"></a></li>
+            <li><a href="/gallery/">Images</a></li>
+            <li><a href="/blog/">Blog</a></li>
 
-          <li>
-            <a href="#" aria-haspopup="true">More</a>
-            <ul class="dropdown" aria-label="submenu">
-              <li><a href="/chess/">Chess</a></li>
-              <li><a href="/aboutme/">About</a></li>
-              <li><a href="/contact/">Contact</a></li>
-            </ul>
-          </li>
+            <li><a href="#" aria-haspopup="true">More</a>
+                <ul class="dropdown" aria-label="submenu">
+                    <li><a href="/chess/">Chess</a></li>
+                    <li><a href="/aboutme/">About</a></li>
+                    <li><a href="/contact/">Contact</a></li>
+                </ul>
+            </li>
         </ul>
-      </div>
-    </nav>
-
-    <main>
-      <article>
-        <div id="site_title">
-          <h2 class="lspace_top">Lowder-Hellstein</h2>
-          <p>Game viewer by <a href="https://chesstempo.com/">ChessTempo</a></p>
-        </div>
-
-        <div id="eventdata">
-          [Event "Wilmington I"]<br />
-          [Site "Wilmington, NC"]<br />
-          [Date "1987.08.08"]<br />
-          [Round "04"]<br />
-          [White "Lowder, Phil"]<br />
-          [Black "Hellstein, Ulf"]<br />
-          [Result "1-0"]<br />
-          [WhiteUSCF "1776"]<br />
-          [BlackUSCF "1824"]<br />
-          [ECO "C44"]<br />
-        </div>
-
-        <div id="chess-container">
-          <script>
-            new PgnViewer({
-              boardName: 'chess',
-              pgnString: '1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Bc4 Bc5 5. O-O Nge7 6. c3 d3 7. b4 Bb6 8. a4 a5 9. b5 Nb8 10. Qb3 O-O 11. Ng5 d5 12. exd5 Qd6 13. Ba3 Qe5 14. Nf3 Qf6 15. Nbd2 Bf5 16. Rfe1 Re8 17. Bxe7 Rxe7 18. Rxe7 Qxe7 19. Re1 Qf8 20. d6 Bg6 21. Ng5 Nd7 22. Re7 Nc5 23. Qa2 h6 24. Bxf7+ Kh8 25. Bxg6 hxg5 26. Qd5 Qf6 27. Be8 cxd6 28. Rf7 Qe5 29. Rf8+ Kh7 30. Qg8+ Kh6 31. Qh8# 1-0',
-              pieceSize: 40,
-              pieceSet: 'merida',
-              pauseBetweenMoves: 800,
-              boardImagePath: 'https://infobucket.com/chess',
-              showCoordinates: true,
-              addVersion: true,
-              autoScrollMoves: true,
-              newlineForEachMainMove: false,
-              showBracketsOnVariation: false,
-              movesFormat: 'main_on_own_line',
-              moveAnimationLength: 0.1,
-              pollPGNMilliseconds: 90000,
-            });
-          </script>
-        </div>
-
-        <div id="chess-moves"></div>
-      </article>
-    </main>
-
-    <div class="footer_row">
-      <div class="footer_column">
-        <ul>
-          <li class="footer_label">Media</li>
-          <li>
-            <a href="https://www.facebook.com/phil.lowder"><img src="/assets/media/png/f_logo.png" title="Visit my Facebook page" width="52" height="52" alt="FaceBook Logo" /></a>
-          </li>
-          <li>
-            <a href="https://github.com/philwlowder"><img src="/assets/media/png/github-logo.png" title="Visit my GitHub repositories" width="48" height="48" alt="GitHub Logo" /></a>
-          </li>
-          <li>
-            <a href="https://www.youtube.com/@phil.lowder"><img src="/assets/media/png/youtube_social_squircle_white.png" title="Visit my YouTube channel" width="48" height="48" alt="GitHub Logo" /></a>
-          </li>
-          <li>
-            <a href="https://www.instagram.com/philw.lowder/"><img src="/assets/media/png/instagram_01.png" title="Visit my Instagram" width="48" height="48" alt="Instagram Logo" /></a>
-          </li>
-        </ul>
-      </div>
-
-      <div class="footer_column">
-        <ul>
-          <li class="footer_label">Tools</li>
-          <li><a href="https://code.visualstudio.com/">VS Code</a></li>
-          <li><a href="https://gulpjs.com/">Gulp</a></li>
-          <li><a href="https://github.com/">GitHub</a></li>
-          <li><a href="https://www.mozilla.org/en-US/firefox/new/">FireFox</a></li>
-          <li><a href="https://lokeshdhakar.com/projects/lightbox2/">Lightbox</a></li>
-        </ul>
-      </div>
-      <div class="footer_column">
-        <ul>
-          <li class="footer_label">Resources</li>
-          <li><a href="https://www.netlify.com/">Netlify</a></li>
-          <li><a href="https://www.toptal.com/designers/subtlepatterns/noisy-grid/">Noisy Grid</a></li>
-          <li><a href="https://www.toptal.com/designers/subtlepatterns/">Subtle Patterns</a></li>
-          <li><a href="https://material.io/resources/icons/?style=baseline">Material Icons</a></li>
-        </ul>
-      </div>
-
-      <div class="footer_column">
-        <ul>
-          <li class="footer_label">Site Map</li>
-          <li><a href="/">Home</a></li>
-          <li><a href="/blog/">Blog</a></li>
-          <li><a href="/gallery/">Images</a></li>
-          <li><a href="/chess/">Chess</a></li>
-          <li><a href="/contact/">Email</a></li>
-          <li><a href="/aboutme/">About Me</a></li>
-          <li><a href="/links/">Links</a></li>
-        </ul>
-      </div>
     </div>
-    <div class="sig">
-      <img src="/assets/media/gif/copyright.gif" width="200" height="34" alt="copyright Phil W. Lowder" class="center" />
-    </div>
-  </body>
+</nav>
+
+  <main>
+    <article>
+      <div id="site_title">
+        <h2 class="lspace_top">Lowder-Hellstein</h2>
+        <p>Game viewer by <a href="https://chesstempo.com/">ChessTempo</a></p>
+      </div>
+
+      <div id="eventdata">
+        [Event "Wilmington I"]<br>
+        [Site "Wilmington, NC"]<br>
+        [Date "1987.08.08"]<br>
+        [Round "04"]<br>
+        [White "Lowder, Phil"]<br>
+        [Black "Hellstein, Ulf"]<br>
+        [Result "1-0"]<br>
+        [WhiteUSCF "1776"]<br>
+        [BlackUSCF "1824"]<br>
+        [ECO "C44"]<br>
+      </div>
+
+      <div id="chess-container">
+        <script>
+          new PgnViewer({
+            boardName: 'chess',
+            pgnString: '1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Bc4 Bc5 5. O-O Nge7 6. c3 d3 7. b4 Bb6 8. a4 a5 9. b5 Nb8 10. Qb3 O-O 11. Ng5 d5 12. exd5 Qd6 13. Ba3 Qe5 14. Nf3 Qf6 15. Nbd2 Bf5 16. Rfe1 Re8 17. Bxe7 Rxe7 18. Rxe7 Qxe7 19. Re1 Qf8 20. d6 Bg6 21. Ng5 Nd7 22. Re7 Nc5 23. Qa2 h6 24. Bxf7+ Kh8 25. Bxg6 hxg5 26. Qd5 Qf6 27. Be8 cxd6 28. Rf7 Qe5 29. Rf8+ Kh7 30. Qg8+ Kh6 31. Qh8# 1-0',
+            pieceSize: 40,
+            pieceSet: 'merida',
+            pauseBetweenMoves: 800,
+            boardImagePath: 'https://infobucket.com/chess',
+            showCoordinates: true,
+            addVersion: true,
+            autoScrollMoves: true,
+            newlineForEachMainMove: false,
+            showBracketsOnVariation: false,
+            movesFormat: 'main_on_own_line',
+            moveAnimationLength: 0.1,
+            pollPGNMilliseconds: 90000,
+          });
+        </script>
+      </div>
+
+      <div id="chess-moves"></div>
+    </article>
+  </main>
+
+  <div class="footer_row">
+   <div class="footer_column">
+      <ul>
+         <li class="footer_label">Media</li>
+         <li><a href="https://www.facebook.com/phil.lowder"><img src="/assets/media/png/f_logo.png" title="Visit my Facebook page" width="52" height="52" alt="FaceBook Logo"></a></li>
+         <li><a href="https://github.com/philwlowder"><img src="/assets/media/png/github-logo.png" title="Visit my GitHub repositories" width="48" height="48" alt="GitHub Logo"></a></li>
+         <li><a href="https://www.youtube.com/@phil.lowder"><img src="/assets/media/png/youtube_social_squircle_white.png" title="Visit my YouTube channel" width="48" height="48"
+                    alt="GitHub Logo"></a></li>
+         <li><a href="https://www.instagram.com/philw.lowder/"><img src="/assets/media/png/instagram_01.png" title="Visit my Instagram" width="48" height="48" alt="Instagram Logo"></a></li>
+      </ul>
+
+   </div>
+
+   <div class="footer_column">
+      <ul>
+         <li class="footer_label">Tools</li>
+         <li><a href="https://code.visualstudio.com/">VS Code</a></li>
+         <li><a href="https://gulpjs.com/">Gulp</a></li>
+         <li><a href="https://github.com/">GitHub</a></li>
+         <li><a href="https://www.mozilla.org/en-US/firefox/new/">FireFox</a></li>
+         <li><a href="https://lokeshdhakar.com/projects/lightbox2/">Lightbox</a></li>
+      </ul>
+   </div>
+   <div class="footer_column">
+      <ul>
+         <li class="footer_label">Resources</li>
+         <li><a href="https://www.netlify.com/">Netlify</a></li>
+         <li><a href="https://www.toptal.com/designers/subtlepatterns/noisy-grid/">Noisy Grid</a></li>
+         <li><a href="https://www.toptal.com/designers/subtlepatterns/">Subtle Patterns</a></li>
+         <li><a href="https://material.io/resources/icons/?style=baseline">Material Icons</a></li>
+      </ul>
+   </div>
+
+   <div class="footer_column">
+      <ul>
+         <li class="footer_label">Site Map </li>
+         <li><a href="/">Home</a></li>
+         <li><a href="/blog/">Blog</a></li>
+         <li><a href="/gallery/">Images</a></li>
+         <li><a href="/chess/">Chess</a></li>
+         <li><a href="/contact/">Email</a></li>
+         <li><a href="/aboutme/">About Me</a></li>
+         <li><a href="/links/">Links</a>
+
+      </ul>
+   </div>
+</div>
+  <div class="sig">
+    <img src="/assets/media/gif/copyright.gif" width="200" height="34" alt="copyright Phil W. Lowder" class="center">
+</div>
+</body>
+
 </html>

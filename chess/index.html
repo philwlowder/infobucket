@@ -1,185 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta name="description" content="this page provides an email address" />
-    <title>Chess | Infobucket</title>
 
-    <!-- Before it was infobucket it was a page of links that began 10/6/97 -->
+<head>
+  <meta name="description" content="this page provides an email address">
+  <title>Chess | Infobucket</title>
 
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="pinterest" content="nopin" />
+  <!-- Before it was infobucket it was a page of links that began 10/6/97 -->
 
-    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'"> -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="pinterest" content="nopin">
 
-    <!-- https://realfavicongenerator.net/ -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-    <link rel="icon" href="/favicon.ico" />
-    <meta name="msapplication-TileColor" content="#da532c" />
-    <meta name="theme-color" content="#ffffff" />
+<!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'"> -->
 
-    <link rel="stylesheet" href="/assets/css/main.css" />
+<!-- https://realfavicongenerator.net/ -->
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="icon" href="/favicon.ico">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
 
-    <script src="pgnyui.js"></script>
-    <script src="pgnviewer.js"></script>
+<link rel="stylesheet" href="/assets/css/main.css">
 
-    <link rel="icon" type="image/x-icon" href="../favicon.ico" />
-    <link type="text/css" rel="stylesheet" href="chess.css" />
+  <script src="pgnyui.js"></script>
+  <script src="pgnviewer.js"></script>
 
-    <style>
-      .chess_li {
-        font-size: 18px;
-        font-weight: 400;
-        margin-left: 10px;
-        margin-top: 5px;
-        margin-bottom: 10px;
-        padding: 0;
-        list-style-position: inside;
-        list-style-type: square;
-      }
+  <link rel="icon" type="image/x-icon" href="../favicon.ico">
+  <link type="text/css" rel="stylesheet" href="chess.css">
 
-      .chess_ul {
-        font-size: 16px;
-        margin-bottom: 20px;
-      }
-    </style>
-  </head>
+  <style>
+    .chess_li {
+      font-size: 18px;
+      font-weight: 400;
+      margin-left: 10px;
+      margin-top: 5px;
+      margin-bottom: 10px;
+      padding: 0;
+      list-style-position: inside;
+      list-style-type: square;
+    }
 
-  <body>
-    <nav>
-      <div class="wrapnav">
+    .chess_ul {
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <div class="wrapnav">
         <ul>
-          <li class="home">
-            <a href="/" class="home"><img src="/assets/media/svg/home.svg" width="42" height="42" alt="home icon" /></a>
-          </li>
-          <li><a href="/gallery/">Images</a></li>
-          <li><a href="/blog/">Blog</a></li>
+            <li class="home"><a href="/" class="home"><img src="/assets/media/svg/home.svg" width=42 height=42 alt="home icon"></a></li>
+            <li><a href="/gallery/">Images</a></li>
+            <li><a href="/blog/">Blog</a></li>
 
-          <li>
-            <a href="#" aria-haspopup="true">More</a>
-            <ul class="dropdown" aria-label="submenu">
-              <li><a href="/chess/">Chess</a></li>
-              <li><a href="/aboutme/">About</a></li>
-              <li><a href="/contact/">Contact</a></li>
-            </ul>
-          </li>
+            <li><a href="#" aria-haspopup="true">More</a>
+                <ul class="dropdown" aria-label="submenu">
+                    <li><a href="/chess/">Chess</a></li>
+                    <li><a href="/aboutme/">About</a></li>
+                    <li><a href="/contact/">Contact</a></li>
+                </ul>
+            </li>
         </ul>
-      </div>
-    </nav>
+    </div>
+</nav>
 
-    <main>
-      <div id="site_title">
-        <h1>Stanly County Chess</h1>
-      </div>
-      <!-- This webpage began 10/6/97 -->
+  <main>
 
-      <div id="demo-container">
-        <script>
-          new PgnViewer({
-            boardName: 'demo',
-            pgnFile: 'fensmith.pgn',
-            pieceSize: 35,
-            pieceSet: 'merida',
-            pauseBetweenMoves: 800,
-            boardImagePath: 'https://infobucket.com/chess',
-            showCoordinates: true,
-            addVersion: true,
-            autoScrollMoves: true,
-            newlineForEachMainMove: false,
-            showBracketsOnVariation: false,
-            movesFormat: 'main_on_own_line',
-            moveAnimationLength: 0.1,
-          });
-        </script>
-      </div>
+    <div id="site_title">
+      <h1>Stanly County Chess</h1>
+    </div>
+    <!-- This webpage began 10/6/97 -->
 
-      <p class="paragraph">Black to move, from <a href="/chess/games/smith.html">Smith-Lowder</a>. Chess viewer by <a href="https://chesstempo.com/">ChessTempo</a>.</p>
+    <div id="demo-container">
+      <script>
+        new PgnViewer({
+          boardName: 'demo',
+          pgnFile: 'fensmith.pgn',
+          pieceSize: 35,
+          pieceSet: 'merida',
+          pauseBetweenMoves: 800,
+          boardImagePath: 'https://infobucket.com/chess',
+          showCoordinates: true,
+          addVersion: true,
+          autoScrollMoves: true,
+          newlineForEachMainMove: false,
+          showBracketsOnVariation: false,
+          movesFormat: 'main_on_own_line',
+          moveAnimationLength: 0.1,
+        });
+      </script>
+    </div>
 
-      <p class="paragraph">To find out how you <a href="https://www.uschess.org/datapage/top-players2.php?state=NC&limit=&maxcnt=200&players=C&rtgsys=R&current=C">rate</a>, play in a <a href="https://www.uschess.org">USCF</a> tournament. Anyone can play and get a <a href="https://www.uschess.org/msa/MbrDtlMain.php?12333730">rating</a>. The only requirement is an entry fee.</p>
+    <p class="paragraph">Black to move, from <a href="/chess/games/smith.html">Smith-Lowder</a>.
+      Chess viewer by <a href="https://chesstempo.com/">ChessTempo</a>.</p>
 
-      <ul class="chess_ul">
-        <li class="chess_li"><a href="https://ncchess.org">NC Chess Association</a></li>
-        <li class="chess_li"><a href="https://www.scchess.org">SC Chess Association</a></li>
-        <li class="chess_li"><a href="https://en.chessbase.com/">ChessBase </a></li>
-        <li class="chess_li"><a href="https://theweekinchess.com/">The Week In Chess</a></li>
+    <p class="paragraph">To find out how you <a href="https://www.uschess.org/datapage/top-players2.php?state=NC&limit=&maxcnt=200&players=C&rtgsys=R&current=C">rate</a>,
+      play in a <a href="https://www.uschess.org">USCF</a> tournament. Anyone can play and get a <a href="https://www.uschess.org/msa/MbrDtlMain.php?12333730">rating</a>.
+      The only requirement is an entry fee.
+    </p>
+
+    <ul class="chess_ul">
+      <li class="chess_li"><a href="https://ncchess.org">NC Chess Association</a></li>
+      <li class="chess_li"><a href="https://www.scchess.org">SC Chess Association</a></li>
+      <li class="chess_li"><a href="https://en.chessbase.com/">ChessBase </a></li>
+      <li class="chess_li"><a href="https://theweekinchess.com/">The Week In Chess</a></li>
+    </ul>
+
+    <p class="paragraph"><a href="https://www.uschess.org/">USCF</a> tournament games.</p>
+
+    <ul class="chess_ul">
+      <li class="chess_li"><a href="/chess/games/hayes.html">Hayes-Lowder</a></li>
+      <li class="chess_li"><a href="/chess/games/keller.html">Lowder-Keller</a></li>
+      <li class="chess_li"><a href="/chess/games/daniel.html">Daniel-Lowder</a></li>
+      <li class="chess_li"><a href="/chess/games/michael.html">Lowder-Michael</a></li>
+      <li class="chess_li"><a href="/chess/games/obryant.html">O'Bryant-Lowder</a></li>
+      <li class="chess_li"><a href="/chess/games/smith.html">Smith-Lowder</a></li>
+      <li class="chess_li"><a href="/chess/games/hauser.html">Lowder-Hauser</a></li>
+      <li class="chess_li"><a href="/chess/games/vicary.html">Vicary-Lowder</a></li>
+      <li class="chess_li"><a href="/chess/games/lindsay.html">Lowder-Lindsay</a></li>
+      <li class="chess_li"><a href="/chess/games/bridges.html">Lowder-Bridges</a></li>
+      <li class="chess_li"><a href="/chess/games/frady.html">Lowder-Frady</a></li>
+      <li class="chess_li"><a href="/chess/games/hellstein.html">Lowder-Hellstein</a></li>
+      <li class="chess_li"><a href="/chess/games/weber.html">Lowder-Weber</a></li>
+    </ul>
+
+
+  </main>
+
+  <div class="footer_row">
+   <div class="footer_column">
+      <ul>
+         <li class="footer_label">Media</li>
+         <li><a href="https://www.facebook.com/phil.lowder"><img src="/assets/media/png/f_logo.png" title="Visit my Facebook page" width="52" height="52" alt="FaceBook Logo"></a></li>
+         <li><a href="https://github.com/philwlowder"><img src="/assets/media/png/github-logo.png" title="Visit my GitHub repositories" width="48" height="48" alt="GitHub Logo"></a></li>
+         <li><a href="https://www.youtube.com/@phil.lowder"><img src="/assets/media/png/youtube_social_squircle_white.png" title="Visit my YouTube channel" width="48" height="48"
+                    alt="GitHub Logo"></a></li>
+         <li><a href="https://www.instagram.com/philw.lowder/"><img src="/assets/media/png/instagram_01.png" title="Visit my Instagram" width="48" height="48" alt="Instagram Logo"></a></li>
       </ul>
 
-      <p class="paragraph"><a href="https://www.uschess.org/">USCF</a> tournament games.</p>
+   </div>
 
-      <ul class="chess_ul">
-        <li class="chess_li"><a href="/chess/games/hayes.html">Hayes-Lowder</a></li>
-        <li class="chess_li"><a href="/chess/games/keller.html">Lowder-Keller</a></li>
-        <li class="chess_li"><a href="/chess/games/daniel.html">Daniel-Lowder</a></li>
-        <li class="chess_li"><a href="/chess/games/michael.html">Lowder-Michael</a></li>
-        <li class="chess_li"><a href="/chess/games/obryant.html">O'Bryant-Lowder</a></li>
-        <li class="chess_li"><a href="/chess/games/smith.html">Smith-Lowder</a></li>
-        <li class="chess_li"><a href="/chess/games/hauser.html">Lowder-Hauser</a></li>
-        <li class="chess_li"><a href="/chess/games/vicary.html">Vicary-Lowder</a></li>
-        <li class="chess_li"><a href="/chess/games/lindsay.html">Lowder-Lindsay</a></li>
-        <li class="chess_li"><a href="/chess/games/bridges.html">Lowder-Bridges</a></li>
-        <li class="chess_li"><a href="/chess/games/frady.html">Lowder-Frady</a></li>
-        <li class="chess_li"><a href="/chess/games/hellstein.html">Lowder-Hellstein</a></li>
-        <li class="chess_li"><a href="/chess/games/weber.html">Lowder-Weber</a></li>
+   <div class="footer_column">
+      <ul>
+         <li class="footer_label">Tools</li>
+         <li><a href="https://code.visualstudio.com/">VS Code</a></li>
+         <li><a href="https://gulpjs.com/">Gulp</a></li>
+         <li><a href="https://github.com/">GitHub</a></li>
+         <li><a href="https://www.mozilla.org/en-US/firefox/new/">FireFox</a></li>
+         <li><a href="https://lokeshdhakar.com/projects/lightbox2/">Lightbox</a></li>
       </ul>
-    </main>
+   </div>
+   <div class="footer_column">
+      <ul>
+         <li class="footer_label">Resources</li>
+         <li><a href="https://www.netlify.com/">Netlify</a></li>
+         <li><a href="https://www.toptal.com/designers/subtlepatterns/noisy-grid/">Noisy Grid</a></li>
+         <li><a href="https://www.toptal.com/designers/subtlepatterns/">Subtle Patterns</a></li>
+         <li><a href="https://material.io/resources/icons/?style=baseline">Material Icons</a></li>
+      </ul>
+   </div>
 
-    <div class="footer_row">
-      <div class="footer_column">
-        <ul>
-          <li class="footer_label">Media</li>
-          <li>
-            <a href="https://www.facebook.com/phil.lowder"><img src="/assets/media/png/f_logo.png" title="Visit my Facebook page" width="52" height="52" alt="FaceBook Logo" /></a>
-          </li>
-          <li>
-            <a href="https://github.com/philwlowder"><img src="/assets/media/png/github-logo.png" title="Visit my GitHub repositories" width="48" height="48" alt="GitHub Logo" /></a>
-          </li>
-          <li>
-            <a href="https://www.youtube.com/@phil.lowder"><img src="/assets/media/png/youtube_social_squircle_white.png" title="Visit my YouTube channel" width="48" height="48" alt="GitHub Logo" /></a>
-          </li>
-          <li>
-            <a href="https://www.instagram.com/philw.lowder/"><img src="/assets/media/png/instagram_01.png" title="Visit my Instagram" width="48" height="48" alt="Instagram Logo" /></a>
-          </li>
-        </ul>
-      </div>
+   <div class="footer_column">
+      <ul>
+         <li class="footer_label">Site Map </li>
+         <li><a href="/">Home</a></li>
+         <li><a href="/blog/">Blog</a></li>
+         <li><a href="/gallery/">Images</a></li>
+         <li><a href="/chess/">Chess</a></li>
+         <li><a href="/contact/">Email</a></li>
+         <li><a href="/aboutme/">About Me</a></li>
+         <li><a href="/links/">Links</a>
 
-      <div class="footer_column">
-        <ul>
-          <li class="footer_label">Tools</li>
-          <li><a href="https://code.visualstudio.com/">VS Code</a></li>
-          <li><a href="https://gulpjs.com/">Gulp</a></li>
-          <li><a href="https://github.com/">GitHub</a></li>
-          <li><a href="https://www.mozilla.org/en-US/firefox/new/">FireFox</a></li>
-          <li><a href="https://lokeshdhakar.com/projects/lightbox2/">Lightbox</a></li>
-        </ul>
-      </div>
-      <div class="footer_column">
-        <ul>
-          <li class="footer_label">Resources</li>
-          <li><a href="https://www.netlify.com/">Netlify</a></li>
-          <li><a href="https://www.toptal.com/designers/subtlepatterns/noisy-grid/">Noisy Grid</a></li>
-          <li><a href="https://www.toptal.com/designers/subtlepatterns/">Subtle Patterns</a></li>
-          <li><a href="https://material.io/resources/icons/?style=baseline">Material Icons</a></li>
-        </ul>
-      </div>
+      </ul>
+   </div>
+</div>
+  <div class="sig">
+    <img src="/assets/media/gif/copyright.gif" width="200" height="34" alt="copyright Phil W. Lowder" class="center">
+</div>
+</body>
 
-      <div class="footer_column">
-        <ul>
-          <li class="footer_label">Site Map</li>
-          <li><a href="/">Home</a></li>
-          <li><a href="/blog/">Blog</a></li>
-          <li><a href="/gallery/">Images</a></li>
-          <li><a href="/chess/">Chess</a></li>
-          <li><a href="/contact/">Email</a></li>
-          <li><a href="/aboutme/">About Me</a></li>
-          <li><a href="/links/">Links</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="sig">
-      <img src="/assets/media/gif/copyright.gif" width="200" height="34" alt="copyright Phil W. Lowder" class="center" />
-    </div>
-  </body>
 </html>

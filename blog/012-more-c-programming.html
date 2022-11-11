@@ -2,6 +2,18 @@
 <html lang="en">
 
 <head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FSWZSZMX28"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-FSWZSZMX28');
+</script>
+
+
   <meta name="description" content="count the words, pages, etc.">
 
   <title>More C Programming</title>
@@ -34,7 +46,10 @@
       margin-left: 5px;
     }
   </style>
+
 </head>
+
+
 
 <body>
   <nav>
@@ -65,19 +80,24 @@
       <p>May 30th, 2019</p>
       <h2>Doc Info</h2>
 
-      <p>I met Scott Dittmer in the Sumter/Shaw Computer Club about 1989. He was a student at Sumter Tech. We shared a desire to learn all we could about PCs. At that time, I think we understood well
+      <p>I met Scott Dittmer in the Sumter/Shaw Computer Club about 1989. He was a student at Sumter Tech. We shared a
+        desire to learn all we could about PCs. At that time, I think we understood well
         each file of the computers OS. That ended with Windows.</p>
 
-      <p>When I bought a copy of QuickC, Scott had a program he wanted to create. Scott named it Docinfo. It counted pages, form feeds, lines, words and characters in a text file. Scott wrote <a
-           href="docinfo.txt">Docinfo.txt</a> to explain the usage.</p>
+      <p>When I bought a copy of QuickC, Scott had a program he wanted to create. Scott named it Docinfo. It counted
+        pages, form feeds, lines, words and characters in a text file. Scott wrote <a href="docinfo.txt">Docinfo.txt</a>
+        to explain the usage.</p>
 
-      <p>Below are three screen shots of the program running in <a href="https://www.dosbox.com/">DOSBox</a> on my PC a few days ago. Old MS-DOS programs will run on Windows using this virtual MS-DOS.
+      <p>Below are three screen shots of the program running in <a href="https://www.dosbox.com/">DOSBox</a> on my PC a
+        few days ago. Old MS-DOS programs will run on Windows using this virtual MS-DOS.
       </p>
 
       <p>
         The Project Gutenberg complete works of Mark Twain is a roughly 16 megabyte text file
-        <a href="http://www.gutenberg.org/cache/epub/3200/pg3200.txt">Twain Text</a>. Docinfo took just less than 3 minutes while running in DosBox on my computer. My 9 year old PC runs Win10 64bit
-        with an Intel Core i5 650 @ 3.20GHz. I don't know if Docinfo could generate results faster with a faster PC. It seems fast enough.
+        <a href="http://www.gutenberg.org/cache/epub/3200/pg3200.txt">Twain Text</a>. Docinfo took just less than 3
+        minutes while running in DosBox on my computer. My 9 year old PC runs Win10 64bit
+        with an Intel Core i5 650 @ 3.20GHz. I don't know if Docinfo could generate results faster with a faster PC. It
+        seems fast enough.
       </p>
 
       <p>Install DOSBox and use <a href="/blog/docinfo.exe">Docinfo.exe</a>. You can download the <a href="/blog/docinfo.c">source code</a>, make alterations, and if you like, compile a new

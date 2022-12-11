@@ -14,9 +14,9 @@
 </script>
 
 
+  <meta name="description" content="chess game ">
 
-  <meta name="description" content="this page provides an email address">
-  <title>Chess | Infobucket</title>
+  <title>Cato vs Lowder | Infobucket</title>
 
   <!-- Before it was infobucket it was a page of links that began Wednesday 1 October 1997 at 7:00 PM -->
 
@@ -37,36 +37,20 @@
 
 <link rel="stylesheet" href="/assets/css/main.css">
 
-  <script src="pgnyui.js"></script>
-  <script src="pgnviewer.js"></script>
+  <!--  pgnviewer.js and usage can be found at Chess Tempo
+      https://old.chesstempo.com/pgn-usage.html  -->
 
-  <link rel="icon" type="image/x-icon" href="../favicon.ico">
-  <link type="text/css" rel="stylesheet" href="chess.css">
 
-  <style>
-    .chess_li {
-      font-size: 18px;
-      font-weight: 400;
-      margin-left: 10px;
-      margin-top: 5px;
-      margin-bottom: 10px;
-      padding: 0;
-      list-style-position: inside;
-      list-style-type: square;
-    }
-
-    .chess_ul {
-      font-size: 16px;
-      margin-bottom: 20px;
-    }
-  </style>
+  <script type="text/javascript" src="pgnyui.js"></script>
+  <script type="text/javascript" src="pgnviewer.js"></script>
+  <link type="text/css" rel="stylesheet" href="moves.css">
 
 </head>
 
 
 
 <body>
-
+  <!-- This website began 10/6/97 -->
   <nav>
     <div class="wrapnav">
         <ul>
@@ -86,69 +70,48 @@
 </nav>
 
   <main>
+    <article>
+      <div id="site_title">
+        <h2>Cato-Lowder</h2>
+        <p>Game viewer by <a href="https://chesstempo.com/">ChessTempo</a></p>
+      </div>
 
-    <div id="site_title">
-      <h1>Stanly County Chess</h1>
-    </div>
-    <!-- This webpage began 10/6/97 -->
+      <div id="eventdata">
+        [Event "End of the Year"]<br>
+        [Site "Lancaster, SC"]<br>
+        [Date "1985.12.28"]<br>
+        [Round "02"]<br>
+        [White "Cato, Tony"]<br>
+        [Black "Lowder, Phil"]<br>
+        [Result "0-1"]<br>
+        [WhiteUSCF "1600"]<br>
+        [BlackUSCF "1625"]<br>
+        [ECO "B95"]<br>
+      </div>
 
-    <div id="demo-container">
-      <script>
-        new PgnViewer({
-          boardName: 'demo',
-          pgnFile: 'fensmith.pgn',
-          pieceSize: 35,
-          pieceSet: 'merida',
-          pauseBetweenMoves: 800,
-          boardImagePath: 'https://infobucket.com/chess',
-          showCoordinates: true,
-          addVersion: true,
-          autoScrollMoves: true,
-          newlineForEachMainMove: false,
-          showBracketsOnVariation: false,
-          movesFormat: 'main_on_own_line',
-          moveAnimationLength: 0.1,
-        });
-      </script>
-    </div>
+      <div id="chess-container">
+        <script>
+          new PgnViewer({
+            boardName: 'chess',
+            pgnString: '1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 a6 6. Bg5 e6 7. Bd3 Be7 8. O-O Nc6 9. Nf3 b5 10. a3 Bb7 11. Re1 Rc8 12. Rc1 Na5 13. b4 Rxc3 14. Bd2 Rc8 15. bxa5 O-O 16. Bb4 Nd7 17. e5 Bxf3 18. Qxf3 Nxe5 19. Qb7 Qc7 20. Qxc7 Rxc7 21. Bf1 Rfc8 22. c3 Nc6 23. Re3 Nxb4 24. axb4 Bg5 0-1',
+            pieceSize: 40,
+            pieceSet: 'merida',
+            pauseBetweenMoves: 800,
+            boardImagePath: 'https://www.infobucket.com/chess',
+            showCoordinates: true,
+            addVersion: true,
+            autoScrollMoves: true,
+            newlineForEachMainMove: false,
+            showBracketsOnVariation: false,
+            movesFormat: 'main_on_own_line',
+            moveAnimationLength: 0.1,
+            pollPGNMilliseconds: 90000,
+          });
+        </script>
+      </div>
 
-    <p class="paragraph">Black to move, from <a href="/chess/games/smith.html">Smith-Lowder</a>.
-      Chess viewer by <a href="https://chesstempo.com/">ChessTempo</a>.</p>
-
-    <p class="paragraph">To find out how you <a href="https://www.uschess.org/datapage/top-players2.php?state=NC&limit=&maxcnt=200&players=C&rtgsys=R&current=C">rate</a>,
-      play in a <a href="https://www.uschess.org">USCF</a> tournament. Anyone can play and get a <a href="https://www.uschess.org/msa/MbrDtlMain.php?12333730">rating</a>.
-      The only requirement is an entry fee.
-    </p>
-
-
-    <ul class="chess_ul">
-      <li class="chess_li"><a href="https://ncchess.org">NC Chess Association</a></li>
-      <li class="chess_li"><a href="https://www.scchess.org">SC Chess Association</a></li>
-      <li class="chess_li"><a href="https://en.chessbase.com/">ChessBase </a></li>
-      <li class="chess_li"><a href="https://theweekinchess.com/">The Week In Chess</a></li>
-    </ul>
-
-    <p class="paragraph"><a href="https://www.uschess.org/">USCF</a> tournament games.</p>
-
-    <ul class="chess_ul">
-      <li class="chess_li"><a href="/chess/games/hayes.html">Hayes-Lowder</a></li>
-      <!--  <li class="chess_li"><a href="/chess/games/keller.html">Lowder-Keller</a></li> -->
-      <!-- <li class="chess_li"><a href="/chess/games/daniel.html">Daniel-Lowder</a></li> -->
-      <li class="chess_li"><a href="/chess/games/michael.html">Lowder-Michael</a></li>
-      <li class="chess_li"><a href="/chess/games/obryant.html">O'Bryant-Lowder</a></li>
-      <li class="chess_li"><a href="/chess/games/smith.html">Smith-Lowder</a></li>
-      <li class="chess_li"><a href="/chess/games/hauser.html">Lowder-Hauser</a></li>
-      <li class="chess_li"><a href="/chess/games/vicary.html">Vicary-Lowder</a></li>
-      <li class="chess_li"><a href="/chess/games/lindsay.html">Lowder-Lindsay</a></li>
-      <li class="chess_li"><a href="/chess/games/bridges.html">Lowder-Bridges</a></li>
-      <li class="chess_li"><a href="/chess/games/frady.html">Lowder-Frady</a></li>
-      <li class="chess_li"><a href="/chess/games/hellstein.html">Lowder-Hellstein</a></li>
-      <li class="chess_li"><a href="/chess/games/weber.html">Lowder-Weber</a></li>
-      <li class="chess_li"><a href="/chess/games/strickland.html">Strickland-Lowder</a></li>
-      <li class="chess_li"><a href="/chess/games/cato.html">Cato-Lowder</a></li>
-    </ul>
-
-
+      <div id="chess-moves"></div>
+    </article>
   </main>
 
   <div class="footer_row">

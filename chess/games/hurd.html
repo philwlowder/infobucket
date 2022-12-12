@@ -14,9 +14,9 @@
 </script>
 
 
+  <meta name="description" content="chess game ">
 
-  <meta name="description" content="this page provides an email address">
-  <title>Chess | Infobucket</title>
+  <title>Hurd vs Lowder | Infobucket</title>
 
   <!-- Before it was infobucket it was a page of links that began Wednesday 1 October 1997 at 7:00 PM -->
 
@@ -37,36 +37,20 @@
 
 <link rel="stylesheet" href="/assets/css/main.css">
 
-  <script src="pgnyui.js"></script>
-  <script src="pgnviewer.js"></script>
+  <!--  pgnviewer.js and usage can be found at Chess Tempo
+      https://old.chesstempo.com/pgn-usage.html  -->
 
-  <link rel="icon" type="image/x-icon" href="../favicon.ico">
-  <link type="text/css" rel="stylesheet" href="chess.css">
 
-  <style>
-    .chess_li {
-      font-size: 18px;
-      font-weight: 400;
-      margin-left: 10px;
-      margin-top: 5px;
-      margin-bottom: 10px;
-      padding: 0;
-      list-style-position: inside;
-      list-style-type: square;
-    }
-
-    .chess_ul {
-      font-size: 16px;
-      margin-bottom: 20px;
-    }
-  </style>
+  <script type="text/javascript" src="pgnyui.js"></script>
+  <script type="text/javascript" src="pgnviewer.js"></script>
+  <link type="text/css" rel="stylesheet" href="moves.css">
 
 </head>
 
 
 
 <body>
-
+  <!-- This website began 10/6/97 -->
   <nav>
     <div class="wrapnav">
         <ul>
@@ -86,70 +70,49 @@
 </nav>
 
   <main>
+    <article>
+      <div id="site_title">
+        <h2>Hurd-Lowder</h2>
+        <p>Game viewer by <a href="https://chesstempo.com/">ChessTempo</a></p>
+      </div>
 
-    <div id="site_title">
-      <h1>Stanly County Chess</h1>
-    </div>
-    <!-- This webpage began 10/6/97 -->
+      <div id="eventdata">
+        [Event "LPO 15"]<br>
+        [Site "Winston-Salem, NC"]<br>
+        [Date "1988.07.30"]<br>
+        [Round "01"]<br>
+        [White "Hurd Jr, Alfred"]<br>
+        [Black "Lowder, Phil"]<br>
+        [Result "0-1"]<br>
+        [WhiteUSCF "1960"]<br>
+        [BlackUSCF "1753"]<br>
+        [ECO "A63"]<br>
 
-    <div id="demo-container">
-      <script>
-        new PgnViewer({
-          boardName: 'demo',
-          pgnFile: 'fensmith.pgn',
-          pieceSize: 35,
-          pieceSet: 'merida',
-          pauseBetweenMoves: 800,
-          boardImagePath: 'https://infobucket.com/chess',
-          showCoordinates: true,
-          addVersion: true,
-          autoScrollMoves: true,
-          newlineForEachMainMove: false,
-          showBracketsOnVariation: false,
-          movesFormat: 'main_on_own_line',
-          moveAnimationLength: 0.1,
-        });
-      </script>
-    </div>
+      </div>
 
-    <p class="paragraph">Black to move, from <a href="/chess/games/smith.html">Smith-Lowder</a>.
-      Chess viewer by <a href="https://chesstempo.com/">ChessTempo</a>.</p>
+      <div id="chess-container">
+        <script>
+          new PgnViewer({
+            boardName: 'chess',
+            pgnString: '1. d4 Nf6 2. c4 c5 3. d5 e6 4. Nc3 exd5 5. cxd5 d6 6. g3 g6 7. Bg2 Bg7 8. Nf3 O-O 9. O-O Nbd7 10. Bf4 Nb6 11. h3 a6 12. a4 Qc7 13. Nd2 Nh5 14. Be3 f5 15. a5 Nd7 16. Nc4 b5 17. axb6 Nxb6 18. Nxb6 Qxb6 19. Qd2 Ra7 20. Rfb1 Raf7 21. Bh6 Qd8 22. Bxg7 Kxg7 23. e3 Qg5 24. Ne2 Nf6 25. b4 Ne4 26. Qb2+ Kg8 27. bxc5 dxc5 28. Nf4 Qe7 29. Bf1 g5 30. Nh5 Qd6 31. Bc4 Qh6 32. g4 fxg4 33. Ng3 Nxg3 34. fxg3 gxh3 35. d6 Be6 36. Qb3 Bxc4 37. Qxc4 Qxd6 38. Kh2 g4 39. Rb2 h5 40. Rxa6 Qe5 41. Rf2 Kg7 42. Rxf7+ Rxf7 43. Qc2 Qf5 44. Qc3+ Rf6 45. Ra7+ Kg6 46. Ra2 Qf1 47. Qc2+ Kh6 48. e4 Qg2+ 49. Qxg2 hxg2 50. Kxg2 Rc6 51. Kf2 Kg6 52. Rc2 Kf6 53. Ke3 Ke5 54. Rh2 Rh6 55. Rf2 Rf6 56. Rh2 Rf3+ 57. Ke2 Kxe4 58. Rxh5 c4 59. Rc5 Kd4 60. Rc8 Rxg3 61. Rd8+ Kc3 62. Rc8 Rg2+ 63. Kd1 g3 64. Rg8 Kd3 65. Rd8+ Kc3 66. Rg8 Rd2+ 67. Kc1 Rd3 68. Rg7 Rf3 69. Kd1 Kb4 70. Rb7+ Ka5 71. Rc7 Rf1+ 0-1',
+            pieceSize: 40,
+            pieceSet: 'merida',
+            pauseBetweenMoves: 800,
+            boardImagePath: 'https://www.infobucket.com/chess',
+            showCoordinates: true,
+            addVersion: true,
+            autoScrollMoves: true,
+            newlineForEachMainMove: false,
+            showBracketsOnVariation: false,
+            movesFormat: 'main_on_own_line',
+            moveAnimationLength: 0.1,
+            pollPGNMilliseconds: 90000,
+          });
+        </script>
+      </div>
 
-    <p class="paragraph">To find out how you <a href="https://www.uschess.org/datapage/top-players2.php?state=NC&limit=&maxcnt=200&players=C&rtgsys=R&current=C">rate</a>,
-      play in a <a href="https://www.uschess.org">USCF</a> tournament. Anyone can play and get a <a href="https://www.uschess.org/msa/MbrDtlMain.php?12333730">rating</a>.
-      The only requirement is an entry fee.
-    </p>
-
-
-    <ul class="chess_ul">
-      <li class="chess_li"><a href="https://ncchess.org">NC Chess Association</a></li>
-      <li class="chess_li"><a href="https://www.scchess.org">SC Chess Association</a></li>
-      <li class="chess_li"><a href="https://en.chessbase.com/">ChessBase </a></li>
-      <li class="chess_li"><a href="https://theweekinchess.com/">The Week In Chess</a></li>
-    </ul>
-
-    <p class="paragraph"><a href="https://www.uschess.org/">USCF</a> tournament games.</p>
-
-    <ul class="chess_ul">
-      <li class="chess_li"><a href="/chess/games/hayes.html">Hayes-Lowder</a></li>
-      <!--  <li class="chess_li"><a href="/chess/games/keller.html">Lowder-Keller</a></li> -->
-      <!-- <li class="chess_li"><a href="/chess/games/daniel.html">Daniel-Lowder</a></li> -->
-      <li class="chess_li"><a href="/chess/games/michael.html">Lowder-Michael</a></li>
-      <li class="chess_li"><a href="/chess/games/obryant.html">O'Bryant-Lowder</a></li>
-      <li class="chess_li"><a href="/chess/games/smith.html">Smith-Lowder</a></li>
-      <li class="chess_li"><a href="/chess/games/hauser.html">Lowder-Hauser</a></li>
-      <li class="chess_li"><a href="/chess/games/vicary.html">Vicary-Lowder</a></li>
-      <li class="chess_li"><a href="/chess/games/lindsay.html">Lowder-Lindsay</a></li>
-      <li class="chess_li"><a href="/chess/games/bridges.html">Lowder-Bridges</a></li>
-      <li class="chess_li"><a href="/chess/games/frady.html">Lowder-Frady</a></li>
-      <li class="chess_li"><a href="/chess/games/hellstein.html">Lowder-Hellstein</a></li>
-      <li class="chess_li"><a href="/chess/games/weber.html">Lowder-Weber</a></li>
-      <li class="chess_li"><a href="/chess/games/strickland.html">Strickland-Lowder</a></li>
-      <li class="chess_li"><a href="/chess/games/cato.html">Cato-Lowder</a></li>
-      <li class="chess_li"><a href="/chess/games/hurd.html">Hurd-Lowder</a></li>
-    </ul>
-
-
+      <div id="chess-moves"></div>
+    </article>
   </main>
 
   <div class="footer_row">

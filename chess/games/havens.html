@@ -3,10 +3,14 @@
 
 <head>
 
-    <meta name="description" content="links" />
-    <title>Links | Infobucket</title>
 
-    <!-- Before it was infobucket it was a page of links that began Wednesday 1 October 1997 at 7:00 PM -->
+
+
+  <meta name="description" content="chess game ">
+
+  <title>Lowder vs Haves | Infobucket</title>
+
+  <!-- Before it was infobucket it was a page of links that began Wednesday 1 October 1997 at 7:00 PM -->
 
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,14 +29,19 @@
 
 <link rel="stylesheet" href="/assets/css/main.css">
 
+  <!--  pgnviewer.js and usage can be found at Chess Tempo
+      https://old.chesstempo.com/pgn-usage.html  -->
+
+
+  <script type="text/javascript" src="pgnyui.js"></script>
+  <script type="text/javascript" src="pgnviewer.js"></script>
+  <link type="text/css" rel="stylesheet" href="moves.css">
+
 </head>
 
-
-
 <body>
-
-
-    <nav>
+  <!-- This website began 10/6/97 -->
+  <nav>
     <div class="wrapnav">
         <ul>
             <li class="home"><a href="/" class="home"><img src="/assets/media/svg/home.svg" width=42 height=42 alt="home icon"></a></li>
@@ -50,78 +59,53 @@
     </div>
 </nav>
 
-    <main>
-        <article>
-            <h1>Useful Sites</h1>
+  <main>
+    <article>
+      <div id="site_title">
+        <h2>Lowder-Havens</h2>
+        <p>Game viewer by <a href="https://chesstempo.com/">ChessTempo</a></p>
+      </div>
 
-            <ul>
+      <div id="eventdata">
+        [Event "LPO 15"]<br>
+        [Site "Winston-Salem, NC"]<br>
+        [Date "1988.07.31"]<br>
+        [Round "05"]<br>
+        [White "Lowder, Phil"]<br>
+        [Black "Havens, L."]<br>
+        [Result "1-0"]<br>
+        [WhiteUSCF "1753"]<br>
+        [BlackUSCF "1868"]<br>
+        [ECO "C44"]<br>
 
-                <li>Weather</li>
-                <ul>
-                    <li class="normal_li">
-                        <a href="https://www.wunderground.com/dashboard/pws/KNCALBEM28">Preformed Line Products</a>
-                    </li>
+      </div>
 
-                    <li class="normal_li">
-                        <a href="https://www.windy.com/35.407/-80.117?34.895,-80.117,8,m:eEbadVD">Windy</a>
-                    </li>
+      <div id="chess-container">
+        <script>
+          new PgnViewer({
+            boardName: 'chess',
+            pgnString: '1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Bc4 Be7 5. c3 d6 6. cxd4 Nf6 7. Nc3 O-O 8. Bb5 Bg4 9. Bxc6 bxc6 10. h3 Bh5 11. O-O Re8 12. Re1 Nd7 13. Bf4 Rb8 14. b3 c5 15. Nd5 cxd4 16. Qxd4 Bxf3 17. gxf3 Nb6 18. Kh2 Nxd5 19. Qxd5 Qd7 20. Rg1 Bf6 21. Rad1 Rb5 22. Qd2 Rh5 23. Rg4 Qe6 24. Rdg1 g6 25. Be3 Bg7 26. h4 Rb8 27. Bd4 Bh6 28. Qc3 Qd7 29. Bf6 Rbb5 30. R1g3 Rhc5 31. Qd3 Qe6 32. e5 Rd5 33. Qe4 dxe5 34. Bg5 f5 35. Qc4 fxg4 36. Bxh6 Rbc5 37. Qb4 Qb6 38. Qxg4 Rd8 39. Be3 Kg7 40. b4 Qa6 41. Bxc5 Qxa2 42. h5 Qb1 43. Rg1 Qc2 44. h6 + Kh8 45. Qg5 Rf8 46. Qe7 1-0',
+            pieceSize: 40,
+            pieceSet: 'merida',
+            pauseBetweenMoves: 800,
+            boardImagePath: 'https://www.infobucket.com/chess',
+            showCoordinates: true,
+            addVersion: true,
+            autoScrollMoves: true,
+            newlineForEachMainMove: false,
+            showBracketsOnVariation: false,
+            movesFormat: 'main_on_own_line',
+            moveAnimationLength: 0.1,
+            pollPGNMilliseconds: 90000,
+          });
+        </script>
+      </div>
 
-                    <li class="normal_li">
-                        <a href="https://forecast.weather.gov/MapClick.php?textField1=35.41&textField2=-80.12#.Yi37HzUpC71">NOAA</a>
-                    </li>
+      <div id="chess-moves"></div>
+    </article>
+  </main>
 
-                    <li class="normal_li">
-                        <a href="https://weather.com/weather/radar/interactive/l/bff87ed74e8d64a13d956b4f7eb8f09c8c7934e2a92d5e6168792b22e76f5826">Weather
-                            Channel Radar</a>
-                    </li>
-
-                </ul>
-
-                <li>Chess</li>
-                <ul>
-                    <li class="normal_li">
-                        <a href="https://www.chess.com/events">Chess Events</a>
-                    </li>
-                    <li class="normal_li">
-                        <a href="https://2700chess.com/">Live Chess Ratings</a>
-                    </li>
-
-                    <li class="normal_li">
-                        <a href="https://chesstempo.com/chess-tactics/">Chess Tempo</a>
-                    </li>
-
-
-                </ul>
-
-
-                <li>Misc</li>
-
-                <ul>
-                    <li class="normal_li">
-                        <a href="https://www.kadaza.com/">Kadaza</a>
-                    </li>
-
-                    <li class="normal_li">
-                        <a href="https://web.archive.org/web/19991001000000*/http://web.infoave.net/~plowder/">Wayback
-                            Machine Infoavenue</a>
-                    </li>
-
-                    <li class="normal_li">
-                        <a href="http://www.dialpoint.net/users/plowder/">Wayback Machine Dialpoint</a>
-                    </li>
-
-                    <!-- <li class="normal_li">
-                        <a href="http://10.webmasters.com/*infobucket.com/httpdocs/">Webmasters site</a>
-                    </li> -->
-
-
-
-                </ul>
-            </ul>
-        </article>
-    </main>
-
-    <div class="footer_row">
+  <div class="footer_row">
    <div class="footer_column">
       <ul>
          <li class="footer_label">Media</li>
@@ -168,10 +152,10 @@
       </ul>
    </div>
 </div>
-    <div class="sig">
+  <div class="sig">
     <img src="/assets/media/gif/copyright.gif" width="200" height="34" alt="copyright Phil W. Lowder" class="center">
 </div>
-    <!-- Default Statcounter code for My personal website
+  <!-- Default Statcounter code for My personal website
 https://infobucket.com/ -->
 <script type="text/javascript">
     var sc_project = 12254161;

@@ -1,1 +1,184 @@
-<!DOCTYPE html><html lang="en"><head><meta name="description" content="hosting on AWS Lightsail"><title>Virtual Private Server</title><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="pinterest" content="nopin"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="icon" href="/favicon.ico"><meta name="msapplication-TileColor" content="#da532c"><meta name="theme-color" content="#ffffff"><link rel="stylesheet" href="/assets/css/main.css"><style>main{margin-left:5px}</style></head><body><nav><div class="wrapnav"><ul><li class="home"><a href="/" class="home"><img src="/assets/media/svg/home.svg" width="42" height="42" alt="home icon"></a></li><li><a href="/gallery/">Images</a></li><li><a href="/blog/">Blog</a></li><li><a href="#" aria-haspopup="true">More</a><ul class="dropdown" aria-label="submenu"><li><a href="/chess/">Chess</a></li><li><a href="/aboutme/">About</a></li><li><a href="/contact/">Contact</a></li></ul></li></ul></div></nav><main><a href="/blog/012-more-c-programming.html" class="btn_nav btn_small btn_blue">Previous</a> <a href="/blog/index.html" class="btn_nav btn_small btn_blue">Index</a> <a href="/blog/016-nivo-slider.html" class="btn_nav btn_small btn_blue">Next</a><article><h1>Virtual Private Server</h1><p>January 18th, 2020</p><br>I am now hosting my website with an affordable Virtual Private Server (VPS) from <a href="https://aws.amazon.com/lightsail/">Amazon Web Services (AWS) Lightsail</a>.<br><br>Most small, low traffic sites are served from shared hosting accounts. There are advantages to having my own server. With AWS Lightsail, one advantage is lower cost. Another advantage is performance. Testing my new server with <a href="https://www.webpagetest.org/">WebPageTest</a> I have seen an increase in my "page speed". Now I have the ability to work directly with the server software, Apache.<br><br>Amazon calls each virtual server an "instance". I started my first AWS instance December 31st, 2019. With <a href="https://bitnami.com/">Bitnami</a> as a partner, AWS offers a variety of software installations. I first tried the Bitnami LAMP stack (Linux, Apache, Mysql, PHP). My virtual server instance was created almost instantly. My operating system of choice was Ubuntu 18.4 "Bionic" with Apache version 2.4. Picking the most recent versions seemed to make sense.<br><br>I had experience with <a href="http://www.wampserver.com/en/">WAMP</a> (Windows, Apache, Mysql, PHP). I installed WAMP on my desktop PC several years ago. WAMP makes it possible to develop websites on my own desktop PC using <a href="https://www.html.net/">PHP</a>.<br><br>Once the AWS VPS was created, I began to explore. Looking at Apache 2.4 configuration files, I became confused. I didn't recognize them. I decided to delete the first instance and start over. I created the second instance without Bitnami's help. I wanted to make certain that Bitnami could not be a part of my confusion.<br><br>Once again I chose Ubuntu 18 "Bionic" for an operating system. Next I manually installed Apache 2.4. I began to realized this new version of Apache used a different configuration system. That was the main source of my confusion. I began to make progress, but 90% of the help found on the internet was for older versions of Apache. My past knowledge was as confusing as it was helpful.<br><br>After some study, I had Apache configured and my website up and running. The next step was to install a <a href="https://letsencrypt.org/">Let's Encrypt</a> certificate. I misread the instructions but the certificate appeared to install correctly. Even though the installation looked correct, an error message popped up. After more work and reading, I suspected a firewall issue. I spent a long time working with Apache and it's firewall looking for a solution. After much head banging, I dimly recalled firewall settings in the Lightsail management pages. Once I found that page again and made the correct adjustments my problem was solved.<br><br>Next <a href="https://www.mysql.com/">Mysql</a> installed without any trouble. Then I installed <a href="https://www.htmlmyadmin.net/">Phpmyadmin</a> and an error message told me I had a missing PHP module. After another long struggle, I solved that problem. I learned something basic. The PHP used by Apache and Ubuntu are separate. Mine were different versions and I had assumed they were the same.<br><br>When I began, I selected the $3.50 instance. After installing the above apps, I had used 20% of the drive space and 75% of the ram memory.<br><br>I haven't loaded a table into the database yet. There was only one page that needed a database and I temporarily removed it from the menu.<br><br>I'm happy with the result. I doubt I have optimized this instance, but the site works well and is fast.<br></article></main><div class="footer_row"><div class="footer_column"><ul><li class="footer_label">Media</li><li><a href="https://www.facebook.com/phil.lowder"><img src="/assets/media/png/f_logo.png" title="Visit my Facebook page" width="52" height="52" alt="FaceBook Logo"></a></li><li><a href="https://github.com/philwlowder"><img src="/assets/media/png/github-logo.png" title="Visit my GitHub repositories" width="48" height="48" alt="GitHub Logo"></a></li><li><a href="https://www.youtube.com/@phil.lowder"><img src="/assets/media/png/youtube_social_squircle_white.png" title="Visit my YouTube channel" width="48" height="48" alt="GitHub Logo"></a></li><li><a href="https://www.instagram.com/philw.lowder/"><img src="/assets/media/png/instagram_01.png" title="Visit my Instagram" width="48" height="48" alt="Instagram Logo"></a></li></ul></div><div class="footer_column"><ul><li class="footer_label">Tools</li><li><a href="https://code.visualstudio.com/">VS Code</a></li><li><a href="https://gulpjs.com/">Gulp</a></li><li><a href="https://github.com/">GitHub</a></li><li><a href="https://lokeshdhakar.com/projects/lightbox2/">Lightbox</a></li></ul></div><div class="footer_column"><ul><li class="footer_label">Resources</li><li><a href="https://www.netlify.com/">Netlify</a></li><li><a href="https://material.io/resources/icons/?style=baseline">Material Icons</a></li><li><a href="https://www.mozilla.org/en-US/firefox/new/">FireFox</a></li><li><a href="https://jigsaw.w3.org/css-validator/check/referer"><img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!"></a></li></ul></div><div class="footer_column"><ul><li class="footer_label">Site Map</li><li><a href="/">Home</a></li><li><a href="/blog/">Blog</a></li><li><a href="/gallery/">Images</a></li><li><a href="/chess/">Chess</a></li><li><a href="/contact/">Email</a></li><li><a href="/aboutme/">About Me</a></li><li><a href="/links/">Links</a></li></ul></div></div><div class="sig"><img src="/assets/media/gif/copyright.gif" width="200" height="34" alt="copyright Phil W. Lowder" class="center"></div></body></html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta name="description" content="hosting on AWS Lightsail">
+
+  <title>Virtual Private Server</title>
+
+  <!-- Before it was infobucket it was a page of links that began Wednesday 1 October 1997 at 7:00 PM -->
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="pinterest" content="nopin">
+
+<!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'"> -->
+
+<!-- https://realfavicongenerator.net/ -->
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="icon" href="/favicon.ico">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+
+<link rel="stylesheet" href="/assets/css/main.css">
+
+  <style>
+    main {
+      margin-left: 5px;
+    }
+  </style>
+
+</head>
+
+
+
+<body>
+  <nav>
+    <div class="wrapnav">
+        <ul>
+            <li class="home"><a href="/" class="home"><img src="/assets/media/svg/home.svg" width=42 height=42 alt="home icon"></a></li>
+            <li><a href="/gallery/">Images</a></li>
+            <li><a href="/blog/">Blog</a></li>
+
+            <li><a href="#" aria-haspopup="true">More</a>
+                <ul class="dropdown" aria-label="submenu">
+                    <li><a href="/chess/">Chess</a></li>
+                    <li><a href="/aboutme/">About</a></li>
+                    <li><a href="/contact/">Contact</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+  <main>
+    <a href="/blog/012-more-c-programming.html" class="btn_nav btn_small btn_blue">Previous</a>
+    <a href="/blog/index.html" class="btn_nav btn_small btn_blue">Index</a>
+    <a href="/blog/016-nivo-slider.html" class="btn_nav btn_small btn_blue">Next</a>
+
+    <article>
+      <h1>Virtual Private Server</h1>
+      <p>January 18th, 2020</p>
+
+      <br>
+      I am now hosting my website with an affordable Virtual Private Server (VPS) from <a href="https://aws.amazon.com/lightsail/">Amazon Web Services (AWS) Lightsail</a>. <br>
+
+      <br>
+      Most small, low traffic sites are served from shared hosting accounts. There are advantages to having my own
+      server. With AWS Lightsail, one advantage is lower cost. Another advantage is
+      performance. Testing my new server with <a href="https://www.webpagetest.org/">WebPageTest</a>
+      I have seen an increase in my "page speed". Now I have the ability to work directly with the server software,
+      Apache.
+      <br>
+
+      <br>
+      Amazon calls each virtual server an "instance". I started my first AWS instance December 31st, 2019. With <a href="https://bitnami.com/">Bitnami</a> as a partner, AWS offers a variety of
+      software installations. I first tried the Bitnami LAMP stack (Linux, Apache, Mysql, PHP). My virtual server
+      instance was created almost instantly. My operating system of choice was Ubuntu 18.4
+      "Bionic" with Apache version 2.4. Picking the most recent versions seemed to make sense.
+      <br>
+
+      <br>
+      I had experience with <a href="http://www.wampserver.com/en/">WAMP</a> (Windows, Apache, Mysql, PHP). I installed
+      WAMP on my desktop PC several years ago. WAMP makes it possible to develop
+      websites on my own desktop PC using <a href="https://www.html.net/">PHP</a>. <br>
+
+      <br>
+      Once the AWS VPS was created, I began to explore. Looking at Apache 2.4 configuration files, I became confused. I
+      didn't recognize them. I decided to delete the first instance and start over. I
+      created the second instance without Bitnami's help. I wanted to make certain that Bitnami could not be a part of
+      my confusion. <br>
+
+      <br>
+      Once again I chose Ubuntu 18 "Bionic" for an operating system. Next I manually installed Apache 2.4. I began to
+      realized this new version of Apache used a different configuration system. That
+      was the main source of my confusion. I began to make progress, but 90% of the help found on the internet was for
+      older versions of Apache. My past knowledge was as confusing as it was helpful.
+      <br>
+
+      <br>
+      After some study, I had Apache configured and my website up and running. The next step was to install a <a href="https://letsencrypt.org/">Let's Encrypt</a> certificate. I misread the
+      instructions but the certificate appeared to install correctly. Even though the installation looked correct, an
+      error message popped up. After more work and reading, I suspected a firewall
+      issue. I spent a long time working with Apache and it's firewall looking for a solution. After much head banging,
+      I dimly recalled firewall settings in the Lightsail management pages. Once I
+      found that page again and made the correct adjustments my problem was solved.
+      <br>
+
+      <br>
+      Next <a href="https://www.mysql.com/">Mysql</a> installed without any trouble. Then I installed <a href="https://www.htmlmyadmin.net/">Phpmyadmin</a> and an error message told me I had a missing
+      PHP module. After another long struggle, I solved that problem. I learned something basic. The PHP used by Apache
+      and Ubuntu are separate. Mine were different versions and I had assumed they
+      were the same. <br>
+
+      <br>
+      When I began, I selected the $3.50 instance. After installing the above apps, I had used 20% of the drive space
+      and 75% of the ram memory. <br>
+
+      <br>
+      I haven't loaded a table into the database yet. There was only one page that needed a database and I temporarily
+      removed it from the menu. <br>
+
+      <br>
+      I'm happy with the result. I doubt I have optimized this instance, but the site works well and is fast. <br>
+    </article>
+  </main>
+  <!-- end main -->
+
+  <div class="footer_row">
+   <div class="footer_column">
+      <ul>
+         <li class="footer_label">Media</li>
+         <li><a href="https://www.facebook.com/phil.lowder"><img src="/assets/media/png/f_logo.png" title="Visit my Facebook page" width="52" height="52" alt="FaceBook Logo"></a></li>
+         <li><a href="https://github.com/philwlowder"><img src="/assets/media/png/github-logo.png" title="Visit my GitHub repositories" width="48" height="48" alt="GitHub Logo"></a></li>
+         <li><a href="https://www.youtube.com/@phil.lowder"><img src="/assets/media/png/youtube_social_squircle_white.png" title="Visit my YouTube channel" width="48" height="48"
+                    alt="GitHub Logo"></a></li>
+         <li><a href="https://www.instagram.com/philw.lowder/"><img src="/assets/media/png/instagram_01.png" title="Visit my Instagram" width="48" height="48" alt="Instagram Logo"></a></li>
+      </ul>
+
+   </div>
+
+   <div class="footer_column">
+      <ul>
+         <li class="footer_label">Tools</li>
+         <li><a href="https://code.visualstudio.com/">VS Code</a></li>
+         <li><a href="https://gulpjs.com/">Gulp</a></li>
+         <li><a href="https://github.com/">GitHub</a></li>
+         <li><a href="https://lokeshdhakar.com/projects/lightbox2/">Lightbox</a></li>
+      </ul>
+   </div>
+   <div class="footer_column">
+      <ul>
+         <li class="footer_label">Resources</li>
+         <li><a href="https://www.netlify.com/">Netlify</a></li>
+         <li><a href="https://material.io/resources/icons/?style=baseline">Material Icons</a></li>
+         <li><a href="https://www.mozilla.org/en-US/firefox/new/">FireFox</a></li>
+         <li><a href="https://jigsaw.w3.org/css-validator/check/referer"><img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!"></a></li>
+      </ul>
+   </div>
+
+   <div class="footer_column">
+      <ul>
+         <li class="footer_label">Site Map </li>
+         <li><a href="/">Home</a></li>
+         <li><a href="/blog/">Blog</a></li>
+         <li><a href="/gallery/">Images</a></li>
+         <li><a href="/chess/">Chess</a></li>
+         <li><a href="/contact/">Email</a></li>
+         <li><a href="/aboutme/">About Me</a></li>
+         <li><a href="/links/">Links</a>
+
+      </ul>
+   </div>
+</div>
+  <div class="sig">
+    <img src="/assets/media/gif/copyright.gif" width="200" height="34" alt="copyright Phil W. Lowder" class="center">
+</div>
+
+</body>
+
+</html>
